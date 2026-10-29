@@ -1,0 +1,4400 @@
+{
+ "generated": "2026-10-29T16:39:08.392Z",
+ "source": "https://buildbot.libretro.com/assets/frontend/overlays.zip",
+ "license": "CC-BY-4.0 (see presets/COPYING)",
+ "categories": [
+  {
+   "id": "borders",
+   "count": 15,
+   "cfgs": [
+    {
+     "name": "gb",
+     "file": "gb.cfg",
+     "path": "borders/gb.cfg",
+     "dir": "borders",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "gb-4k",
+     "file": "gb-4k.cfg",
+     "path": "borders/gb-4k.cfg",
+     "dir": "borders",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "gba-4k",
+     "file": "gba-4k.cfg",
+     "path": "borders/gba-4k.cfg",
+     "dir": "borders",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "megadrive_animated_border",
+     "file": "megadrive_animated_border.cfg",
+     "path": "borders/animated-border/megadrive_animated_border.cfg",
+     "dir": "borders/animated-border",
+     "overlays": 0,
+     "descs": 0,
+     "names": [
+      "3-button",
+      "6-button"
+     ],
+     "thumb": "borders/animated-border/img-md/pad_up.png"
+    },
+    {
+     "name": "nes-border",
+     "file": "nes-border.cfg",
+     "path": "borders/animated-border/nes-border.cfg",
+     "dir": "borders/animated-border",
+     "overlays": 1,
+     "descs": 11,
+     "names": [
+      "overlay0"
+     ],
+     "thumb": "borders/animated-border/img-nes/l.png"
+    },
+    {
+     "name": "nes-smb2-integer",
+     "file": "nes-smb2-integer.cfg",
+     "path": "borders/nes-smb2-integer.cfg",
+     "dir": "borders",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "psx_animated_border",
+     "file": "psx_animated_border.cfg",
+     "path": "borders/animated-border/psx_animated_border.cfg",
+     "dir": "borders/animated-border",
+     "overlays": 0,
+     "descs": 0,
+     "names": [
+      "overlay0"
+     ],
+     "thumb": "borders/animated-border/img-psx/THUMB_BTN.png"
+    },
+    {
+     "name": "snes-castlevania4",
+     "file": "snes-castlevania4.cfg",
+     "path": "borders/snes-castlevania4.cfg",
+     "dir": "borders",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "snes-ct-integer",
+     "file": "snes-ct-integer.cfg",
+     "path": "borders/snes-ct-integer.cfg",
+     "dir": "borders",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "snes-demonscrest-integer",
+     "file": "snes-demonscrest-integer.cfg",
+     "path": "borders/snes-demonscrest-integer.cfg",
+     "dir": "borders",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "snes-lttp",
+     "file": "snes-lttp.cfg",
+     "path": "borders/snes-lttp.cfg",
+     "dir": "borders",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "snes-metroid-integer",
+     "file": "snes-metroid-integer.cfg",
+     "path": "borders/snes-metroid-integer.cfg",
+     "dir": "borders",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "snes-smas-integer",
+     "file": "snes-smas-integer.cfg",
+     "path": "borders/snes-smas-integer.cfg",
+     "dir": "borders",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "super_famicom_animated_border",
+     "file": "super_famicom_animated_border.cfg",
+     "path": "borders/animated-border/super_famicom_animated_border.cfg",
+     "dir": "borders/animated-border",
+     "overlays": 4,
+     "descs": 104,
+     "names": [
+      "BZL_LIGHT",
+      "LIGHT",
+      "BZL_DARK",
+      "DARK"
+     ],
+     "thumb": "borders/animated-border/img-sfc/BEZEL_LEFT.png"
+    },
+    {
+     "name": "tv-integer",
+     "file": "tv-integer.cfg",
+     "path": "borders/tv-integer.cfg",
+     "dir": "borders",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    }
+   ]
+  },
+  {
+   "id": "ctr",
+   "count": 21,
+   "cfgs": [
+    {
+     "name": "a2600_template",
+     "file": "a2600_template.cfg",
+     "path": "ctr/templates/a2600_template.cfg",
+     "dir": "ctr/templates",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "a2600-integer",
+     "file": "a2600-integer.cfg",
+     "path": "ctr/borders/a2600-integer.cfg",
+     "dir": "ctr/borders",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "gb_integer_template",
+     "file": "gb_integer_template.cfg",
+     "path": "ctr/templates/gb_integer_template.cfg",
+     "dir": "ctr/templates",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "gb_template",
+     "file": "gb_template.cfg",
+     "path": "ctr/templates/gb_template.cfg",
+     "dir": "ctr/templates",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "gb-alt3",
+     "file": "gb-alt3.cfg",
+     "path": "ctr/borders/gb-alt3.cfg",
+     "dir": "ctr/borders",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "gb-alt3-grid-gray",
+     "file": "gb-alt3-grid-gray.cfg",
+     "path": "ctr/borders/gb-alt3-grid-gray.cfg",
+     "dir": "ctr/borders",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "gb-alt3-grid-green",
+     "file": "gb-alt3-grid-green.cfg",
+     "path": "ctr/borders/gb-alt3-grid-green.cfg",
+     "dir": "ctr/borders",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "gb-integer",
+     "file": "gb-integer.cfg",
+     "path": "ctr/borders/gb-integer.cfg",
+     "dir": "ctr/borders",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "gb-integer-grid-gray",
+     "file": "gb-integer-grid-gray.cfg",
+     "path": "ctr/borders/gb-integer-grid-gray.cfg",
+     "dir": "ctr/borders",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "mame-phosphors",
+     "file": "mame-phosphors.cfg",
+     "path": "ctr/effects/mame-phosphors.cfg",
+     "dir": "ctr/effects",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "nes_template",
+     "file": "nes_template.cfg",
+     "path": "ctr/templates/nes_template.cfg",
+     "dir": "ctr/templates",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "nes-integer",
+     "file": "nes-integer.cfg",
+     "path": "ctr/borders/nes-integer.cfg",
+     "dir": "ctr/borders",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "nes-integer-mame-phosphors",
+     "file": "nes-integer-mame-phosphors.cfg",
+     "path": "ctr/borders/nes-integer-mame-phosphors.cfg",
+     "dir": "ctr/borders",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "psx_template",
+     "file": "psx_template.cfg",
+     "path": "ctr/templates/psx_template.cfg",
+     "dir": "ctr/templates",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "psx-alt-integer",
+     "file": "psx-alt-integer.cfg",
+     "path": "ctr/borders/psx-alt-integer.cfg",
+     "dir": "ctr/borders",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "psx-integer",
+     "file": "psx-integer.cfg",
+     "path": "ctr/borders/psx-integer.cfg",
+     "dir": "ctr/borders",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "psx-integer-mame-phosphors",
+     "file": "psx-integer-mame-phosphors.cfg",
+     "path": "ctr/borders/psx-integer-mame-phosphors.cfg",
+     "dir": "ctr/borders",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "scanlines-alpha",
+     "file": "scanlines-alpha.cfg",
+     "path": "ctr/effects/scanlines-alpha.cfg",
+     "dir": "ctr/effects",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "scanlines-grid-alpha",
+     "file": "scanlines-grid-alpha.cfg",
+     "path": "ctr/effects/scanlines-grid-alpha.cfg",
+     "dir": "ctr/effects",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "snes_template",
+     "file": "snes_template.cfg",
+     "path": "ctr/templates/snes_template.cfg",
+     "dir": "ctr/templates",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "snes-integer",
+     "file": "snes-integer.cfg",
+     "path": "ctr/borders/snes-integer.cfg",
+     "dir": "ctr/borders",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    }
+   ]
+  },
+  {
+   "id": "effects",
+   "count": 45,
+   "cfgs": [
+    {
+     "name": "3x-scanlines1-1280x720",
+     "file": "3x-scanlines1-1280x720.cfg",
+     "path": "effects/scanlines/nesguy_scanlines/3x-scanlines1-1280x720.cfg",
+     "dir": "effects/scanlines/nesguy_scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "3x-scanlines2-1280x720",
+     "file": "3x-scanlines2-1280x720.cfg",
+     "path": "effects/scanlines/nesguy_scanlines/3x-scanlines2-1280x720.cfg",
+     "dir": "effects/scanlines/nesguy_scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "3x-scanlines3-1280x720",
+     "file": "3x-scanlines3-1280x720.cfg",
+     "path": "effects/scanlines/nesguy_scanlines/3x-scanlines3-1280x720.cfg",
+     "dir": "effects/scanlines/nesguy_scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "4x-scanlines1-1920x1080",
+     "file": "4x-scanlines1-1920x1080.cfg",
+     "path": "effects/scanlines/nesguy_scanlines/4x-scanlines1-1920x1080.cfg",
+     "dir": "effects/scanlines/nesguy_scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "4x-scanlines2-1920x1080",
+     "file": "4x-scanlines2-1920x1080.cfg",
+     "path": "effects/scanlines/nesguy_scanlines/4x-scanlines2-1920x1080.cfg",
+     "dir": "effects/scanlines/nesguy_scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "4x-scanlines3-1920x1080",
+     "file": "4x-scanlines3-1920x1080.cfg",
+     "path": "effects/scanlines/nesguy_scanlines/4x-scanlines3-1920x1080.cfg",
+     "dir": "effects/scanlines/nesguy_scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "4x-scanlines4-1920x1080",
+     "file": "4x-scanlines4-1920x1080.cfg",
+     "path": "effects/scanlines/nesguy_scanlines/4x-scanlines4-1920x1080.cfg",
+     "dir": "effects/scanlines/nesguy_scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "5x-scanlines1-1920x1080",
+     "file": "5x-scanlines1-1920x1080.cfg",
+     "path": "effects/scanlines/nesguy_scanlines/5x-scanlines1-1920x1080.cfg",
+     "dir": "effects/scanlines/nesguy_scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "5x-scanlines2-1920x1080",
+     "file": "5x-scanlines2-1920x1080.cfg",
+     "path": "effects/scanlines/nesguy_scanlines/5x-scanlines2-1920x1080.cfg",
+     "dir": "effects/scanlines/nesguy_scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "5x-scanlines3-1920x1080",
+     "file": "5x-scanlines3-1920x1080.cfg",
+     "path": "effects/scanlines/nesguy_scanlines/5x-scanlines3-1920x1080.cfg",
+     "dir": "effects/scanlines/nesguy_scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "5x-scanlines4-1920x1080",
+     "file": "5x-scanlines4-1920x1080.cfg",
+     "path": "effects/scanlines/nesguy_scanlines/5x-scanlines4-1920x1080.cfg",
+     "dir": "effects/scanlines/nesguy_scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "5x-scanlines5-1920x1080",
+     "file": "5x-scanlines5-1920x1080.cfg",
+     "path": "effects/scanlines/nesguy_scanlines/5x-scanlines5-1920x1080.cfg",
+     "dir": "effects/scanlines/nesguy_scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "5x-scanlines6-1920x1080",
+     "file": "5x-scanlines6-1920x1080.cfg",
+     "path": "effects/scanlines/nesguy_scanlines/5x-scanlines6-1920x1080.cfg",
+     "dir": "effects/scanlines/nesguy_scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "5x-scanlines7-1920x1080",
+     "file": "5x-scanlines7-1920x1080.cfg",
+     "path": "effects/scanlines/nesguy_scanlines/5x-scanlines7-1920x1080.cfg",
+     "dir": "effects/scanlines/nesguy_scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "5x-scanlines8-1920x1080",
+     "file": "5x-scanlines8-1920x1080.cfg",
+     "path": "effects/scanlines/nesguy_scanlines/5x-scanlines8-1920x1080.cfg",
+     "dir": "effects/scanlines/nesguy_scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "5x-scanlines9-1920x1080",
+     "file": "5x-scanlines9-1920x1080.cfg",
+     "path": "effects/scanlines/nesguy_scanlines/5x-scanlines9-1920x1080.cfg",
+     "dir": "effects/scanlines/nesguy_scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "aperture-grille-3x",
+     "file": "aperture-grille-3x.cfg",
+     "path": "effects/scanlines/aperture-grille-3x.cfg",
+     "dir": "effects/scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "aperture-grille-4x-1280x720",
+     "file": "aperture-grille-4x-1280x720.cfg",
+     "path": "effects/scanlines/aperture-grille-4x-1280x720.cfg",
+     "dir": "effects/scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "aperture-grille-4x-1920x1080",
+     "file": "aperture-grille-4x-1920x1080.cfg",
+     "path": "effects/scanlines/aperture-grille-4x-1920x1080.cfg",
+     "dir": "effects/scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "aperture-grille-5x-1280x720",
+     "file": "aperture-grille-5x-1280x720.cfg",
+     "path": "effects/scanlines/aperture-grille-5x-1280x720.cfg",
+     "dir": "effects/scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "aperture-grille-5x-1440x1080",
+     "file": "aperture-grille-5x-1440x1080.cfg",
+     "path": "effects/scanlines/aperture-grille-5x-1440x1080.cfg",
+     "dir": "effects/scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "aperture-grille-5x-1920x1080",
+     "file": "aperture-grille-5x-1920x1080.cfg",
+     "path": "effects/scanlines/aperture-grille-5x-1920x1080.cfg",
+     "dir": "effects/scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "checker",
+     "file": "checker.cfg",
+     "path": "effects/patterns/checker.cfg",
+     "dir": "effects/patterns",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "checker2x",
+     "file": "checker2x.cfg",
+     "path": "effects/patterns/checker2x.cfg",
+     "dir": "effects/patterns",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "crt-royale-scanlines-vertical-interlacing",
+     "file": "crt-royale-scanlines-vertical-interlacing.cfg",
+     "path": "effects/scanlines/crt-royale-scanlines-vertical-interlacing.cfg",
+     "dir": "effects/scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "crt-royale-scanlines-vertical-interlacing-thin",
+     "file": "crt-royale-scanlines-vertical-interlacing-thin.cfg",
+     "path": "effects/scanlines/crt-royale-scanlines-vertical-interlacing-thin.cfg",
+     "dir": "effects/scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "gb_green_shade_integerscale_6x7x",
+     "file": "gb_green_shade_integerscale_6x7x.cfg",
+     "path": "effects/patterns/gb_green_shade_integerscale_6x7x.cfg",
+     "dir": "effects/patterns",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "gb_no_shade_integerscale_6x7x",
+     "file": "gb_no_shade_integerscale_6x7x.cfg",
+     "path": "effects/patterns/gb_no_shade_integerscale_6x7x.cfg",
+     "dir": "effects/patterns",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "gbc_grille_integerscale_6x7x",
+     "file": "gbc_grille_integerscale_6x7x.cfg",
+     "path": "effects/patterns/gbc_grille_integerscale_6x7x.cfg",
+     "dir": "effects/patterns",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "grid",
+     "file": "grid.cfg",
+     "path": "effects/patterns/grid.cfg",
+     "dir": "effects/patterns",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "grid2x",
+     "file": "grid2x.cfg",
+     "path": "effects/patterns/grid2x.cfg",
+     "dir": "effects/patterns",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "horizontal",
+     "file": "horizontal.cfg",
+     "path": "effects/crt-bezels/horizontal.cfg",
+     "dir": "effects/crt-bezels",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "lines",
+     "file": "lines.cfg",
+     "path": "effects/patterns/lines.cfg",
+     "dir": "effects/patterns",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "lines2x",
+     "file": "lines2x.cfg",
+     "path": "effects/patterns/lines2x.cfg",
+     "dir": "effects/patterns",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "mame-cools-4x",
+     "file": "mame-cools-4x.cfg",
+     "path": "effects/scanlines/mame-cools-4x.cfg",
+     "dir": "effects/scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "mame-phosphors-3x",
+     "file": "mame-phosphors-3x.cfg",
+     "path": "effects/scanlines/mame-phosphors-3x.cfg",
+     "dir": "effects/scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "mame-rgb-3x",
+     "file": "mame-rgb-3x.cfg",
+     "path": "effects/scanlines/mame-rgb-3x.cfg",
+     "dir": "effects/scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "phosphors",
+     "file": "phosphors.cfg",
+     "path": "effects/patterns/phosphors.cfg",
+     "dir": "effects/patterns",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "scanline-fade-integer-nocrop",
+     "file": "scanline-fade-integer-nocrop.cfg",
+     "path": "effects/scanlines/scanline-fade-integer-nocrop.cfg",
+     "dir": "effects/scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "scanline-solid-integer-nocrop",
+     "file": "scanline-solid-integer-nocrop.cfg",
+     "path": "effects/scanlines/scanline-solid-integer-nocrop.cfg",
+     "dir": "effects/scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "scanlines1280x720",
+     "file": "scanlines1280x720.cfg",
+     "path": "effects/scanlines/nesguy_scanlines/scanlines1280x720.cfg",
+     "dir": "effects/scanlines/nesguy_scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "scanlines1920x1080",
+     "file": "scanlines1920x1080.cfg",
+     "path": "effects/scanlines/nesguy_scanlines/scanlines1920x1080.cfg",
+     "dir": "effects/scanlines/nesguy_scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "scanlines1920x1080-5x",
+     "file": "scanlines1920x1080-5x.cfg",
+     "path": "effects/scanlines/nesguy_scanlines/scanlines1920x1080-5x.cfg",
+     "dir": "effects/scanlines/nesguy_scanlines",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "trellis",
+     "file": "trellis.cfg",
+     "path": "effects/patterns/trellis.cfg",
+     "dir": "effects/patterns",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "vertical",
+     "file": "vertical.cfg",
+     "path": "effects/crt-bezels/vertical.cfg",
+     "dir": "effects/crt-bezels",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    }
+   ]
+  },
+  {
+   "id": "gamepads",
+   "count": 202,
+   "cfgs": [
+    {
+     "name": "6-button-fighter",
+     "file": "6-button-fighter.cfg",
+     "path": "gamepads/arcade-anim/6-button-fighter.cfg",
+     "dir": "gamepads/arcade-anim",
+     "overlays": 1,
+     "descs": 21,
+     "names": [
+      "6-button-fighter"
+     ],
+     "thumb": "gamepads/arcade-anim/img/left.png"
+    },
+    {
+     "name": "720-med",
+     "file": "720-med.cfg",
+     "path": "gamepads/720-med/720-med.cfg",
+     "dir": "gamepads/720-med",
+     "overlays": 2,
+     "descs": 40,
+     "names": [
+      "landscape",
+      "menu"
+     ],
+     "thumb": null
+    },
+    {
+     "name": "720-med",
+     "file": "720-med.cfg",
+     "path": "gamepads/old/720-med.cfg",
+     "dir": "gamepads/old",
+     "overlays": 2,
+     "descs": 40,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "arcade",
+     "file": "arcade.cfg",
+     "path": "gamepads/arcade/arcade.cfg",
+     "dir": "gamepads/arcade",
+     "overlays": 6,
+     "descs": 96,
+     "names": [
+      "6-button-landscape",
+      "4-button-landscape",
+      "6-button-portrait",
+      "4-button-portrait",
+      "menu",
+      "hide"
+     ],
+     "thumb": "gamepads/arcade/img/start.png"
+    },
+    {
+     "name": "arcade",
+     "file": "arcade.cfg",
+     "path": "gamepads/flat/arcade.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 9,
+     "descs": 176,
+     "names": [
+      "landscape-4",
+      "hidden-4",
+      "portrait-4",
+      "landscape-4-style2",
+      "hidden-4-style2",
+      "portrait-4-style2",
+      "landscape-6",
+      "hidden-6"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "arcade-minimal",
+     "file": "arcade-minimal.cfg",
+     "path": "gamepads/arcade-minimal/arcade-minimal.cfg",
+     "dir": "gamepads/arcade-minimal",
+     "overlays": 6,
+     "descs": 96,
+     "names": [
+      "6-button-landscape",
+      "4-button-landscape",
+      "6-button-portrait",
+      "4-button-portrait",
+      "menu",
+      "hide"
+     ],
+     "thumb": "gamepads/arcade-minimal/img/start.png"
+    },
+    {
+     "name": "arctic",
+     "file": "arctic.cfg",
+     "path": "gamepads/gba_landscape_6x/arctic.cfg",
+     "dir": "gamepads/gba_landscape_6x",
+     "overlays": 1,
+     "descs": 49,
+     "names": [
+      "landscape"
+     ],
+     "thumb": "gamepads/gba_landscape_6x/img/bezel_default.png"
+    },
+    {
+     "name": "Atari - 2600",
+     "file": "Atari - 2600.cfg",
+     "path": "gamepads/Named_Overlays/Atari - 2600.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 3,
+     "descs": 42,
+     "names": [
+      "landscape",
+      "hidden",
+      "portrait"
+     ],
+     "thumb": "gamepads/flat/img/atari-stick-background.png"
+    },
+    {
+     "name": "Atari - 7800",
+     "file": "Atari - 7800.cfg",
+     "path": "gamepads/Named_Overlays/Atari - 7800.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 5,
+     "descs": 51,
+     "names": [
+      "landscape",
+      "portrait",
+      "hidden",
+      "landscape-B",
+      "hidden-B"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Atari - 8-bit",
+     "file": "Atari - 8-bit.cfg",
+     "path": "gamepads/Named_Overlays/Atari - 8-bit.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 8,
+     "descs": 152,
+     "names": [
+      "none",
+      "left",
+      "none_mouse",
+      "left_mouse",
+      "right",
+      "right_mouse",
+      "both",
+      "both_mouse"
+     ],
+     "thumb": "gamepads/lite/select.png"
+    },
+    {
+     "name": "Atari - Jaguar",
+     "file": "Atari - Jaguar.cfg",
+     "path": "gamepads/Named_Overlays/Atari - Jaguar.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 6,
+     "descs": 118,
+     "names": [
+      "3-button-landscape",
+      "numpad-landscape",
+      "3-button-portrait",
+      "numpad-portrait",
+      "hidden-3-button",
+      "hidden-numpad"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Atari - Lynx",
+     "file": "Atari - Lynx.cfg",
+     "path": "gamepads/Named_Overlays/Atari - Lynx.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 5,
+     "descs": 54,
+     "names": [
+      "landscape-gb-B",
+      "portrait-gb-B",
+      "hidden-gb-B",
+      "landscape-gb-B-flipped",
+      "hidden-gb-B-flipped"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "atari_lynx",
+     "file": "atari_lynx.cfg",
+     "path": "gamepads/flat/atari_lynx.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 5,
+     "descs": 54,
+     "names": [
+      "landscape-gb-B",
+      "portrait-gb-B",
+      "hidden-gb-B",
+      "landscape-gb-B-flipped",
+      "hidden-gb-B-flipped"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "atari2600",
+     "file": "atari2600.cfg",
+     "path": "gamepads/flat/atari2600.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 3,
+     "descs": 40,
+     "names": [
+      "landscape",
+      "hidden",
+      "portrait"
+     ],
+     "thumb": "gamepads/flat/img/atari-stick-background.png"
+    },
+    {
+     "name": "atari7800",
+     "file": "atari7800.cfg",
+     "path": "gamepads/flat/atari7800.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 5,
+     "descs": 51,
+     "names": [
+      "landscape",
+      "portrait",
+      "hidden",
+      "landscape-B",
+      "hidden-B"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Bandai - WonderSwan",
+     "file": "Bandai - WonderSwan.cfg",
+     "path": "gamepads/Named_Overlays/Bandai - WonderSwan.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 3,
+     "descs": 98,
+     "names": [
+      "landscape",
+      "portrait",
+      "hidden"
+     ],
+     "thumb": "gamepads/flat/img/X4_wswan.png"
+    },
+    {
+     "name": "Bandai - WonderSwan Color",
+     "file": "Bandai - WonderSwan Color.cfg",
+     "path": "gamepads/Named_Overlays/Bandai - WonderSwan Color.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 3,
+     "descs": 98,
+     "names": [
+      "landscape",
+      "portrait",
+      "hidden"
+     ],
+     "thumb": "gamepads/flat/img/X4_wswan.png"
+    },
+    {
+     "name": "basic_overlay",
+     "file": "basic_overlay.cfg",
+     "path": "gamepads/old/Low-resolution/basic_overlay.cfg",
+     "dir": "gamepads/old/Low-resolution",
+     "overlays": 3,
+     "descs": 27,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "basic_overlay_portrait",
+     "file": "basic_overlay_portrait.cfg",
+     "path": "gamepads/old/Low-resolution/basic_overlay_portrait.cfg",
+     "dir": "gamepads/old/Low-resolution",
+     "overlays": 3,
+     "descs": 27,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "black",
+     "file": "black.cfg",
+     "path": "gamepads/gba_landscape_6x/black.cfg",
+     "dir": "gamepads/gba_landscape_6x",
+     "overlays": 1,
+     "descs": 49,
+     "names": [
+      "landscape"
+     ],
+     "thumb": "gamepads/gba_landscape_6x/img/bezel_default.png"
+    },
+    {
+     "name": "box-gba",
+     "file": "box-gba.cfg",
+     "path": "gamepads/old/box-gba.cfg",
+     "dir": "gamepads/old",
+     "overlays": 4,
+     "descs": 34,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "box-gba-with-diagonals",
+     "file": "box-gba-with-diagonals.cfg",
+     "path": "gamepads/old/box-gba-with-diagonals.cfg",
+     "dir": "gamepads/old",
+     "overlays": 4,
+     "descs": 42,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "box-ps-with-diagonals",
+     "file": "box-ps-with-diagonals.cfg",
+     "path": "gamepads/old/box-ps-with-diagonals.cfg",
+     "dir": "gamepads/old",
+     "overlays": 4,
+     "descs": 50,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "box-psx",
+     "file": "box-psx.cfg",
+     "path": "gamepads/old/box-psx.cfg",
+     "dir": "gamepads/old",
+     "overlays": 4,
+     "descs": 42,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "box-psx-diagonals",
+     "file": "box-psx-diagonals.cfg",
+     "path": "gamepads/psx/box-psx-diagonals.cfg",
+     "dir": "gamepads/psx",
+     "overlays": 4,
+     "descs": 54,
+     "names": [
+      "landscape",
+      "portrait",
+      "menu",
+      "hide"
+     ],
+     "thumb": "gamepads/psx/img/dpad-left.png"
+    },
+    {
+     "name": "Casio - Loopy",
+     "file": "Casio - Loopy.cfg",
+     "path": "gamepads/Named_Overlays/Casio - Loopy.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 11,
+     "descs": 195,
+     "names": [
+      "landscape-4",
+      "hidden-4",
+      "landscape-4-snes-style-1",
+      "hidden-4-snes-style-1",
+      "portrait-4-1",
+      "landscape-4-snes-style-2",
+      "hidden-4-snes-style-2",
+      "portrait-4-2"
+     ],
+     "thumb": "gamepads/flat/img/thumbstick-background.png"
+    },
+    {
+     "name": "Cave Story",
+     "file": "Cave Story.cfg",
+     "path": "gamepads/Named_Overlays/Cave Story.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 3,
+     "descs": 42,
+     "names": [
+      "landscape-A",
+      "hidden-A",
+      "portrait"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "cave_story",
+     "file": "cave_story.cfg",
+     "path": "gamepads/flat/cave_story.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 3,
+     "descs": 42,
+     "names": [
+      "landscape-A",
+      "hidden-A",
+      "portrait"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "cdi",
+     "file": "cdi.cfg",
+     "path": "gamepads/cdi_anim_portrait/cdi.cfg",
+     "dir": "gamepads/cdi_anim_portrait",
+     "overlays": 0,
+     "descs": 14,
+     "names": [
+      "cdi-portrait"
+     ],
+     "thumb": "gamepads/cdi_anim_portrait/img/Menu.png"
+    },
+    {
+     "name": "Commodore - 64",
+     "file": "Commodore - 64.cfg",
+     "path": "gamepads/Named_Overlays/Commodore - 64.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 8,
+     "descs": 152,
+     "names": [
+      "none",
+      "left",
+      "none_mouse",
+      "left_mouse",
+      "right",
+      "right_mouse",
+      "both",
+      "both_mouse"
+     ],
+     "thumb": "gamepads/lite/select.png"
+    },
+    {
+     "name": "Commodore - Amiga",
+     "file": "Commodore - Amiga.cfg",
+     "path": "gamepads/Named_Overlays/Commodore - Amiga.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 8,
+     "descs": 152,
+     "names": [
+      "none",
+      "left",
+      "none_mouse",
+      "left_mouse",
+      "right",
+      "right_mouse",
+      "both",
+      "both_mouse"
+     ],
+     "thumb": "gamepads/lite/select.png"
+    },
+    {
+     "name": "Commodore - PET",
+     "file": "Commodore - PET.cfg",
+     "path": "gamepads/Named_Overlays/Commodore - PET.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 8,
+     "descs": 152,
+     "names": [
+      "none",
+      "left",
+      "none_mouse",
+      "left_mouse",
+      "right",
+      "right_mouse",
+      "both",
+      "both_mouse"
+     ],
+     "thumb": "gamepads/lite/select.png"
+    },
+    {
+     "name": "Commodore - Plus-4",
+     "file": "Commodore - Plus-4.cfg",
+     "path": "gamepads/Named_Overlays/Commodore - Plus-4.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 8,
+     "descs": 152,
+     "names": [
+      "none",
+      "left",
+      "none_mouse",
+      "left_mouse",
+      "right",
+      "right_mouse",
+      "both",
+      "both_mouse"
+     ],
+     "thumb": "gamepads/lite/select.png"
+    },
+    {
+     "name": "Commodore - VIC-20",
+     "file": "Commodore - VIC-20.cfg",
+     "path": "gamepads/Named_Overlays/Commodore - VIC-20.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 8,
+     "descs": 152,
+     "names": [
+      "none",
+      "left",
+      "none_mouse",
+      "left_mouse",
+      "right",
+      "right_mouse",
+      "both",
+      "both_mouse"
+     ],
+     "thumb": "gamepads/lite/select.png"
+    },
+    {
+     "name": "cps",
+     "file": "cps.cfg",
+     "path": "gamepads/flat/cps.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 3,
+     "descs": 66,
+     "names": [
+      "landscape-6",
+      "hidden-6",
+      "portrait-6"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "DOS",
+     "file": "DOS.cfg",
+     "path": "gamepads/Named_Overlays/DOS.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 8,
+     "descs": 152,
+     "names": [
+      "none",
+      "left",
+      "none_mouse",
+      "left_mouse",
+      "right",
+      "right_mouse",
+      "both",
+      "both_mouse"
+     ],
+     "thumb": "gamepads/lite/select.png"
+    },
+    {
+     "name": "DOS",
+     "file": "DOS.cfg",
+     "path": "gamepads/lite/DOS.cfg",
+     "dir": "gamepads/lite",
+     "overlays": 8,
+     "descs": 152,
+     "names": [
+      "none",
+      "left",
+      "none_mouse",
+      "left_mouse",
+      "right",
+      "right_mouse",
+      "both",
+      "both_mouse"
+     ],
+     "thumb": "gamepads/lite/select.png"
+    },
+    {
+     "name": "DOS_2",
+     "file": "DOS_2.cfg",
+     "path": "gamepads/lite/DOS_2.cfg",
+     "dir": "gamepads/lite",
+     "overlays": 8,
+     "descs": 204,
+     "names": [
+      "none",
+      "none_mouse",
+      "left",
+      "left_mouse",
+      "right",
+      "right_mouse",
+      "both",
+      "both_mouse"
+     ],
+     "thumb": "gamepads/lite/select.png"
+    },
+    {
+     "name": "dreamcast",
+     "file": "dreamcast.cfg",
+     "path": "gamepads/flat/dreamcast.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 5,
+     "descs": 95,
+     "names": [
+      "landscape-A",
+      "landscape-B",
+      "portrait",
+      "hidden-A",
+      "hidden-B"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "dual-shock",
+     "file": "dual-shock.cfg",
+     "path": "gamepads/dual-shock/dual-shock.cfg",
+     "dir": "gamepads/dual-shock",
+     "overlays": 4,
+     "descs": 62,
+     "names": [
+      "landscape",
+      "portrait",
+      "menu",
+      "hide"
+     ],
+     "thumb": "gamepads/dual-shock/img/dpad-left.png"
+    },
+    {
+     "name": "DualShock",
+     "file": "DualShock.cfg",
+     "path": "gamepads/lite/DualShock.cfg",
+     "dir": "gamepads/lite",
+     "overlays": 16,
+     "descs": 320,
+     "names": [
+      "none_landscape",
+      "left_landscape",
+      "right_landscape",
+      "both_landscape",
+      "none_alt_landscape",
+      "left_alt_landscape",
+      "right_alt_landscape",
+      "both_alt_landscape"
+     ],
+     "thumb": "gamepads/lite/select.png"
+    },
+    {
+     "name": "DualShock_2",
+     "file": "DualShock_2.cfg",
+     "path": "gamepads/lite/DualShock_2.cfg",
+     "dir": "gamepads/lite",
+     "overlays": 8,
+     "descs": 184,
+     "names": [
+      "left_norm",
+      "none_norm",
+      "right_norm",
+      "both_norm",
+      "left_alt",
+      "none_alt",
+      "right_alt",
+      "both_alt"
+     ],
+     "thumb": "gamepads/lite/select.png"
+    },
+    {
+     "name": "DualShock_Full",
+     "file": "DualShock_Full.cfg",
+     "path": "gamepads/lite/DualShock_Full.cfg",
+     "dir": "gamepads/lite",
+     "overlays": 8,
+     "descs": 200,
+     "names": [
+      "none",
+      "left",
+      "right",
+      "both",
+      "none_alt",
+      "left_alt",
+      "right_alt",
+      "both_alt"
+     ],
+     "thumb": "gamepads/lite/select.png"
+    },
+    {
+     "name": "DualShock_Full2",
+     "file": "DualShock_Full2.cfg",
+     "path": "gamepads/lite/DualShock_Full2.cfg",
+     "dir": "gamepads/lite",
+     "overlays": 8,
+     "descs": 248,
+     "names": [
+      "left_norm",
+      "none_norm",
+      "right_norm",
+      "both_norm",
+      "left_alt",
+      "none_alt",
+      "right_alt",
+      "both_alt"
+     ],
+     "thumb": "gamepads/lite/select.png"
+    },
+    {
+     "name": "DualShock_Mix",
+     "file": "DualShock_Mix.cfg",
+     "path": "gamepads/lite/DualShock_Mix.cfg",
+     "dir": "gamepads/lite",
+     "overlays": 8,
+     "descs": 176,
+     "names": [
+      "none",
+      "left",
+      "right",
+      "both",
+      "none_full",
+      "left_full",
+      "right_full",
+      "both_full"
+     ],
+     "thumb": "gamepads/lite/select.png"
+    },
+    {
+     "name": "Enterprise - 128",
+     "file": "Enterprise - 128.cfg",
+     "path": "gamepads/Named_Overlays/Enterprise - 128.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 8,
+     "descs": 152,
+     "names": [
+      "none",
+      "left",
+      "none_mouse",
+      "left_mouse",
+      "right",
+      "right_mouse",
+      "both",
+      "both_mouse"
+     ],
+     "thumb": "gamepads/lite/select.png"
+    },
+    {
+     "name": "example",
+     "file": "example.cfg",
+     "path": "gamepads/example/example.cfg",
+     "dir": "gamepads/example",
+     "overlays": 1,
+     "descs": 6,
+     "names": [],
+     "thumb": "gamepads/example/left.png"
+    },
+    {
+     "name": "FBNeo - Arcade Games",
+     "file": "FBNeo - Arcade Games.cfg",
+     "path": "gamepads/Named_Overlays/FBNeo - Arcade Games.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 9,
+     "descs": 176,
+     "names": [
+      "landscape-4",
+      "hidden-4",
+      "portrait-4",
+      "landscape-4-style2",
+      "hidden-4-style2",
+      "portrait-4-style2",
+      "landscape-6",
+      "hidden-6"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "flat-base",
+     "file": "flat-base.cfg",
+     "path": "gamepads/flat/old/flat-base.cfg",
+     "dir": "gamepads/flat/old",
+     "overlays": 2,
+     "descs": 39,
+     "names": [
+      "ztestld",
+      "ztestla"
+     ],
+     "thumb": "gamepads/flat/old/znub1.png"
+    },
+    {
+     "name": "flat-gb-wip",
+     "file": "flat-gb-wip.cfg",
+     "path": "gamepads/flat/old/flat-gb-wip.cfg",
+     "dir": "gamepads/flat/old",
+     "overlays": 1,
+     "descs": 15,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "flat-n64",
+     "file": "flat-n64.cfg",
+     "path": "gamepads/flat/old/flat-n64.cfg",
+     "dir": "gamepads/flat/old",
+     "overlays": 2,
+     "descs": 35,
+     "names": [
+      "flat64d",
+      "flat64a"
+     ],
+     "thumb": "gamepads/flat/old/znub2.png"
+    },
+    {
+     "name": "flat-ws",
+     "file": "flat-ws.cfg",
+     "path": "gamepads/flat/old/flat-ws.cfg",
+     "dir": "gamepads/flat/old",
+     "overlays": 1,
+     "descs": 12,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "flip_phone",
+     "file": "flip_phone.cfg",
+     "path": "gamepads/flip_phone/flip_phone.cfg",
+     "dir": "gamepads/flip_phone",
+     "overlays": 1,
+     "descs": 15,
+     "names": [
+      "flip_phone_portrait"
+     ],
+     "thumb": "gamepads/flip_phone/img/soft1.png"
+    },
+    {
+     "name": "gameboy",
+     "file": "gameboy.cfg",
+     "path": "gamepads/flat/gameboy.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 6,
+     "descs": 72,
+     "names": [
+      "landscape-A",
+      "hidden-A",
+      "portrait-A",
+      "landscape-B",
+      "hidden-B",
+      "portrait-B"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "gameboy",
+     "file": "gameboy.cfg",
+     "path": "gamepads/gameboy/gameboy.cfg",
+     "dir": "gamepads/gameboy",
+     "overlays": 4,
+     "descs": 44,
+     "names": [
+      "landscape",
+      "portrait",
+      "menu",
+      "hide"
+     ],
+     "thumb": "gamepads/gameboy/img/start.png"
+    },
+    {
+     "name": "gameboy-landscape",
+     "file": "gameboy-landscape.cfg",
+     "path": "gamepads/old/gameboy-landscape.cfg",
+     "dir": "gamepads/old",
+     "overlays": 3,
+     "descs": 26,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "gameboy-portrait",
+     "file": "gameboy-portrait.cfg",
+     "path": "gamepads/old/gameboy-portrait.cfg",
+     "dir": "gamepads/old",
+     "overlays": 3,
+     "descs": 26,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "gamecube",
+     "file": "gamecube.cfg",
+     "path": "gamepads/flat/gamecube.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 3,
+     "descs": 50,
+     "names": [
+      "landscape",
+      "hidden",
+      "portrait"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "GamePark - GP32",
+     "file": "GamePark - GP32.cfg",
+     "path": "gamepads/Named_Overlays/GamePark - GP32.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 16,
+     "descs": 246,
+     "names": [
+      "landscape-A",
+      "hidden-A",
+      "landscape-B",
+      "hidden-B",
+      "landscape-4-snes-style-A",
+      "hidden-4-snes-style-A",
+      "landscape-4-snes-style-B",
+      "hidden-4-snes-style-B"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "gb_big",
+     "file": "gb_big.cfg",
+     "path": "gamepads/gb_anim_portrait/gb_big.cfg",
+     "dir": "gamepads/gb_anim_portrait",
+     "overlays": 2,
+     "descs": 36,
+     "names": [
+      "GameBoy",
+      "GameBoyColor"
+     ],
+     "thumb": "gamepads/gb_anim_portrait/img/gb_left.png"
+    },
+    {
+     "name": "gba",
+     "file": "gba.cfg",
+     "path": "gamepads/flat/gba.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 16,
+     "descs": 246,
+     "names": [
+      "landscape-A",
+      "hidden-A",
+      "landscape-B",
+      "hidden-B",
+      "landscape-4-snes-style-A",
+      "hidden-4-snes-style-A",
+      "landscape-4-snes-style-B",
+      "hidden-4-snes-style-B"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "gba",
+     "file": "gba.cfg",
+     "path": "gamepads/gba/gba.cfg",
+     "dir": "gamepads/gba",
+     "overlays": 4,
+     "descs": 48,
+     "names": [
+      "landscape",
+      "portrait",
+      "menu",
+      "hide"
+     ],
+     "thumb": "gamepads/gba/img/start.png"
+    },
+    {
+     "name": "gba",
+     "file": "gba.cfg",
+     "path": "gamepads/gba_easy_touch/gba.cfg",
+     "dir": "gamepads/gba_easy_touch",
+     "overlays": 16,
+     "descs": 304,
+     "names": [
+      "portrait",
+      "landscape",
+      "portrait_analog",
+      "landscape_analog",
+      "portrait_turbo_a",
+      "portrait_turbo_b",
+      "portrait_turbo_a_b",
+      "landscape_turbo_a"
+     ],
+     "thumb": "gamepads/gba_easy_touch/img/d_button_horizontal_left.png"
+    },
+    {
+     "name": "GBA",
+     "file": "GBA.cfg",
+     "path": "gamepads/lite/GBA.cfg",
+     "dir": "gamepads/lite",
+     "overlays": 2,
+     "descs": 38,
+     "names": [],
+     "thumb": "gamepads/lite/select.png"
+    },
+    {
+     "name": "GBA_2",
+     "file": "GBA_2.cfg",
+     "path": "gamepads/lite/GBA_2.cfg",
+     "dir": "gamepads/lite",
+     "overlays": 2,
+     "descs": 36,
+     "names": [],
+     "thumb": "gamepads/lite/select.png"
+    },
+    {
+     "name": "gba_dpad_fix",
+     "file": "gba_dpad_fix.cfg",
+     "path": "gamepads/gba_easy_touch/gba_dpad_fix.cfg",
+     "dir": "gamepads/gba_easy_touch",
+     "overlays": 16,
+     "descs": 304,
+     "names": [
+      "portrait",
+      "landscape",
+      "portrait_analog",
+      "landscape_analog",
+      "portrait_turbo_a",
+      "portrait_turbo_b",
+      "portrait_turbo_a_b",
+      "landscape_turbo_a"
+     ],
+     "thumb": "gamepads/gba_easy_touch/img/d_button_horizontal_left.png"
+    },
+    {
+     "name": "gba-control-purple",
+     "file": "gba-control-purple.cfg",
+     "path": "gamepads/gba-anim_landscape/gba-control-purple.cfg",
+     "dir": "gamepads/gba-anim_landscape",
+     "overlays": 1,
+     "descs": 30,
+     "names": [
+      "gba_control"
+     ],
+     "thumb": "gamepads/gba-anim_landscape/img/l.png"
+    },
+    {
+     "name": "gba-grey",
+     "file": "gba-grey.cfg",
+     "path": "gamepads/gba-grey/gba-grey.cfg",
+     "dir": "gamepads/gba-grey",
+     "overlays": 4,
+     "descs": 48,
+     "names": [
+      "landscape",
+      "portrait",
+      "menu",
+      "hide"
+     ],
+     "thumb": "gamepads/gba-grey/img/start.png"
+    },
+    {
+     "name": "GCE - Vectrex",
+     "file": "GCE - Vectrex.cfg",
+     "path": "gamepads/Named_Overlays/GCE - Vectrex.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 11,
+     "descs": 195,
+     "names": [
+      "landscape-4",
+      "hidden-4",
+      "landscape-4-snes-style-1",
+      "hidden-4-snes-style-1",
+      "portrait-4-1",
+      "landscape-4-snes-style-2",
+      "hidden-4-snes-style-2",
+      "portrait-4-2"
+     ],
+     "thumb": "gamepads/flat/img/thumbstick-background.png"
+    },
+    {
+     "name": "genesis",
+     "file": "genesis.cfg",
+     "path": "gamepads/flat/genesis.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 6,
+     "descs": 96,
+     "names": [
+      "3-button-landscape",
+      "6-button-landscape",
+      "3-button-portrait",
+      "6-button-portrait",
+      "hidden-3-button",
+      "hidden-6-button"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "genesis",
+     "file": "genesis.cfg",
+     "path": "gamepads/genesis/genesis.cfg",
+     "dir": "gamepads/genesis",
+     "overlays": 6,
+     "descs": 86,
+     "names": [
+      "6-button-landscape",
+      "3-button-landscape",
+      "6-button-portrait",
+      "3-button-portrait",
+      "menu",
+      "hide"
+     ],
+     "thumb": "gamepads/genesis/img/start.png"
+    },
+    {
+     "name": "genesis_and_sms",
+     "file": "genesis_and_sms.cfg",
+     "path": "gamepads/flat/genesis_and_sms.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 9,
+     "descs": 126,
+     "names": [
+      "3-button-landscape",
+      "6-button-landscape",
+      "3-button-portrait",
+      "6-button-portrait",
+      "hidden-3-button",
+      "hidden-6-button",
+      "landscape-sms",
+      "portrait-sms"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "genesis3-landscape",
+     "file": "genesis3-landscape.cfg",
+     "path": "gamepads/old/genesis3-landscape.cfg",
+     "dir": "gamepads/old",
+     "overlays": 3,
+     "descs": 26,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "genesis3-portrait",
+     "file": "genesis3-portrait.cfg",
+     "path": "gamepads/old/genesis3-portrait.cfg",
+     "dir": "gamepads/old",
+     "overlays": 3,
+     "descs": 26,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "genesis6-landscape",
+     "file": "genesis6-landscape.cfg",
+     "path": "gamepads/old/genesis6-landscape.cfg",
+     "dir": "gamepads/old",
+     "overlays": 3,
+     "descs": 29,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "genesis6-portrait",
+     "file": "genesis6-portrait.cfg",
+     "path": "gamepads/old/genesis6-portrait.cfg",
+     "dir": "gamepads/old",
+     "overlays": 3,
+     "descs": 29,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "Hartung - Game Master",
+     "file": "Hartung - Game Master.cfg",
+     "path": "gamepads/Named_Overlays/Hartung - Game Master.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 6,
+     "descs": 72,
+     "names": [
+      "landscape-A",
+      "hidden-A",
+      "portrait-A",
+      "landscape-B",
+      "hidden-B",
+      "portrait-B"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "HBMAME",
+     "file": "HBMAME.cfg",
+     "path": "gamepads/Named_Overlays/HBMAME.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 9,
+     "descs": 176,
+     "names": [
+      "landscape-4",
+      "hidden-4",
+      "portrait-4",
+      "landscape-4-style2",
+      "hidden-4-style2",
+      "portrait-4-style2",
+      "landscape-6",
+      "hidden-6"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "indigo",
+     "file": "indigo.cfg",
+     "path": "gamepads/gba_landscape_6x/indigo.cfg",
+     "dir": "gamepads/gba_landscape_6x",
+     "overlays": 1,
+     "descs": 49,
+     "names": [
+      "landscape"
+     ],
+     "thumb": "gamepads/gba_landscape_6x/img/bezel_default.png"
+    },
+    {
+     "name": "Infocom - Z-Machine",
+     "file": "Infocom - Z-Machine.cfg",
+     "path": "gamepads/Named_Overlays/Infocom - Z-Machine.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 8,
+     "descs": 152,
+     "names": [
+      "none",
+      "left",
+      "none_mouse",
+      "left_mouse",
+      "right",
+      "right_mouse",
+      "both",
+      "both_mouse"
+     ],
+     "thumb": "gamepads/lite/select.png"
+    },
+    {
+     "name": "lynx-landscape",
+     "file": "lynx-landscape.cfg",
+     "path": "gamepads/old/lynx-landscape.cfg",
+     "dir": "gamepads/old",
+     "overlays": 1,
+     "descs": 14,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "MAME",
+     "file": "MAME.cfg",
+     "path": "gamepads/Named_Overlays/MAME.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 9,
+     "descs": 176,
+     "names": [
+      "landscape-4",
+      "hidden-4",
+      "portrait-4",
+      "landscape-4-style2",
+      "hidden-4-style2",
+      "portrait-4-style2",
+      "landscape-6",
+      "hidden-6"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "MAME 2000",
+     "file": "MAME 2000.cfg",
+     "path": "gamepads/Named_Overlays/MAME 2000.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 9,
+     "descs": 176,
+     "names": [
+      "landscape-4",
+      "hidden-4",
+      "portrait-4",
+      "landscape-4-style2",
+      "hidden-4-style2",
+      "portrait-4-style2",
+      "landscape-6",
+      "hidden-6"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "MAME 2003",
+     "file": "MAME 2003.cfg",
+     "path": "gamepads/Named_Overlays/MAME 2003.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 9,
+     "descs": 176,
+     "names": [
+      "landscape-4",
+      "hidden-4",
+      "portrait-4",
+      "landscape-4-style2",
+      "hidden-4-style2",
+      "portrait-4-style2",
+      "landscape-6",
+      "hidden-6"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "MAME 2003-Plus",
+     "file": "MAME 2003-Plus.cfg",
+     "path": "gamepads/Named_Overlays/MAME 2003-Plus.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 9,
+     "descs": 176,
+     "names": [
+      "landscape-4",
+      "hidden-4",
+      "portrait-4",
+      "landscape-4-style2",
+      "hidden-4-style2",
+      "portrait-4-style2",
+      "landscape-6",
+      "hidden-6"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "MAME 2010",
+     "file": "MAME 2010.cfg",
+     "path": "gamepads/Named_Overlays/MAME 2010.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 9,
+     "descs": 176,
+     "names": [
+      "landscape-4",
+      "hidden-4",
+      "portrait-4",
+      "landscape-4-style2",
+      "hidden-4-style2",
+      "portrait-4-style2",
+      "landscape-6",
+      "hidden-6"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "MAME 2015",
+     "file": "MAME 2015.cfg",
+     "path": "gamepads/Named_Overlays/MAME 2015.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 9,
+     "descs": 176,
+     "names": [
+      "landscape-4",
+      "hidden-4",
+      "portrait-4",
+      "landscape-4-style2",
+      "hidden-4-style2",
+      "portrait-4-style2",
+      "landscape-6",
+      "hidden-6"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "MAME 2016",
+     "file": "MAME 2016.cfg",
+     "path": "gamepads/Named_Overlays/MAME 2016.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 9,
+     "descs": 176,
+     "names": [
+      "landscape-4",
+      "hidden-4",
+      "portrait-4",
+      "landscape-4-style2",
+      "hidden-4-style2",
+      "portrait-4-style2",
+      "landscape-6",
+      "hidden-6"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Microsoft - MSX",
+     "file": "Microsoft - MSX.cfg",
+     "path": "gamepads/Named_Overlays/Microsoft - MSX.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 8,
+     "descs": 152,
+     "names": [
+      "none",
+      "left",
+      "none_mouse",
+      "left_mouse",
+      "right",
+      "right_mouse",
+      "both",
+      "both_mouse"
+     ],
+     "thumb": "gamepads/lite/select.png"
+    },
+    {
+     "name": "Microsoft - MSX2",
+     "file": "Microsoft - MSX2.cfg",
+     "path": "gamepads/Named_Overlays/Microsoft - MSX2.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 8,
+     "descs": 152,
+     "names": [
+      "none",
+      "left",
+      "none_mouse",
+      "left_mouse",
+      "right",
+      "right_mouse",
+      "both",
+      "both_mouse"
+     ],
+     "thumb": "gamepads/lite/select.png"
+    },
+    {
+     "name": "n64",
+     "file": "n64.cfg",
+     "path": "gamepads/n64/n64.cfg",
+     "dir": "gamepads/n64",
+     "overlays": 4,
+     "descs": 76,
+     "names": [
+      "landscape",
+      "portrait",
+      "portrait-analog",
+      "landscape-analog"
+     ],
+     "thumb": "gamepads/n64/img/dpad-left.png"
+    },
+    {
+     "name": "n64",
+     "file": "n64.cfg",
+     "path": "gamepads/n64/old/n64.cfg",
+     "dir": "gamepads/n64/old",
+     "overlays": 6,
+     "descs": 86,
+     "names": [
+      "analog-landscape",
+      "digital-landscape",
+      "analog-portrait",
+      "digital-portrait",
+      "menu",
+      "hide"
+     ],
+     "thumb": "gamepads/n64/old/start.png"
+    },
+    {
+     "name": "NDS",
+     "file": "NDS.cfg",
+     "path": "gamepads/lite/NDS.cfg",
+     "dir": "gamepads/lite",
+     "overlays": 16,
+     "descs": 185,
+     "names": [
+      "gamepad1_landscape",
+      "gamepad2_landscape",
+      "stylus1_landscape",
+      "stylus2_landscape",
+      "hidden_gamepad1_landscape",
+      "hidden_gamepad2_landscape",
+      "hidden_stylus1_landscape",
+      "hidden_stylus2_landscape"
+     ],
+     "thumb": "gamepads/lite/select.png"
+    },
+    {
+     "name": "NEC - PC Engine - TurboGrafx 16",
+     "file": "NEC - PC Engine - TurboGrafx 16.cfg",
+     "path": "gamepads/Named_Overlays/NEC - PC Engine - TurboGrafx 16.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 8,
+     "descs": 91,
+     "names": [
+      "landscape",
+      "portrait",
+      "hidden",
+      "landscape-B",
+      "hidden-B",
+      "landscape-6",
+      "hidden-6",
+      "portrait-6"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "NEC - PC Engine CD - TurboGrafx-CD",
+     "file": "NEC - PC Engine CD - TurboGrafx-CD.cfg",
+     "path": "gamepads/Named_Overlays/NEC - PC Engine CD - TurboGrafx-CD.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 8,
+     "descs": 91,
+     "names": [
+      "landscape",
+      "portrait",
+      "hidden",
+      "landscape-B",
+      "hidden-B",
+      "landscape-6",
+      "hidden-6",
+      "portrait-6"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "NEC - PC Engine SuperGrafx",
+     "file": "NEC - PC Engine SuperGrafx.cfg",
+     "path": "gamepads/Named_Overlays/NEC - PC Engine SuperGrafx.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 8,
+     "descs": 91,
+     "names": [
+      "landscape",
+      "portrait",
+      "hidden",
+      "landscape-B",
+      "hidden-B",
+      "landscape-6",
+      "hidden-6",
+      "portrait-6"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "NEC - PC-8001",
+     "file": "NEC - PC-8001.cfg",
+     "path": "gamepads/Named_Overlays/NEC - PC-8001.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 8,
+     "descs": 152,
+     "names": [
+      "none",
+      "left",
+      "none_mouse",
+      "left_mouse",
+      "right",
+      "right_mouse",
+      "both",
+      "both_mouse"
+     ],
+     "thumb": "gamepads/lite/select.png"
+    },
+    {
+     "name": "NEC - PC-98",
+     "file": "NEC - PC-98.cfg",
+     "path": "gamepads/Named_Overlays/NEC - PC-98.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 8,
+     "descs": 152,
+     "names": [
+      "none",
+      "left",
+      "none_mouse",
+      "left_mouse",
+      "right",
+      "right_mouse",
+      "both",
+      "both_mouse"
+     ],
+     "thumb": "gamepads/lite/select.png"
+    },
+    {
+     "name": "NEC - PC-FX",
+     "file": "NEC - PC-FX.cfg",
+     "path": "gamepads/Named_Overlays/NEC - PC-FX.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 3,
+     "descs": 39,
+     "names": [
+      "landscape-6",
+      "hidden-6",
+      "portrait-6"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "neo-ds-portrait",
+     "file": "neo-ds-portrait.cfg",
+     "path": "gamepads/neo-ds-portrait/neo-ds-portrait.cfg",
+     "dir": "gamepads/neo-ds-portrait",
+     "overlays": 2,
+     "descs": 41,
+     "names": [
+      "portrait-digital",
+      "portrait-hidden-digital"
+     ],
+     "thumb": "gamepads/neo-ds-portrait/img/clear/dpad_down.png"
+    },
+    {
+     "name": "neo-retropad",
+     "file": "neo-retropad.cfg",
+     "path": "gamepads/neo-retropad/neo-retropad.cfg",
+     "dir": "gamepads/neo-retropad",
+     "overlays": 12,
+     "descs": 304,
+     "names": [
+      "landscape-digital",
+      "landscape-analog",
+      "landscape-hidden-digital",
+      "landscape-hidden-analog",
+      "portrait-digital",
+      "portrait-analog",
+      "portrait-hidden-digital",
+      "portrait-hidden-analog"
+     ],
+     "thumb": "gamepads/neo-retropad/img/default/dpad_down.png"
+    },
+    {
+     "name": "neo-retropad_collapsed",
+     "file": "neo-retropad_collapsed.cfg",
+     "path": "gamepads/neo-retropad/neo-retropad_collapsed.cfg",
+     "dir": "gamepads/neo-retropad",
+     "overlays": 8,
+     "descs": 142,
+     "names": [
+      "landscape-hidden-digital",
+      "landscape-analog",
+      "landscape-digital",
+      "landscape-hidden-analog",
+      "portrait-digital",
+      "portrait-analog",
+      "portrait-hidden-digital",
+      "portrait-hidden-analog"
+     ],
+     "thumb": "gamepads/neo-retropad/img/default/dpad_down.png"
+    },
+    {
+     "name": "neo-retropad-clear",
+     "file": "neo-retropad-clear.cfg",
+     "path": "gamepads/neo-retropad/neo-retropad-clear.cfg",
+     "dir": "gamepads/neo-retropad",
+     "overlays": 8,
+     "descs": 142,
+     "names": [
+      "landscape-digital",
+      "landscape-analog",
+      "landscape-hidden-digital",
+      "landscape-hidden-analog",
+      "portrait-digital",
+      "portrait-analog",
+      "portrait-hidden-digital",
+      "portrait-hidden-analog"
+     ],
+     "thumb": "gamepads/neo-retropad/img/clear/dpad_down.png"
+    },
+    {
+     "name": "neo-retropad-clear_collapsed",
+     "file": "neo-retropad-clear_collapsed.cfg",
+     "path": "gamepads/neo-retropad/neo-retropad-clear_collapsed.cfg",
+     "dir": "gamepads/neo-retropad",
+     "overlays": 8,
+     "descs": 142,
+     "names": [
+      "landscape-hidden-digital",
+      "landscape-analog",
+      "landscape-digital",
+      "landscape-hidden-analog",
+      "portrait-digital",
+      "portrait-analog",
+      "portrait-hidden-digital",
+      "portrait-hidden-analog"
+     ],
+     "thumb": "gamepads/neo-retropad/img/clear/dpad_down.png"
+    },
+    {
+     "name": "neogeo",
+     "file": "neogeo.cfg",
+     "path": "gamepads/arcade-anim/neogeo.cfg",
+     "dir": "gamepads/arcade-anim",
+     "overlays": 1,
+     "descs": 21,
+     "names": [
+      "neogeo"
+     ],
+     "thumb": "gamepads/arcade-anim/img/left.png"
+    },
+    {
+     "name": "neogeo",
+     "file": "neogeo.cfg",
+     "path": "gamepads/flat/neogeo.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 11,
+     "descs": 195,
+     "names": [
+      "landscape-4",
+      "hidden-4",
+      "landscape-4-snes-style-1",
+      "hidden-4-snes-style-1",
+      "portrait-4-1",
+      "landscape-4-snes-style-2",
+      "hidden-4-snes-style-2",
+      "portrait-4-2"
+     ],
+     "thumb": "gamepads/flat/img/thumbstick-background.png"
+    },
+    {
+     "name": "neogeo_pocket",
+     "file": "neogeo_pocket.cfg",
+     "path": "gamepads/flat/neogeo_pocket.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 6,
+     "descs": 68,
+     "names": [
+      "landscape-A",
+      "hidden-A",
+      "portrait-A",
+      "landscape-B",
+      "hidden-B",
+      "portrait-B"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "nes",
+     "file": "nes.cfg",
+     "path": "gamepads/flat/nes.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 12,
+     "descs": 152,
+     "names": [
+      "landscape-A",
+      "landscape-B",
+      "landscape-gb-A",
+      "landscape-gb-B",
+      "portrait-A",
+      "portrait-B",
+      "portrait-gb-A",
+      "portrait-gb-B"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "nes",
+     "file": "nes.cfg",
+     "path": "gamepads/nes/nes.cfg",
+     "dir": "gamepads/nes",
+     "overlays": 4,
+     "descs": 44,
+     "names": [
+      "landscape",
+      "portrait",
+      "menu",
+      "hide"
+     ],
+     "thumb": "gamepads/nes/img/start.png"
+    },
+    {
+     "name": "nes-landscape",
+     "file": "nes-landscape.cfg",
+     "path": "gamepads/old/nes-landscape.cfg",
+     "dir": "gamepads/old",
+     "overlays": 3,
+     "descs": 26,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "nes-portrait",
+     "file": "nes-portrait.cfg",
+     "path": "gamepads/old/nes-portrait.cfg",
+     "dir": "gamepads/old",
+     "overlays": 3,
+     "descs": 26,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "nes-small-ab",
+     "file": "nes-small-ab.cfg",
+     "path": "gamepads/nes-small/nes-small-ab.cfg",
+     "dir": "gamepads/nes-small",
+     "overlays": 1,
+     "descs": 8,
+     "names": [],
+     "thumb": "gamepads/nes-small/img/dpad-left_no-mark.png"
+    },
+    {
+     "name": "nes-small-abxy",
+     "file": "nes-small-abxy.cfg",
+     "path": "gamepads/nes-small/nes-small-abxy.cfg",
+     "dir": "gamepads/nes-small",
+     "overlays": 1,
+     "descs": 10,
+     "names": [],
+     "thumb": "gamepads/nes-small/img/dpad-left_no-mark.png"
+    },
+    {
+     "name": "Nintendo - Family Computer Disk System",
+     "file": "Nintendo - Family Computer Disk System.cfg",
+     "path": "gamepads/Named_Overlays/Nintendo - Family Computer Disk System.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 12,
+     "descs": 160,
+     "names": [
+      "landscape-A",
+      "landscape-B",
+      "landscape-gb-A",
+      "landscape-gb-B",
+      "portrait-A",
+      "portrait-B",
+      "portrait-gb-A",
+      "portrait-gb-B"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Nintendo - Game Boy",
+     "file": "Nintendo - Game Boy.cfg",
+     "path": "gamepads/Named_Overlays/Nintendo - Game Boy.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 6,
+     "descs": 76,
+     "names": [
+      "landscape-A",
+      "hidden-A",
+      "portrait-A",
+      "landscape-B",
+      "hidden-B",
+      "portrait-B"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Nintendo - Game Boy Advance",
+     "file": "Nintendo - Game Boy Advance.cfg",
+     "path": "gamepads/Named_Overlays/Nintendo - Game Boy Advance.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 16,
+     "descs": 256,
+     "names": [
+      "landscape-A",
+      "hidden-A",
+      "landscape-B",
+      "hidden-B",
+      "landscape-4-snes-style-A",
+      "hidden-4-snes-style-A",
+      "landscape-4-snes-style-B",
+      "hidden-4-snes-style-B"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Nintendo - Game Boy Color",
+     "file": "Nintendo - Game Boy Color.cfg",
+     "path": "gamepads/Named_Overlays/Nintendo - Game Boy Color.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 6,
+     "descs": 76,
+     "names": [
+      "landscape-A",
+      "hidden-A",
+      "portrait-A",
+      "landscape-B",
+      "hidden-B",
+      "portrait-B"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Nintendo - GameCube",
+     "file": "Nintendo - GameCube.cfg",
+     "path": "gamepads/Named_Overlays/Nintendo - GameCube.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 3,
+     "descs": 50,
+     "names": [
+      "landscape",
+      "hidden",
+      "portrait"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Nintendo - Nintendo 3DS",
+     "file": "Nintendo - Nintendo 3DS.cfg",
+     "path": "gamepads/Named_Overlays/Nintendo - Nintendo 3DS.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 3,
+     "descs": 69,
+     "names": [
+      "landscape",
+      "portrait",
+      "hidden"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Nintendo - Nintendo 64",
+     "file": "Nintendo - Nintendo 64.cfg",
+     "path": "gamepads/Named_Overlays/Nintendo - Nintendo 64.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 4,
+     "descs": 92,
+     "names": [
+      "landscape_d-pad",
+      "hidden_d-pad",
+      "portrait_analog",
+      "portrait_d-pad"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Nintendo - Nintendo 64DD",
+     "file": "Nintendo - Nintendo 64DD.cfg",
+     "path": "gamepads/Named_Overlays/Nintendo - Nintendo 64DD.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 4,
+     "descs": 92,
+     "names": [
+      "landscape_d-pad",
+      "hidden_d-pad",
+      "portrait_analog",
+      "portrait_d-pad"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Nintendo - Nintendo DS",
+     "file": "Nintendo - Nintendo DS.cfg",
+     "path": "gamepads/Named_Overlays/Nintendo - Nintendo DS.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 3,
+     "descs": 60,
+     "names": [
+      "landscape",
+      "portrait",
+      "hidden"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Nintendo - Nintendo DSi",
+     "file": "Nintendo - Nintendo DSi.cfg",
+     "path": "gamepads/Named_Overlays/Nintendo - Nintendo DSi.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 3,
+     "descs": 60,
+     "names": [
+      "landscape",
+      "portrait",
+      "hidden"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Nintendo - Nintendo Entertainment System",
+     "file": "Nintendo - Nintendo Entertainment System.cfg",
+     "path": "gamepads/Named_Overlays/Nintendo - Nintendo Entertainment System.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 12,
+     "descs": 160,
+     "names": [
+      "landscape-A",
+      "landscape-B",
+      "landscape-gb-A",
+      "landscape-gb-B",
+      "portrait-A",
+      "portrait-B",
+      "portrait-gb-A",
+      "portrait-gb-B"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Nintendo - Pokemon Mini",
+     "file": "Nintendo - Pokemon Mini.cfg",
+     "path": "gamepads/Named_Overlays/Nintendo - Pokemon Mini.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 6,
+     "descs": 76,
+     "names": [
+      "landscape-A",
+      "hidden-A",
+      "portrait-A",
+      "landscape-B",
+      "hidden-B",
+      "portrait-B"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Nintendo - Satellaview",
+     "file": "Nintendo - Satellaview.cfg",
+     "path": "gamepads/Named_Overlays/Nintendo - Satellaview.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 5,
+     "descs": 89,
+     "names": [
+      "landscape-A",
+      "landscape-B",
+      "portrait",
+      "hidden-A",
+      "hidden-B"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Nintendo - Sufami Turbo",
+     "file": "Nintendo - Sufami Turbo.cfg",
+     "path": "gamepads/Named_Overlays/Nintendo - Sufami Turbo.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 5,
+     "descs": 92,
+     "names": [
+      "landscape-A",
+      "landscape-B",
+      "portrait",
+      "hidden-A",
+      "hidden-B"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Nintendo - Super Nintendo Entertainment System",
+     "file": "Nintendo - Super Nintendo Entertainment System.cfg",
+     "path": "gamepads/Named_Overlays/Nintendo - Super Nintendo Entertainment System.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 5,
+     "descs": 92,
+     "names": [
+      "landscape-A",
+      "landscape-B",
+      "portrait",
+      "hidden-A",
+      "hidden-B"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Nintendo - Virtual Boy",
+     "file": "Nintendo - Virtual Boy.cfg",
+     "path": "gamepads/Named_Overlays/Nintendo - Virtual Boy.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 3,
+     "descs": 51,
+     "names": [
+      "landscape",
+      "hidden",
+      "portrait"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Nintendo - Wii",
+     "file": "Nintendo - Wii.cfg",
+     "path": "gamepads/Named_Overlays/Nintendo - Wii.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 15,
+     "descs": 280,
+     "names": [
+      "landscape",
+      "hidden",
+      "portrait",
+      "sideways landscape",
+      "sideways hidden",
+      "sideways portrait",
+      "nunchuk landscape",
+      "nunchuk hidden"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Nintendo - Wii (Digital)",
+     "file": "Nintendo - Wii (Digital).cfg",
+     "path": "gamepads/Named_Overlays/Nintendo - Wii (Digital).cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 15,
+     "descs": 280,
+     "names": [
+      "landscape",
+      "hidden",
+      "portrait",
+      "sideways landscape",
+      "sideways hidden",
+      "sideways portrait",
+      "nunchuk landscape",
+      "nunchuk hidden"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Nintendo - Wii U",
+     "file": "Nintendo - Wii U.cfg",
+     "path": "gamepads/Named_Overlays/Nintendo - Wii U.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 14,
+     "descs": 262,
+     "names": [
+      "landscape",
+      "landscape-left-analog",
+      "landscape-right-analog",
+      "landscape-both-analog",
+      "portrait",
+      "portrait-analog",
+      "hidden-0",
+      "hidden-1"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "nintendo64",
+     "file": "nintendo64.cfg",
+     "path": "gamepads/flat/nintendo64.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 6,
+     "descs": 112,
+     "names": [
+      "landscape_d-pad",
+      "hidden_d-pad",
+      "landscape_analog",
+      "hidden_analog",
+      "portrait_d-pad",
+      "portrait_analog"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "one-handed-v1",
+     "file": "one-handed-v1.cfg",
+     "path": "gamepads/flat/one-handed-v1.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 5,
+     "descs": 116,
+     "names": [
+      "dpad",
+      "mario",
+      "metroid",
+      "double",
+      "analog"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "one-handed-v2",
+     "file": "one-handed-v2.cfg",
+     "path": "gamepads/flat/one-handed-v2.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 4,
+     "descs": 102,
+     "names": [
+      "dpad",
+      "analog",
+      "double",
+      "analog-double"
+     ],
+     "thumb": "gamepads/flat/img/A.png"
+    },
+    {
+     "name": "one-handed-v2-left",
+     "file": "one-handed-v2-left.cfg",
+     "path": "gamepads/flat/one-handed-v2-left.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 4,
+     "descs": 102,
+     "names": [
+      "dpad",
+      "analog",
+      "double",
+      "analog-double"
+     ],
+     "thumb": "gamepads/flat/img/A.png"
+    },
+    {
+     "name": "opium_2",
+     "file": "opium_2.cfg",
+     "path": "gamepads/old/Low-resolution/opium_2.cfg",
+     "dir": "gamepads/old/Low-resolution",
+     "overlays": 3,
+     "descs": 27,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "opium_3",
+     "file": "opium_3.cfg",
+     "path": "gamepads/old/Low-resolution/opium_3.cfg",
+     "dir": "gamepads/old/Low-resolution",
+     "overlays": 3,
+     "descs": 27,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "opium_4",
+     "file": "opium_4.cfg",
+     "path": "gamepads/old/Low-resolution/opium_4.cfg",
+     "dir": "gamepads/old/Low-resolution",
+     "overlays": 3,
+     "descs": 27,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "opium_5",
+     "file": "opium_5.cfg",
+     "path": "gamepads/old/Low-resolution/opium_5.cfg",
+     "dir": "gamepads/old/Low-resolution",
+     "overlays": 3,
+     "descs": 27,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "opium_5b",
+     "file": "opium_5b.cfg",
+     "path": "gamepads/old/Low-resolution/opium_5b.cfg",
+     "dir": "gamepads/old/Low-resolution",
+     "overlays": 3,
+     "descs": 27,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "opium_6",
+     "file": "opium_6.cfg",
+     "path": "gamepads/old/Low-resolution/opium_6.cfg",
+     "dir": "gamepads/old/Low-resolution",
+     "overlays": 3,
+     "descs": 27,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "opium_7",
+     "file": "opium_7.cfg",
+     "path": "gamepads/old/Low-resolution/opium_7.cfg",
+     "dir": "gamepads/old/Low-resolution",
+     "overlays": 3,
+     "descs": 27,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "opium_8",
+     "file": "opium_8.cfg",
+     "path": "gamepads/old/Low-resolution/opium_8.cfg",
+     "dir": "gamepads/old/Low-resolution",
+     "overlays": 3,
+     "descs": 27,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "orange",
+     "file": "orange.cfg",
+     "path": "gamepads/gba_landscape_6x/orange.cfg",
+     "dir": "gamepads/gba_landscape_6x",
+     "overlays": 1,
+     "descs": 49,
+     "names": [
+      "landscape"
+     ],
+     "thumb": "gamepads/gba_landscape_6x/img/bezel_default.png"
+    },
+    {
+     "name": "palm",
+     "file": "palm.cfg",
+     "path": "gamepads/flat/palm.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 0,
+     "descs": 0,
+     "names": [
+      "palm",
+      "hidden"
+     ],
+     "thumb": "gamepads/flat/img/\"X4_wswan.png"
+    },
+    {
+     "name": "pc-fx",
+     "file": "pc-fx.cfg",
+     "path": "gamepads/flat/pc-fx.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 3,
+     "descs": 38,
+     "names": [
+      "landscape",
+      "hidden",
+      "portrait"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Piixel Retropad",
+     "file": "Piixel Retropad.cfg",
+     "path": "gamepads/Piixel-Gamepads/Retropad/Piixel Retropad.cfg",
+     "dir": "gamepads/Piixel-Gamepads/Retropad",
+     "overlays": 13,
+     "descs": 266,
+     "names": [
+      "landscape",
+      "portrait",
+      "hidden-landscape",
+      "hidden-portrait",
+      "menu-landscape",
+      "menu-portrait",
+      "landscape-01",
+      "portrait-01"
+     ],
+     "thumb": "gamepads/Piixel-Gamepads/Retropad/img/piixel-rpd-logo.png"
+    },
+    {
+     "name": "Piixel Retropad Neo",
+     "file": "Piixel Retropad Neo.cfg",
+     "path": "gamepads/Piixel-Gamepads/Retropad/Piixel Retropad Neo.cfg",
+     "dir": "gamepads/Piixel-Gamepads/Retropad",
+     "overlays": 13,
+     "descs": 266,
+     "names": [
+      "landscape",
+      "portrait",
+      "hidden-landscape",
+      "hidden-portrait",
+      "menu-landscape",
+      "menu-portrait",
+      "landscape-01",
+      "portrait-01"
+     ],
+     "thumb": "gamepads/Piixel-Gamepads/Retropad/img/piixel-neo-logo.png"
+    },
+    {
+     "name": "pokemini",
+     "file": "pokemini.cfg",
+     "path": "gamepads/flat/pokemini.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 6,
+     "descs": 76,
+     "names": [
+      "landscape-A",
+      "hidden-A",
+      "portrait-A",
+      "landscape-B",
+      "hidden-B",
+      "portrait-B"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "psp",
+     "file": "psp.cfg",
+     "path": "gamepads/flat/psp.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 5,
+     "descs": 96,
+     "names": [
+      "landscape-A",
+      "landscape-B",
+      "portrait",
+      "hidden-A",
+      "hidden-B"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left_psx.png"
+    },
+    {
+     "name": "PSP",
+     "file": "PSP.cfg",
+     "path": "gamepads/lite/PSP.cfg",
+     "dir": "gamepads/lite",
+     "overlays": 8,
+     "descs": 154,
+     "names": [
+      "digital_landscape",
+      "analog_landscape",
+      "full_digital_landscape",
+      "full_analog_landscape",
+      "digital_portrait",
+      "analog_portrait",
+      "full_digital_portrait",
+      "full_analog_portrait"
+     ],
+     "thumb": "gamepads/lite/select.png"
+    },
+    {
+     "name": "psx",
+     "file": "psx.cfg",
+     "path": "gamepads/flat/psx.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 14,
+     "descs": 249,
+     "names": [
+      "landscape",
+      "landscape-left-analog",
+      "landscape-right-analog",
+      "landscape-both-analog",
+      "portrait",
+      "portrait-analog",
+      "hidden-0",
+      "hidden-1"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left_psx.png"
+    },
+    {
+     "name": "psx",
+     "file": "psx.cfg",
+     "path": "gamepads/psx/psx.cfg",
+     "dir": "gamepads/psx",
+     "overlays": 4,
+     "descs": 54,
+     "names": [
+      "landscape",
+      "portrait",
+      "menu",
+      "hide"
+     ],
+     "thumb": "gamepads/psx/img/dpad-left.png"
+    },
+    {
+     "name": "PSX",
+     "file": "PSX.cfg",
+     "path": "gamepads/lite/PSX.cfg",
+     "dir": "gamepads/lite",
+     "overlays": 2,
+     "descs": 38,
+     "names": [],
+     "thumb": "gamepads/lite/select.png"
+    },
+    {
+     "name": "PSX_FrameAdvance",
+     "file": "PSX_FrameAdvance.cfg",
+     "path": "gamepads/lite/PSX_FrameAdvance.cfg",
+     "dir": "gamepads/lite",
+     "overlays": 2,
+     "descs": 42,
+     "names": [],
+     "thumb": "gamepads/lite/select.png"
+    },
+    {
+     "name": "psx-black",
+     "file": "psx-black.cfg",
+     "path": "gamepads/dual-shock/psx-black.cfg",
+     "dir": "gamepads/dual-shock",
+     "overlays": 4,
+     "descs": 54,
+     "names": [
+      "landscape",
+      "portrait",
+      "menu",
+      "hide"
+     ],
+     "thumb": "gamepads/dual-shock/img/dpad-left.png"
+    },
+    {
+     "name": "psx-fast",
+     "file": "psx-fast.cfg",
+     "path": "gamepads/flat/psx-fast.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 6,
+     "descs": 115,
+     "names": [
+      "landscape-B",
+      "landscape-left-analog-B",
+      "portrait",
+      "portrait-analog",
+      "hidden-0",
+      "hidden-1"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left_psx.png"
+    },
+    {
+     "name": "psx-landscape",
+     "file": "psx-landscape.cfg",
+     "path": "gamepads/old/psx-landscape.cfg",
+     "dir": "gamepads/old",
+     "overlays": 3,
+     "descs": 32,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "psx-portrait",
+     "file": "psx-portrait.cfg",
+     "path": "gamepads/old/psx-portrait.cfg",
+     "dir": "gamepads/old",
+     "overlays": 3,
+     "descs": 32,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "psx-simple",
+     "file": "psx-simple.cfg",
+     "path": "gamepads/flat/psx-simple.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 2,
+     "descs": 31,
+     "names": [
+      "landscape",
+      "hidden"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left_psx.png"
+    },
+    {
+     "name": "quadpad",
+     "file": "quadpad.cfg",
+     "path": "gamepads/quadpad/quadpad.cfg",
+     "dir": "gamepads/quadpad",
+     "overlays": 4,
+     "descs": 104,
+     "names": [
+      "landscape",
+      "landscape-options",
+      "portrait",
+      "portrait-options"
+     ],
+     "thumb": "gamepads/quadpad/img/dpad_up.png"
+    },
+    {
+     "name": "retropad",
+     "file": "retropad.cfg",
+     "path": "gamepads/Named_Overlays/retropad.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 14,
+     "descs": 263,
+     "names": [
+      "landscape",
+      "landscape-left-analog",
+      "landscape-right-analog",
+      "landscape-both-analog",
+      "portrait",
+      "portrait-analog",
+      "hidden-0",
+      "hidden-1"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "retropad",
+     "file": "retropad.cfg",
+     "path": "gamepads/flat/retropad.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 14,
+     "descs": 263,
+     "names": [
+      "landscape",
+      "landscape-left-analog",
+      "landscape-right-analog",
+      "landscape-both-analog",
+      "portrait",
+      "portrait-analog",
+      "hidden-0",
+      "hidden-1"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "retropad",
+     "file": "retropad.cfg",
+     "path": "gamepads/retropad/retropad.cfg",
+     "dir": "gamepads/retropad",
+     "overlays": 10,
+     "descs": 146,
+     "names": [
+      "landscape",
+      "portrait",
+      "landscape-menu",
+      "hide",
+      "landscape-analog",
+      "portrait-analog",
+      "landscape-analog-menu",
+      "portrait-menu"
+     ],
+     "thumb": "gamepads/retropad/img/start.png"
+    },
+    {
+     "name": "retropad-fast",
+     "file": "retropad-fast.cfg",
+     "path": "gamepads/flat/retropad-fast.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 6,
+     "descs": 117,
+     "names": [
+      "landscape-B",
+      "landscape-left-analog-B",
+      "portrait",
+      "portrait-analog",
+      "hidden-0",
+      "hidden-1"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "retropad-fast-forward",
+     "file": "retropad-fast-forward.cfg",
+     "path": "gamepads/flat/retropad-fast-forward.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 6,
+     "descs": 117,
+     "names": [
+      "landscape-B",
+      "landscape-left-analog-B",
+      "portrait",
+      "portrait-analog",
+      "hidden-0",
+      "hidden-1"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "rgpad_modern",
+     "file": "rgpad_modern.cfg",
+     "path": "gamepads/rgpad/rgpad_modern.cfg",
+     "dir": "gamepads/rgpad",
+     "overlays": 16,
+     "descs": 312,
+     "names": [
+      "landscape-basic",
+      "landscape-basic-hidden",
+      "landscape-options",
+      "landscape-options-hidden",
+      "portrait-basic",
+      "portrait-basic-hidden",
+      "portrait-basic-mini",
+      "portrait-basic-mini-hidden"
+     ],
+     "thumb": "gamepads/rgpad/modern/dpad_up.png"
+    },
+    {
+     "name": "rgpad_retro",
+     "file": "rgpad_retro.cfg",
+     "path": "gamepads/rgpad/rgpad_retro.cfg",
+     "dir": "gamepads/rgpad",
+     "overlays": 16,
+     "descs": 312,
+     "names": [
+      "landscape-basic",
+      "landscape-basic-hidden",
+      "landscape-options",
+      "landscape-options-hidden",
+      "portrait-basic",
+      "portrait-basic-hidden",
+      "portrait-basic-mini",
+      "portrait-basic-mini-hidden"
+     ],
+     "thumb": "gamepads/rgpad/retro/dpad_up.png"
+    },
+    {
+     "name": "saturn",
+     "file": "saturn.cfg",
+     "path": "gamepads/flat/saturn.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 3,
+     "descs": 64,
+     "names": [
+      "landscape",
+      "portrait",
+      "hidden"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "scummvm_mousemode",
+     "file": "scummvm_mousemode.cfg",
+     "path": "gamepads/scummvm/scummvm_mousemode.cfg",
+     "dir": "gamepads/scummvm",
+     "overlays": 2,
+     "descs": 5,
+     "names": [
+      "hide",
+      "landscape"
+     ],
+     "thumb": "gamepads/scummvm/img/next.png"
+    },
+    {
+     "name": "Sega - 32X",
+     "file": "Sega - 32X.cfg",
+     "path": "gamepads/Named_Overlays/Sega - 32X.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 6,
+     "descs": 96,
+     "names": [
+      "6-button-landscape",
+      "3-button-landscape",
+      "3-button-portrait",
+      "6-button-portrait",
+      "hidden-3-button",
+      "hidden-6-button"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Sega - Dreamcast",
+     "file": "Sega - Dreamcast.cfg",
+     "path": "gamepads/Named_Overlays/Sega - Dreamcast.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 5,
+     "descs": 95,
+     "names": [
+      "landscape-A",
+      "landscape-B",
+      "portrait",
+      "hidden-A",
+      "hidden-B"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Sega - Game Gear",
+     "file": "Sega - Game Gear.cfg",
+     "path": "gamepads/Named_Overlays/Sega - Game Gear.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 3,
+     "descs": 28,
+     "names": [
+      "landscape-sms",
+      "portrait-sms",
+      "hidden-sms"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Sega - Master System - Mark III",
+     "file": "Sega - Master System - Mark III.cfg",
+     "path": "gamepads/Named_Overlays/Sega - Master System - Mark III.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 3,
+     "descs": 28,
+     "names": [
+      "landscape-sms",
+      "portrait-sms",
+      "hidden-sms"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Sega - Mega Drive - Genesis",
+     "file": "Sega - Mega Drive - Genesis.cfg",
+     "path": "gamepads/Named_Overlays/Sega - Mega Drive - Genesis.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 6,
+     "descs": 96,
+     "names": [
+      "3-button-landscape",
+      "6-button-landscape",
+      "3-button-portrait",
+      "6-button-portrait",
+      "hidden-3-button",
+      "hidden-6-button"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Sega - Mega-CD - Sega CD",
+     "file": "Sega - Mega-CD - Sega CD.cfg",
+     "path": "gamepads/Named_Overlays/Sega - Mega-CD - Sega CD.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 6,
+     "descs": 96,
+     "names": [
+      "3-button-landscape",
+      "6-button-landscape",
+      "3-button-portrait",
+      "6-button-portrait",
+      "hidden-3-button",
+      "hidden-6-button"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Sega - Saturn",
+     "file": "Sega - Saturn.cfg",
+     "path": "gamepads/Named_Overlays/Sega - Saturn.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 3,
+     "descs": 64,
+     "names": [
+      "landscape",
+      "portrait",
+      "hidden"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Sega - SG-1000",
+     "file": "Sega - SG-1000.cfg",
+     "path": "gamepads/Named_Overlays/Sega - SG-1000.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 3,
+     "descs": 40,
+     "names": [
+      "landscape",
+      "portrait",
+      "hidden"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "sms",
+     "file": "sms.cfg",
+     "path": "gamepads/flat/sms.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 5,
+     "descs": 45,
+     "names": [
+      "landscape",
+      "portrait",
+      "hidden",
+      "landscape-B",
+      "hidden-B"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "snes",
+     "file": "snes.cfg",
+     "path": "gamepads/flat/snes.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 5,
+     "descs": 89,
+     "names": [
+      "landscape-A",
+      "landscape-B",
+      "portrait",
+      "hidden-A",
+      "hidden-B"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "snes",
+     "file": "snes.cfg",
+     "path": "gamepads/snes/snes.cfg",
+     "dir": "gamepads/snes",
+     "overlays": 4,
+     "descs": 52,
+     "names": [
+      "landscape",
+      "portrait",
+      "menu",
+      "hide"
+     ],
+     "thumb": "gamepads/snes/img/start.png"
+    },
+    {
+     "name": "SNES",
+     "file": "SNES.cfg",
+     "path": "gamepads/lite/SNES.cfg",
+     "dir": "gamepads/lite",
+     "overlays": 2,
+     "descs": 25,
+     "names": [],
+     "thumb": "gamepads/lite/select.png"
+    },
+    {
+     "name": "SNES_2",
+     "file": "SNES_2.cfg",
+     "path": "gamepads/lite/SNES_2.cfg",
+     "dir": "gamepads/lite",
+     "overlays": 2,
+     "descs": 27,
+     "names": [],
+     "thumb": "gamepads/lite/select.png"
+    },
+    {
+     "name": "snes-landscape",
+     "file": "snes-landscape.cfg",
+     "path": "gamepads/old/snes-landscape.cfg",
+     "dir": "gamepads/old",
+     "overlays": 3,
+     "descs": 30,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "snes-portrait",
+     "file": "snes-portrait.cfg",
+     "path": "gamepads/old/snes-portrait.cfg",
+     "dir": "gamepads/old",
+     "overlays": 3,
+     "descs": 30,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "SNK - Neo Geo",
+     "file": "SNK - Neo Geo.cfg",
+     "path": "gamepads/Named_Overlays/SNK - Neo Geo.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 11,
+     "descs": 195,
+     "names": [
+      "landscape-4",
+      "hidden-4",
+      "landscape-4-snes-style-1",
+      "hidden-4-snes-style-1",
+      "portrait-4-1",
+      "landscape-4-snes-style-2",
+      "hidden-4-snes-style-2",
+      "portrait-4-2"
+     ],
+     "thumb": "gamepads/flat/img/thumbstick-background.png"
+    },
+    {
+     "name": "SNK - Neo Geo CD",
+     "file": "SNK - Neo Geo CD.cfg",
+     "path": "gamepads/Named_Overlays/SNK - Neo Geo CD.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 11,
+     "descs": 195,
+     "names": [
+      "landscape-4",
+      "hidden-4",
+      "landscape-4-snes-style-1",
+      "hidden-4-snes-style-1",
+      "portrait-4-1",
+      "landscape-4-snes-style-2",
+      "hidden-4-snes-style-2",
+      "portrait-4-2"
+     ],
+     "thumb": "gamepads/flat/img/thumbstick-background.png"
+    },
+    {
+     "name": "SNK - Neo Geo Pocket",
+     "file": "SNK - Neo Geo Pocket.cfg",
+     "path": "gamepads/Named_Overlays/SNK - Neo Geo Pocket.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 6,
+     "descs": 68,
+     "names": [
+      "landscape-A",
+      "hidden-A",
+      "portrait-A",
+      "landscape-B",
+      "hidden-B",
+      "portrait-B"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "SNK - Neo Geo Pocket Color",
+     "file": "SNK - Neo Geo Pocket Color.cfg",
+     "path": "gamepads/Named_Overlays/SNK - Neo Geo Pocket Color.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 6,
+     "descs": 68,
+     "names": [
+      "landscape-A",
+      "hidden-A",
+      "portrait-A",
+      "landscape-B",
+      "hidden-B",
+      "portrait-B"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Sony - PlayStation",
+     "file": "Sony - PlayStation.cfg",
+     "path": "gamepads/Named_Overlays/Sony - PlayStation.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 14,
+     "descs": 257,
+     "names": [
+      "landscape",
+      "landscape-left-analog",
+      "landscape-right-analog",
+      "landscape-both-analog",
+      "portrait",
+      "portrait-analog",
+      "hidden-0",
+      "hidden-1"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left_psx.png"
+    },
+    {
+     "name": "Sony - PlayStation 2",
+     "file": "Sony - PlayStation 2.cfg",
+     "path": "gamepads/Named_Overlays/Sony - PlayStation 2.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 14,
+     "descs": 257,
+     "names": [
+      "landscape",
+      "landscape-left-analog",
+      "landscape-right-analog",
+      "landscape-both-analog",
+      "portrait",
+      "portrait-analog",
+      "hidden-0",
+      "hidden-1"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left_psx.png"
+    },
+    {
+     "name": "Sony - PlayStation 3",
+     "file": "Sony - PlayStation 3.cfg",
+     "path": "gamepads/Named_Overlays/Sony - PlayStation 3.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 14,
+     "descs": 257,
+     "names": [
+      "landscape",
+      "landscape-left-analog",
+      "landscape-right-analog",
+      "landscape-both-analog",
+      "portrait",
+      "portrait-analog",
+      "hidden-0",
+      "hidden-1"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left_psx.png"
+    },
+    {
+     "name": "Sony - PlayStation 3 (PSN)",
+     "file": "Sony - PlayStation 3 (PSN).cfg",
+     "path": "gamepads/Named_Overlays/Sony - PlayStation 3 (PSN).cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 14,
+     "descs": 257,
+     "names": [
+      "landscape",
+      "landscape-left-analog",
+      "landscape-right-analog",
+      "landscape-both-analog",
+      "portrait",
+      "portrait-analog",
+      "hidden-0",
+      "hidden-1"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left_psx.png"
+    },
+    {
+     "name": "Sony - PlayStation Portable",
+     "file": "Sony - PlayStation Portable.cfg",
+     "path": "gamepads/Named_Overlays/Sony - PlayStation Portable.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 5,
+     "descs": 99,
+     "names": [
+      "landscape-A",
+      "landscape-B",
+      "portrait",
+      "hidden-A",
+      "hidden-B"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left_psx.png"
+    },
+    {
+     "name": "Sony - PlayStation Portable (PSN)",
+     "file": "Sony - PlayStation Portable (PSN).cfg",
+     "path": "gamepads/Named_Overlays/Sony - PlayStation Portable (PSN).cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 5,
+     "descs": 99,
+     "names": [
+      "landscape-A",
+      "landscape-B",
+      "portrait",
+      "hidden-A",
+      "hidden-B"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left_psx.png"
+    },
+    {
+     "name": "The 3DO Company - 3DO",
+     "file": "The 3DO Company - 3DO.cfg",
+     "path": "gamepads/Named_Overlays/The 3DO Company - 3DO.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 3,
+     "descs": 66,
+     "names": [
+      "landscape",
+      "portrait",
+      "hidden"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "turbografx-16",
+     "file": "turbografx-16.cfg",
+     "path": "gamepads/flat/turbografx-16.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 5,
+     "descs": 48,
+     "names": [
+      "landscape",
+      "portrait",
+      "hidden",
+      "landscape-B",
+      "hidden-B"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "turbografx-16_6-button",
+     "file": "turbografx-16_6-button.cfg",
+     "path": "gamepads/flat/turbografx-16_6-button.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 8,
+     "descs": 91,
+     "names": [
+      "landscape",
+      "portrait",
+      "hidden",
+      "landscape-B",
+      "hidden-B",
+      "landscape-6",
+      "hidden-6",
+      "portrait-6"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "Vircon32",
+     "file": "Vircon32.cfg",
+     "path": "gamepads/Named_Overlays/Vircon32.cfg",
+     "dir": "gamepads/Named_Overlays",
+     "overlays": 5,
+     "descs": 89,
+     "names": [
+      "landscape-A",
+      "landscape-B",
+      "portrait",
+      "hidden-A",
+      "hidden-B"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "virtualboy",
+     "file": "virtualboy.cfg",
+     "path": "gamepads/flat/virtualboy.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 3,
+     "descs": 51,
+     "names": [
+      "landscape",
+      "hidden",
+      "portrait"
+     ],
+     "thumb": "gamepads/flat/img/dpad-left.png"
+    },
+    {
+     "name": "wonderswan",
+     "file": "wonderswan.cfg",
+     "path": "gamepads/flat/wonderswan.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 3,
+     "descs": 98,
+     "names": [
+      "landscape",
+      "portrait",
+      "hidden"
+     ],
+     "thumb": "gamepads/flat/img/X4_wswan.png"
+    }
+   ]
+  },
+  {
+   "id": "ipad",
+   "count": 6,
+   "cfgs": [
+    {
+     "name": "n64_dark",
+     "file": "n64_dark.cfg",
+     "path": "ipad/n64-dark/n64_dark.cfg",
+     "dir": "ipad/n64-dark",
+     "overlays": 3,
+     "descs": 25,
+     "names": [
+      "analog-landscape",
+      "menu",
+      "hide"
+     ],
+     "thumb": "ipad/n64-dark/img/n64_start.png"
+    },
+    {
+     "name": "n64-ipad",
+     "file": "n64-ipad.cfg",
+     "path": "ipad/n64/n64-ipad.cfg",
+     "dir": "ipad/n64",
+     "overlays": 6,
+     "descs": 86,
+     "names": [
+      "analog-landscape",
+      "digital-landscape",
+      "analog-portrait",
+      "digital-portrait",
+      "menu",
+      "hide"
+     ],
+     "thumb": "ipad/n64/img/start.png"
+    },
+    {
+     "name": "ps_dark_a",
+     "file": "ps_dark_a.cfg",
+     "path": "ipad/psx-dark/ps_dark_a.cfg",
+     "dir": "ipad/psx-dark",
+     "overlays": 3,
+     "descs": 28,
+     "names": [
+      "landscape",
+      "menu",
+      "hide"
+     ],
+     "thumb": "ipad/psx-dark/img/ps_left.png"
+    },
+    {
+     "name": "ps_dark_b",
+     "file": "ps_dark_b.cfg",
+     "path": "ipad/psx-dark/ps_dark_b.cfg",
+     "dir": "ipad/psx-dark",
+     "overlays": 3,
+     "descs": 28,
+     "names": [
+      "landscape",
+      "menu",
+      "hide"
+     ],
+     "thumb": "ipad/psx-dark/img/ps_left.png"
+    },
+    {
+     "name": "ps_dark_basic",
+     "file": "ps_dark_basic.cfg",
+     "path": "ipad/psx-dark/ps_dark_basic.cfg",
+     "dir": "ipad/psx-dark",
+     "overlays": 3,
+     "descs": 24,
+     "names": [
+      "landscape",
+      "menu",
+      "hide"
+     ],
+     "thumb": "ipad/psx-dark/img/ps_left.png"
+    },
+    {
+     "name": "psx",
+     "file": "psx.cfg",
+     "path": "ipad/box-psx/psx.cfg",
+     "dir": "ipad/box-psx",
+     "overlays": 4,
+     "descs": 54,
+     "names": [
+      "landscape",
+      "portrait",
+      "menu",
+      "hide"
+     ],
+     "thumb": "ipad/box-psx/img/dpad-left.png"
+    }
+   ]
+  },
+  {
+   "id": "keyboards",
+   "count": 14,
+   "cfgs": [
+    {
+     "name": "big",
+     "file": "big.cfg",
+     "path": "keyboards/flat_keyboard/big.cfg",
+     "dir": "keyboards/flat_keyboard",
+     "overlays": 10,
+     "descs": 388,
+     "names": [
+      "tenkeyless_landscape",
+      "keypad_landscape",
+      "hidden_tenkeyless_landscape",
+      "hidden_keypad_landscape",
+      "tenkeyless_portrait",
+      "keypad_portrait",
+      "hidden_tenkeyless_portrait",
+      "hidden_keypad_portrait"
+     ],
+     "thumb": "keyboards/flat_keyboard/img/esc.png"
+    },
+    {
+     "name": "big",
+     "file": "big.cfg",
+     "path": "keyboards/modular-keyboard/clear/big.cfg",
+     "dir": "keyboards/modular-keyboard/clear",
+     "overlays": 8,
+     "descs": 230,
+     "names": [
+      "tenkeyless_landscape",
+      "keypad_landscape",
+      "hidden_tenkeyless_landscape",
+      "hidden_keypad_landscape",
+      "tenkeyless_portrait",
+      "keypad_portrait",
+      "hidden_tenkeyless_portrait",
+      "hidden_keypad_portrait"
+     ],
+     "thumb": "keyboards/modular-keyboard/clear/img/esc.png"
+    },
+    {
+     "name": "big",
+     "file": "big.cfg",
+     "path": "keyboards/modular-keyboard/opaque/big.cfg",
+     "dir": "keyboards/modular-keyboard/opaque",
+     "overlays": 10,
+     "descs": 392,
+     "names": [
+      "tenkeyless_landscape",
+      "keypad_landscape",
+      "hidden_tenkeyless_landscape",
+      "hidden_keypad_landscape",
+      "tenkeyless_portrait",
+      "keypad_portrait",
+      "hidden_tenkeyless_portrait",
+      "hidden_keypad_portrait"
+     ],
+     "thumb": "keyboards/modular-keyboard/opaque/img/esc.png"
+    },
+    {
+     "name": "big_and_retropad",
+     "file": "big_and_retropad.cfg",
+     "path": "keyboards/flat_keyboard/big_and_retropad.cfg",
+     "dir": "keyboards/flat_keyboard",
+     "overlays": 14,
+     "descs": 516,
+     "names": [
+      "tenkeyless_landscape",
+      "keypad_landscape",
+      "hidden_tenkeyless_landscape",
+      "hidden_keypad_landscape",
+      "tenkeyless_portrait",
+      "keypad_portrait",
+      "shift_tenkeyless_landscape",
+      "shift_tenkeyless_portrait"
+     ],
+     "thumb": "keyboards/flat_keyboard/img/esc.png"
+    },
+    {
+     "name": "big_and_retropad_ctrl",
+     "file": "big_and_retropad_ctrl.cfg",
+     "path": "keyboards/flat_keyboard/big_and_retropad_ctrl.cfg",
+     "dir": "keyboards/flat_keyboard",
+     "overlays": 16,
+     "descs": 677,
+     "names": [
+      "tenkeyless_landscape",
+      "keypad_landscape",
+      "hidden_tenkeyless_landscape",
+      "hidden_keypad_landscape",
+      "tenkeyless_portrait",
+      "keypad_portrait",
+      "shift_tenkeyless_landscape",
+      "shift_tenkeyless_portrait"
+     ],
+     "thumb": "keyboards/flat_keyboard/img/esc.png"
+    },
+    {
+     "name": "big_and_retropad_tab",
+     "file": "big_and_retropad_tab.cfg",
+     "path": "keyboards/flat_keyboard/big_and_retropad_tab.cfg",
+     "dir": "keyboards/flat_keyboard",
+     "overlays": 16,
+     "descs": 771,
+     "names": [
+      "tenkeyless_landscape",
+      "keypad_landscape",
+      "hidden_tenkeyless_landscape",
+      "hidden_keypad_landscape",
+      "tenkeyless_portrait",
+      "keypad_portrait",
+      "shift_tenkeyless_landscape",
+      "shift_tenkeyless_portrait"
+     ],
+     "thumb": "keyboards/flat_keyboard/img/esc.png"
+    },
+    {
+     "name": "plus4",
+     "file": "plus4.cfg",
+     "path": "keyboards/commodore/plus4.cfg",
+     "dir": "keyboards/commodore",
+     "overlays": 3,
+     "descs": 88,
+     "names": [
+      "keyboard",
+      "joystick",
+      "hidden"
+     ],
+     "thumb": "keyboards/commodore/img/esc.png"
+    },
+    {
+     "name": "qwerty",
+     "file": "qwerty.cfg",
+     "path": "keyboards/qwerty/qwerty.cfg",
+     "dir": "keyboards/qwerty",
+     "overlays": 1,
+     "descs": 104,
+     "names": [
+      "portrait-qwerty"
+     ],
+     "thumb": null
+    },
+    {
+     "name": "qwerty-big",
+     "file": "qwerty-big.cfg",
+     "path": "keyboards/qwerty-big/qwerty-big.cfg",
+     "dir": "keyboards/qwerty-big",
+     "overlays": 1,
+     "descs": 104,
+     "names": [
+      "portrait-qwerty"
+     ],
+     "thumb": null
+    },
+    {
+     "name": "small",
+     "file": "small.cfg",
+     "path": "keyboards/flat_keyboard/small.cfg",
+     "dir": "keyboards/flat_keyboard",
+     "overlays": 2,
+     "descs": 206,
+     "names": [
+      "standard",
+      "shift"
+     ],
+     "thumb": "keyboards/flat_keyboard/img/esc.png"
+    },
+    {
+     "name": "small",
+     "file": "small.cfg",
+     "path": "keyboards/modular-keyboard/clear/small.cfg",
+     "dir": "keyboards/modular-keyboard/clear",
+     "overlays": 4,
+     "descs": 214,
+     "names": [
+      "qwerty_landscape",
+      "qwerty_portrait",
+      "hidden_landscape",
+      "hidden_portrait"
+     ],
+     "thumb": "keyboards/modular-keyboard/clear/img/esc.png"
+    },
+    {
+     "name": "small",
+     "file": "small.cfg",
+     "path": "keyboards/modular-keyboard/opaque/small.cfg",
+     "dir": "keyboards/modular-keyboard/opaque",
+     "overlays": 6,
+     "descs": 434,
+     "names": [
+      "qwerty_landscape",
+      "shift_landscape",
+      "qwerty_portrait",
+      "shift_portrait",
+      "hidden_landscape",
+      "hidden_portrait"
+     ],
+     "thumb": "keyboards/modular-keyboard/opaque/img/esc.png"
+    },
+    {
+     "name": "split-qwerty",
+     "file": "split-qwerty.cfg",
+     "path": "keyboards/split-qwerty/split-qwerty.cfg",
+     "dir": "keyboards/split-qwerty",
+     "overlays": 4,
+     "descs": 182,
+     "names": [
+      "landscape-primary",
+      "landscape-fn",
+      "portrait-primary",
+      "portrait-fn"
+     ],
+     "thumb": null
+    },
+    {
+     "name": "US-101",
+     "file": "US-101.cfg",
+     "path": "keyboards/US-101/US-101.cfg",
+     "dir": "keyboards/US-101",
+     "overlays": 6,
+     "descs": 222,
+     "names": [
+      "landscape-qwerty",
+      "landscape-hide",
+      "portrait-qwerty",
+      "portrait-qwerty-hide",
+      "portrait-kp",
+      "portrait-kp-hide"
+     ],
+     "thumb": null
+    }
+   ]
+  },
+  {
+   "id": "misc",
+   "count": 3,
+   "cfgs": [
+    {
+     "name": "gb",
+     "file": "gb.cfg",
+     "path": "misc/gb-portrait/gb.cfg",
+     "dir": "misc/gb-portrait",
+     "overlays": 4,
+     "descs": 92,
+     "names": [
+      "gb",
+      "gb2",
+      "gb_save",
+      "gb2_save"
+     ],
+     "thumb": null
+    },
+    {
+     "name": "im",
+     "file": "im.cfg",
+     "path": "misc/immerse/im.cfg",
+     "dir": "misc/immerse",
+     "overlays": 4,
+     "descs": 28,
+     "names": [
+      "im0",
+      "im1",
+      "im2",
+      "im3"
+     ],
+     "thumb": null
+    },
+    {
+     "name": "xperia_play_l2_r2",
+     "file": "xperia_play_l2_r2.cfg",
+     "path": "misc/xperia_play_l2_r2.cfg",
+     "dir": "misc",
+     "overlays": 1,
+     "descs": 2,
+     "names": [],
+     "thumb": null
+    }
+   ]
+  },
+  {
+   "id": "wii",
+   "count": 6,
+   "cfgs": [
+    {
+     "name": "gb",
+     "file": "gb.cfg",
+     "path": "wii/gb.cfg",
+     "dir": "wii",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "gb-grid",
+     "file": "gb-grid.cfg",
+     "path": "wii/gb-grid.cfg",
+     "dir": "wii",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "gb-grid-green",
+     "file": "gb-grid-green.cfg",
+     "path": "wii/gb-grid-green.cfg",
+     "dir": "wii",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "scanlines",
+     "file": "scanlines.cfg",
+     "path": "wii/scanlines.cfg",
+     "dir": "wii",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "scanlines-bold",
+     "file": "scanlines-bold.cfg",
+     "path": "wii/scanlines-bold.cfg",
+     "dir": "wii",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    },
+    {
+     "name": "scanlines-grid",
+     "file": "scanlines-grid.cfg",
+     "path": "wii/scanlines-grid.cfg",
+     "dir": "wii",
+     "overlays": 1,
+     "descs": 0,
+     "names": [],
+     "thumb": null
+    }
+   ]
+  }
+ ]
+}

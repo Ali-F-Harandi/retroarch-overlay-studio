@@ -1,0 +1,35 @@
+# deps / build
+node_modules/
+.next/
+.next-*/
+out/
+build/
+*.tsbuildinfo
+
+# env & secrets
+.env
+.env.*
+!.env.example
+
+# logs
+dev.log
+server.log
+*.log
+
+# local sandbox artifacts
+.zscripts/
+tool-results/
+upload/
+download/
+db/
+prisma/
+Caddyfile
+examples/
+.claude/
+
+# os
+.DS_Store
+Thumbs.db
+site/
+out/
+skills/
