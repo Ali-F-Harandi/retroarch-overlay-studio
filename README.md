@@ -5,7 +5,7 @@ Load official presets, drag & resize buttons on a live canvas, tune touch
 hitboxes with **correct `range_mod` handling**, and export a ready-to-use
 `.cfg` with all artwork.
 
-**Live app:** https://alifharandi.github.io/retroarch-overlay-studio/ (after Pages deployment)
+**Live app:** https://ali-f-harandi.github.io/retroarch-overlay-studio/ (after Pages deployment)
 
 ![RetroArch](https://img.shields.io/badge/RetroArch-overlay%20editor-teal) ![Next.js](https://img.shields.io/badge/Next.js-16-black) ![License](https://img.shields.io/badge/code-MIT-green)
 
