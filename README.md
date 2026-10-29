@@ -19,8 +19,14 @@ hitboxes with **correct `range_mod` handling**, and export a ready-to-use
   analog, light-gun, every `retrok_*` keyboard key and modifiers, system
   commands and decorative labels — searchable from the element properties.
 - **Official presets bundled offline** — all **312 overlay configs** and ~2,200
-  artwork files from the libretro buildbot, browsable by category with
-  thumbnails and search. No network needed, no CORS pain.
+  artwork files from the libretro buildbot, organized in a **folder explorer**
+  (Library → gamepads → gameboy → …) with breadcrumbs, plus global search.
+  Every preset and folder shows a **real rendered preview** — background +
+  buttons composited at their true coordinates, generated from the .cfg itself.
+- **Default artwork for new elements** — the “Add element” picker offers 26
+  named buttons (D-pad, A/B/X/Y, Start/Select, shoulders, analog, RetroArch
+  functions) each with a bundled default image and sensible default size, so
+  new buttons are immediately visible and export with the ZIP.
 - **Correct `range_mod` model** — the graphic always renders at the desc
   `w × h`; `range_mod` only enlarges the *touch area* while pressed
   (per-element values override the page-level value). A toggleable hitbox view
