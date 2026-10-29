@@ -2,7 +2,7 @@
 
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { useEditor, imageForDesc, ASPECTS, type LibImage } from '@/lib/store';
-import { Desc, Overlay, effectiveRangeMod, inputKind, COLOR, ovImage } from '@/lib/cfg';
+import { Desc, Overlay, effectiveRangeMod, inputKind, isCombo, COLOR, ovImage } from '@/lib/cfg';
 import { cn } from '@/lib/utils';
 
 const norm = (e: React.PointerEvent, el: HTMLElement): [number, number] => {
@@ -291,10 +291,11 @@ export default function Canvas() {
         )}
       </div>
 
-      <div className="pointer-events-none absolute bottom-2 left-1/2 z-40 flex -translate-x-1/2 items-center gap-3 rounded-full border border-white/10 bg-zinc-900/85 px-4 py-1.5 font-mono text-[11px] text-zinc-400 backdrop-blur">
-        <span>x {(cursor[0] * 100).toFixed(1)}% · y {(cursor[1] * 100).toFixed(1)}%</span>
-        <span className="text-zinc-600">|</span>
-        <span>{o.descs.length} elements</span>
+      <div className="pointer-events-none absolute bottom-2 left-1/2 z-40 flex max-w-[95%] -translate-x-1/2 items-center gap-2 rounded-full border border-white/10 bg-zinc-900/85 px-3 py-1.5 font-mono text-[10px] text-zinc-400 backdrop-blur sm:gap-3 sm:px-4 sm:text-[11px]">
+        <span className="hidden sm:inline">x {(cursor[0] * 100).toFixed(1)}% · y {(cursor[1] * 100).toFixed(1)}%</span>
+        <span className="sm:hidden">{o.descs.length} el</span>
+        <span className="hidden text-zinc-600 sm:inline">|</span>
+        <span className="hidden sm:inline">{o.descs.length} elements</span>
         {size && (
           <>
             <span className="text-zinc-600">|</span>
@@ -319,19 +320,23 @@ export default function Canvas() {
 }
 
 function Handle({ h }: { h: 'nw' | 'ne' | 'sw' | 'se' }) {
-  // outer 28px invisible hit zone (easy grabbing, also on touch) + visible 12px dot
+  // hit zone = 28px on normal elements, but shrinks with the box (≤55% per
+  // axis) so the four zones never blanket a tiny element — its body stays
+  // draggable and the corners stay individually grabbable on phones
+  const zone = { width: 'min(1.75rem, 55%)', height: 'min(1.75rem, 55%)' };
   return (
     <div
       data-handle={h}
+      style={zone}
       className={cn(
-        'pointer-events-auto absolute flex h-7 w-7 items-center justify-center',
-        h === 'nw' && '-left-3.5 -top-3.5 cursor-nwse-resize',
-        h === 'ne' && '-right-3.5 -top-3.5 cursor-nesw-resize',
-        h === 'sw' && '-bottom-3.5 -left-3.5 cursor-nesw-resize',
-        h === 'se' && '-bottom-3.5 -right-3.5 cursor-nwse-resize',
+        'pointer-events-auto absolute flex items-center justify-center',
+        h === 'nw' && '-left-[27.5%] -top-[27.5%] cursor-nwse-resize',
+        h === 'ne' && '-right-[27.5%] -top-[27.5%] cursor-nesw-resize',
+        h === 'sw' && '-bottom-[27.5%] -left-[27.5%] cursor-nesw-resize',
+        h === 'se' && '-bottom-[27.5%] -right-[27.5%] cursor-nwse-resize',
       )}
     >
-      <div className="h-3 w-3 rounded-full border-2 border-zinc-950 bg-teal-300 shadow-md ring-1 ring-teal-300/40 transition-transform hover:scale-125" />
+      <div className="h-2.5 w-2.5 rounded-full border-2 border-zinc-950 bg-teal-300 shadow-md ring-1 ring-teal-300/40 transition-transform hover:scale-125" />
     </div>
   );
 }
@@ -394,6 +399,9 @@ function ElementView({ d, o, selected, showHitbox, lib }: {
   const img = imageForDesc({ lib }, d);
   const rm = effectiveRangeMod(o, d);
   const dim = kind === 'none' || kind === 'area';
+  // combo hitboxes (e.g. left|up) are auxiliary invisible zones in RetroArch —
+  // render them as faint dashed outlines so they don't cover the artwork
+  const combo = isCombo(d.name);
 
   return (
     <>
@@ -436,14 +444,18 @@ function ElementView({ d, o, selected, showHitbox, lib }: {
           <div
             className={cn('pointer-events-none flex h-full w-full items-center justify-center border-2', d.shape === 'rect' ? 'rounded' : 'rounded-full')}
             style={{
-              background: dim ? 'transparent' : `${color}${selected ? '55' : '2e'}`,
-              borderStyle: dim ? 'dashed' : 'solid',
-              borderColor: selected ? undefined : dim ? 'rgba(255,255,255,.25)' : `${color}88`,
+              background: dim || combo ? 'transparent' : `${color}${selected ? '55' : '2e'}`,
+              borderStyle: dim || combo ? 'dashed' : 'solid',
+              borderColor: selected ? undefined : dim ? 'rgba(255,255,255,.25)' : combo ? `${color}66` : `${color}88`,
             }}
           >
             <span
               className="truncate px-0.5 text-center font-semibold leading-none text-white"
-              style={{ fontSize: 'min(1.6cqw, 12px)', textShadow: '0 1px 2px rgba(0,0,0,.9)' }}
+              style={{
+                fontSize: 'min(1.6cqw, 12px)',
+                textShadow: '0 1px 2px rgba(0,0,0,.9)',
+                visibility: combo && !selected ? 'hidden' : 'visible',
+              }}
             >
               {d.name}
             </span>

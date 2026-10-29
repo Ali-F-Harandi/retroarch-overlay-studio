@@ -36,7 +36,7 @@ function RestoreBanner() {
   if (!pending) return null;
 
   return (
-    <div className="fixed bottom-4 left-1/2 z-50 flex -translate-x-1/2 items-center gap-3 rounded-xl border border-teal-400/30 bg-zinc-900/95 px-4 py-2.5 shadow-2xl shadow-black/60 backdrop-blur">
+    <div className="fixed bottom-[4.75rem] left-1/2 z-50 flex w-max max-w-[94vw] -translate-x-1/2 items-center gap-3 rounded-xl border border-teal-400/30 bg-zinc-900/95 px-4 py-2.5 shadow-2xl shadow-black/60 backdrop-blur sm:bottom-4">
       <History className="h-4 w-4 shrink-0 text-teal-300" />
       <p className="text-xs text-zinc-300">
         Restore unsaved session <span className="font-semibold text-zinc-100">“{pending.fileName}”</span>?
@@ -191,7 +191,7 @@ export default function Home() {
             </button>
           </div>
           <div className="overlay-scroll max-h-[42dvh] overflow-y-auto pb-2">
-            {panel === 'elements' ? <ElementsPanel /> : <PropertiesPanel />}
+            {panel === 'elements' ? <ElementsPanel showHeader={false} /> : <PropertiesPanel />}
           </div>
         </div>
       )}
@@ -199,7 +199,8 @@ export default function Home() {
       <PresetBrowser />
       <PreviewOverlay />
       <HelpDialog />
-      <RestoreBanner />
+      {/* hide the restore prompt while a mobile sheet is open — it would cover it */}
+      {panel === 'none' && <RestoreBanner />}
     </main>
   );
 }

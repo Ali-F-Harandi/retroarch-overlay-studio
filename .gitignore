@@ -33,3 +33,7 @@ Thumbs.db
 site/
 out/
 skills/
+
+# local static-export verification artifacts
+.next-export/
+testroot/

@@ -120,17 +120,19 @@ export function AddButton() {
   );
 }
 
-export default function ElementsPanel() {
+export default function ElementsPanel({ showHeader = true }: { showHeader?: boolean }) {
   const s = useEditor();
   const o = s.model.overlays[s.cur];
   if (!o) return null;
 
   return (
     <div className="flex min-h-0 flex-1 flex-col">
-      <div className="flex items-center justify-between px-3 pb-1 pt-2">
-        <h3 className="text-[11px] font-bold uppercase tracking-widest text-zinc-500">Elements</h3>
-        <span className="rounded-full bg-white/5 px-2 py-0.5 font-mono text-[10px] text-zinc-500">{o.descs.length}</span>
-      </div>
+      {showHeader && (
+        <div className="flex items-center justify-between px-3 pb-1 pt-2">
+          <h3 className="text-[11px] font-bold uppercase tracking-widest text-zinc-500">Elements</h3>
+          <span className="rounded-full bg-white/5 px-2 py-0.5 font-mono text-[10px] text-zinc-500">{o.descs.length}</span>
+        </div>
+      )}
       <div className="overlay-scroll min-h-0 flex-1 overflow-y-auto px-2 pb-2">
         {o.descs.length === 0 && (
           <p className="px-2 py-6 text-center text-xs leading-relaxed text-zinc-600">
