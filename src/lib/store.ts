@@ -57,7 +57,7 @@ interface EditorState {
 
   /* actions */
   setLoaded: (v: boolean) => void;
-  loadCfgText: (text: string, fileName: string, mode?: 'replace' | 'append') => void;
+  loadCfgText: (text: string, fileName: string, mode?: 'replace' | 'append') => boolean;
   normalizePixelOverlays: (sizes?: ({ w: number; h: number } | null)[]) => void;
   newProject: (landscape: boolean) => void;
   setFileName: (n: string) => void;
@@ -66,7 +66,7 @@ interface EditorState {
   toggleSelect: (id: string) => void;
 
   updateDesc: (id: string, patch: Partial<Desc>, history?: boolean) => void;
-  updateDescs: (ids: string[], fn: (d: Desc) => void, history?: boolean) => void;
+  updateDescs: (ids: string[], fn: (d: Desc, i: number) => void, history?: boolean) => void;
   addDesc: (name?: string) => void;
   duplicateSel: () => void;
   deleteSel: () => void;
@@ -106,7 +106,8 @@ const freshModel = (landscape: boolean): CfgModel => {
 };
 
 const snapModel = (s: Pick<EditorState, 'fileName' | 'model'>) =>
-  JSON.stringify({ f: s.fileName, m: s.model });
+  // keys must match EditorState — undo/redo spread this snapshot into the store
+  JSON.stringify({ fileName: s.fileName, model: s.model });
 
 const clone = <T,>(v: T): T => JSON.parse(JSON.stringify(v));
 
@@ -142,7 +143,7 @@ export const useEditor = create<EditorState>((set, get) => ({
       } else {
         model = parsed;
       }
-      const entry: EditorState = {
+      const entry: Partial<EditorState> = {
         fileName: mode === 'replace' ? fileName : s.fileName,
         model,
         cur: mode === 'replace' ? 0 : s.model.overlays.length,
@@ -200,23 +201,25 @@ export const useEditor = create<EditorState>((set, get) => ({
 
   undo: () => set((s) => {
     if (!s.history.length) return {};
-    const prev = s.history[s.history.length - 1];
+    const prev = JSON.parse(s.history[s.history.length - 1]) as Pick<EditorState, 'fileName' | 'model'>;
     return {
       history: s.history.slice(0, -1),
       future: [snapModel(s), ...s.future].slice(0, 100),
-      ...JSON.parse(prev),
-      cur: Math.min(JSON.parse(prev).m.overlays.length - 1, s.cur),
-      sel: s.sel.filter((id) => JSON.parse(prev).m.overlays.some((o: Overlay) => o.descs.some((d) => d.id === id))),
+      fileName: prev.fileName,
+      model: prev.model,
+      cur: Math.min(prev.model.overlays.length - 1, s.cur),
+      sel: s.sel.filter((id) => prev.model.overlays.some((o: Overlay) => o.descs.some((d) => d.id === id))),
     };
   }),
 
   redo: () => set((s) => {
     if (!s.future.length) return {};
-    const next = s.future[0];
+    const next = JSON.parse(s.future[0]) as Pick<EditorState, 'fileName' | 'model'>;
     return {
       history: [...s.history, snapModel(s)].slice(-100),
       future: s.future.slice(1),
-      ...JSON.parse(next),
+      fileName: next.fileName,
+      model: next.model,
     };
   }),
 
@@ -235,7 +238,8 @@ export const useEditor = create<EditorState>((set, get) => ({
     set((s) => {
       const model = clone(s.model);
       for (const d of model.overlays[s.cur]?.descs ?? []) {
-        if (ids.includes(d.id)) fn(d);
+        const i = ids.indexOf(d.id);
+        if (i >= 0) fn(d, i);
       }
       return { model, dirty: true };
     });

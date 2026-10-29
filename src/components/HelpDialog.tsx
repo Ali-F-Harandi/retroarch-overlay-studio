@@ -18,7 +18,7 @@ export default function HelpDialog() {
 
   return (
     <Dialog open={s.helpOpen} onOpenChange={(v) => s.setUI({ helpOpen: v })}>
-      <DialogContent className="max-h-[85dvh] max-w-3xl overflow-hidden border-white/10 bg-zinc-950/95 p-0">
+      <DialogContent className="max-h-[85dvh] max-w-3xl overflow-hidden sm:max-w-3xl border-white/10 bg-zinc-950/95 p-0">
         <div className="overlay-scroll max-h-[85dvh] overflow-y-auto">
           <DialogHeader className="px-6 pt-6">
             <DialogTitle className="text-base font-bold text-zinc-100">Shortcuts & reference</DialogTitle>

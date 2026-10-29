@@ -6,15 +6,18 @@ import { inputKind, COLOR, isCombo } from '@/lib/cfg';
 import { cn } from '@/lib/utils';
 import {
   Plus, Copy, Trash2, GripVertical, Layers, Gamepad2, SlidersHorizontal,
-  CircleSlash, Expand, Aperture,
+  CircleSlash, Expand, Aperture, Keyboard, Crosshair, Tag,
 } from 'lucide-react';
 
-const KIND_ICON: Record<string, React.ComponentType<{ className?: string }>> = {
+const KIND_ICON: Record<string, React.ComponentType<{ className?: string; style?: React.CSSProperties }>> = {
   game: Gamepad2,
   system: SlidersHorizontal,
   menu: Layers,
   analog: Expand,
+  keyboard: Keyboard,
+  lightgun: Crosshair,
   area: Aperture,
+  label: Tag,
   none: CircleSlash,
 };
 

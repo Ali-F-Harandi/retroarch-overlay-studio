@@ -65,7 +65,7 @@ let uid = 0;
 export const newId = () => `d${Date.now().toString(36)}${(uid++).toString(36)}`;
 
 const stripBom = (s: string) => (s.charCodeAt(0) === 0xfeff ? s.slice(1) : s);
-export const unquote = (s: string) => s.replace(/^"(.*)"$/s, '$1');
+export const unquote = (s: string) => s.replace(/^"([\s\S]*)"$/, '$1');
 export const quoteIfNeeded = (s: string) => (/[\s,;]/.test(s) ? `"${s}"` : s);
 
 const DESC_MAIN = /^overlay(\d+)_desc(\d+)\s*=\s*"(.*)"\s*$/;
@@ -275,19 +275,22 @@ export function normalizeOverlay(o: Overlay, W: number, H: number) {
 
 /* ---------- categories & input catalog ---------- */
 
-export type InputKind = 'game' | 'system' | 'menu' | 'analog' | 'area' | 'none';
+export type InputKind = 'game' | 'system' | 'menu' | 'analog' | 'keyboard' | 'lightgun' | 'area' | 'label' | 'none';
 
 export function inputKind(name: string): InputKind {
   if (name === 'nul' || name === 'null') return 'none';
+  if (/^retrok/.test(name)) return 'keyboard';
+  if (/^gun_/.test(name)) return 'lightgun';
   if (/_area$/.test(name)) return 'area';
   if (/^analog_/.test(name) || /^[lr]_[xy]_(plus|minus)$/.test(name)) return 'analog';
-  if (/^(overlay_next|menu_toggle|osk_toggle)/.test(name)) return 'menu';
+  if (/^(overlay_next|menu|osk_toggle)/.test(name)) return 'menu';
   if (
-    /^(save_state|load_state|state_slot_|rewind|pause_toggle|frame_advance|reset|screenshot|fps_toggle|toggle_fast_forward|hold_fast_forward|toggle_slowmotion|hold_slowmotion|mute|volume_|exit_emulator|shader_|netplay_|run_ahead_toggle|cheat_|movie_record|playreplay)/.test(
+    /^(save_state|load_state|state_slot_|rewind|hold_|pause_toggle|frame_advance|reset|screenshot|fps_toggle|toggle_fast_forward|toggle_fast_foward|fast_forward|slowmotion|toggle_slowmotion|hold_slowmotion|mute|volume_|exit_emulator|shader_|netplay_|run_ahead_toggle|cheat_|movie_record|playreplay|turbo_|ai_service)/.test(
       name,
     )
   )
     return 'system';
+  if (/^(BEZEL|SCREEN|TOP_|BOTTOM_|LEFT_|RIGHT_|CENTER_|^[0-9][A-Z_]*$)/.test(name)) return 'label';
   return 'game';
 }
 
@@ -300,18 +303,64 @@ export const COLOR: Record<InputKind, string> = {
   system: '#fbbf24', // amber-400
   menu: '#a1a1aa', // zinc-400
   analog: '#c084fc', // purple-400
+  keyboard: '#60a5fa', // blue-400
+  lightgun: '#fb7185', // rose-400
   area: '#64748b', // slate-500
+  label: '#94a3b8', // slate-400
   none: '#52525b',
 };
 
+const RETROK_LETTERS = [
+  'retrok_a', 'retrok_b', 'retrok_c', 'retrok_d', 'retrok_e', 'retrok_f', 'retrok_g', 'retrok_h', 'retrok_i', 'retrok_j',
+  'retrok_k', 'retrok_l', 'retrok_m', 'retrok_n', 'retrok_o', 'retrok_p', 'retrok_q', 'retrok_r', 'retrok_s', 'retrok_t',
+  'retrok_u', 'retrok_v', 'retrok_w', 'retrok_x', 'retrok_y', 'retrok_z',
+];
+
+const RETROK_SPECIAL = [
+  'retrok_0', 'retrok_1', 'retrok_2', 'retrok_3', 'retrok_4', 'retrok_5', 'retrok_6', 'retrok_7', 'retrok_8', 'retrok_9',
+  'retrok_num0', 'retrok_num1', 'retrok_num2', 'retrok_num3', 'retrok_num4', 'retrok_num5', 'retrok_num6', 'retrok_num7',
+  'retrok_num8', 'retrok_num9',
+  'retrok_f1', 'retrok_f2', 'retrok_f3', 'retrok_f4', 'retrok_f5', 'retrok_f6', 'retrok_f7', 'retrok_f8', 'retrok_f9',
+  'retrok_f10', 'retrok_f11', 'retrok_f12',
+  'retrok_up', 'retrok_down', 'retrok_left', 'retrok_right',
+  'retrok_enter', 'retrok_return', 'retrok_kp_enter', 'retrok_escape', 'retrok_tab', 'retrok_backspace', 'retrok_del',
+  'retrok_delete', 'retrok_insert', 'retrok_home', 'retrok_end', 'retrok_pageup', 'retrok_pagedown',
+  'retrok_space', 'retrok_backquote', 'retrok_minus', 'retrok_equals', 'retrok_leftbracket', 'retrok_rightbracket',
+  'retrok_backslash', 'retrok_semicolon', 'retrok_quote', 'retrok_comma', 'retrok_period', 'retrok_slash',
+  'retrok_exclaim', 'retrok_question', 'retrok_colon', 'retrok_tilde', 'retrok_divide', 'retrok_multiply', 'retrok_kp_plus',
+  'retrok_kp_minus', 'retrok_kp_period', 'retrok_kp_equals',
+  'retrok_lshift', 'retrok_rshift', 'retrok_shift', 'retrok_lctrl', 'retrok_rctrl', 'retrok_ctrl', 'retrok_lalt',
+  'retrok_ralt', 'retrok_alt', 'retrok_capslock', 'retrok_numlock', 'retrok_scroll_lock', 'retrok_pause',
+  'retrok_print_screen',
+];
+
+/**
+ * Full command catalog for the input picker. Everything below is either part of
+ * the RetroArch input namespace or was found in official libretro overlay
+ * presets (scanned from the bundled /presets library).
+ */
 export const BUTTONS: { group: string; items: string[] }[] = [
   {
     group: 'Gamepad',
     items: ['a', 'b', 'x', 'y', 'start', 'select', 'l', 'r', 'l2', 'r2', 'l3', 'r3', 'up', 'down', 'left', 'right'],
   },
   {
-    group: 'Combos (dpad corners / face)',
-    items: ['left|up', 'up|right', 'right|down', 'down|left', 'a|b', 'b|a', 'x|y', 'y|x', 'a|x', 'a|b|x|y', 'l|r'],
+    group: 'Combos',
+    items: [
+      // dpad diagonals
+      'up|left', 'up|right', 'down|left', 'down|right', 'left|up', 'left|down', 'right|up', 'right|down',
+      // face combos
+      'a|b', 'b|a', 'a|x', 'a|y', 'b|x', 'b|y', 'x|a', 'x|b', 'x|y', 'x|l', 'x|r', 'y|a', 'y|b', 'y|l', 'y|r', 'y|x',
+      'a|b|x|y', 'l|r',
+      // face + dpad (used by several official presets)
+      'a|left', 'a|right', 'b|left', 'b|right', 'x|left', 'x|right', 'y|left', 'y|right',
+      // shoulder / trigger combos
+      'l|b', 'l|x', 'l|l2', 'l|r2', 'r|a', 'r|l2', 'r|r2', 'l2|r2', 'l2|overlay_next',
+      'r2|a', 'r2|b', 'r2|x', 'r2|y', 'r2|a|b', 'r2|x|a', 'r2|x|y', 'r2|y|b', 'r2|l2', 'r2|l3', 'r2|r3',
+      'r3|l2', 'r3|l3', 'l|l2|r|r2', 'r|r2|r3|l|l2|l3',
+      // dpad + analog stick combos (used by N64 / dual-shock presets)
+      'up|l_y_minus', 'down|l_y_plus', 'left|l_x_minus', 'right|l_x_plus',
+    ],
   },
   {
     group: 'Analog',
@@ -320,15 +369,39 @@ export const BUTTONS: { group: string; items: string[] }[] = [
   {
     group: 'RetroArch (system)',
     items: [
-      'menu_toggle', 'overlay_next', 'osk_toggle', 'save_state', 'load_state', 'state_slot_increase', 'state_slot_decrease',
+      'menu_toggle', 'menu', 'overlay_next', 'osk_toggle',
+      'save_state', 'load_state', 'state_slot_increase', 'state_slot_decrease',
       'rewind', 'hold_rewind', 'pause_toggle', 'frame_advance', 'reset', 'screenshot', 'fps_toggle',
-      'toggle_fast_forward', 'hold_fast_forward', 'toggle_slowmotion', 'hold_slowmotion', 'mute', 'volume_up', 'volume_down',
-      'exit_emulator', 'shader_prev', 'shader_next',
+      'toggle_fast_forward', 'hold_fast_forward', 'toggle_fast_foward', 'fast_forward',
+      'toggle_slowmotion', 'hold_slowmotion', 'slowmotion', 'mute', 'volume_up', 'volume_down',
+      'exit_emulator', 'shader_prev', 'shader_next', 'hold_enable', 'turbo_enable',
+      'netplay_ping', 'netplay_player_chat', 'run_ahead_toggle', 'ai_service',
+      'movie_record', 'movie_play', 'cheat_index_plus', 'cheat_index_minus', 'cheat_toggle',
     ],
   },
   {
-    group: 'Areas (invisible zones)',
-    items: ['dpad_area', 'abxy_area', 'nul'],
+    group: 'Light gun',
+    items: ['gun_trigger', 'gun_offscreen_shot', 'gun_aux_a', 'gun_aux_b', 'gun_aux_c', 'gun_start', 'gun_select', 'gun_dpad_up', 'gun_dpad_down', 'gun_dpad_left', 'gun_dpad_right'],
+  },
+  {
+    group: 'Keyboard — letters',
+    items: RETROK_LETTERS,
+  },
+  {
+    group: 'Keyboard — numbers, F-keys, navigation',
+    items: RETROK_SPECIAL,
+  },
+  {
+    group: 'Keyboard modifiers (combine with |)',
+    items: ['retrokmod_ctrl', 'retrokmod_shift', 'retrokmod_alt', 'retrokmod_gui', 'retrokmod_ctrl|retrok_a', 'retrokmod_ctrl|retrok_c', 'retrokmod_ctrl|retrok_v', 'retrokmod_ctrl|retrok_x', 'retrokmod_shift|retrok_escape', 'retrokmod_ctrl|retrok_q'],
+  },
+  {
+    group: 'Areas & special',
+    items: ['dpad_area', 'abxy_area', 'nul', 'null'],
+  },
+  {
+    group: 'Decorative labels (official presets)',
+    items: ['BEZEL_LEFT', 'BEZEL_RIGHT', 'TOP_CENTER', 'BOTTOM_CENTER', '0_LEFT', '0_RIGHT', '6button_bg'],
   },
 ];
 

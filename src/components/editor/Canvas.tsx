@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { useEditor, imageForDesc, ASPECTS } from '@/lib/store';
+import { useEditor, imageForDesc, ASPECTS, type LibImage } from '@/lib/store';
 import { Desc, Overlay, effectiveRangeMod, inputKind, COLOR, ovImage } from '@/lib/cfg';
 import { cn } from '@/lib/utils';
 
@@ -11,9 +11,9 @@ const norm = (e: React.PointerEvent, el: HTMLElement): [number, number] => {
 };
 
 type Drag =
-  | { m: 'move'; ids: string[]; start: [number, number][]; p0: [number, number]; moved: boolean }
-  | { m: 'resize'; id: string; anchor: [number, number] }
-  | { m: 'scale'; ids: string[]; start: { x: number; y: number; w: number; h: number }[]; c: [number, number]; r0: number }
+  | { m: 'move'; ids: string[]; start: [number, number][]; p0: [number, number]; moved: boolean; pushed: boolean }
+  | { m: 'resize'; id: string; anchor: [number, number]; ratio: number; pushed: boolean }
+  | { m: 'scale'; ids: string[]; start: { x: number; y: number; w: number; h: number }[]; c: [number, number]; r0: number; pushed: boolean }
   | { m: 'marquee'; x0: number; y0: number; x1: number; y1: number };
 
 export default function Canvas() {
@@ -23,6 +23,7 @@ export default function Canvas() {
   const [marquee, setMarquee] = useState<null | { l: number; t: number; w: number; h: number }>(null);
   const [guides, setGuides] = useState<{ v?: boolean; h?: boolean }>({});
   const [cursor, setCursor] = useState<[number, number]>([0, 0]);
+  const [size, setSize] = useState<{ w: number; h: number } | null>(null);
 
   const o = s.model.overlays[s.cur];
   const aspect = ASPECTS[s.aspect] ?? ASPECTS[0];
@@ -39,20 +40,21 @@ export default function Canvas() {
     const [nx, ny] = norm(e, el);
     const t = e.target as HTMLElement;
     const target = t.closest('[data-desc]');
-    const handle = t.dataset.handle;
+    const handle = t.closest('[data-handle]')?.getAttribute('data-handle') ?? undefined;
     (e.currentTarget as HTMLElement).setPointerCapture?.(e.pointerId);
 
     if (handle && s.sel.length >= 1) {
-      s.pushHistory();
       const descs = o.descs.filter((d) => s.sel.includes(d.id));
       if (s.sel.length === 1 && descs[0]) {
         const d = descs[0];
+        // anchor = the opposite (fixed) corner; center always sits between
+        // the pointer and the anchor at distance (w, h) from it
         const anchor: [number, number] =
           handle === 'nw' ? [d.x + d.w, d.y + d.h]
           : handle === 'ne' ? [d.x - d.w, d.y + d.h]
           : handle === 'sw' ? [d.x + d.w, d.y - d.h]
           : [d.x - d.w, d.y - d.h];
-        dragRef.current = { m: 'resize', id: d.id, anchor };
+        dragRef.current = { m: 'resize', id: d.id, anchor, ratio: Math.max(0.0001, d.w / Math.max(0.0001, d.h)), pushed: false };
       } else {
         const cx = descs.reduce((a, d) => a + d.x, 0) / descs.length;
         const cy = descs.reduce((a, d) => a + d.y, 0) / descs.length;
@@ -62,22 +64,23 @@ export default function Canvas() {
           start: descs.map((d) => ({ x: d.x, y: d.y, w: d.w, h: d.h })),
           c: [cx, cy],
           r0: Math.hypot(nx - cx, ny - cy) || 0.01,
+          pushed: false,
         };
       }
       return;
     }
 
     if (target) {
-      const id = target.dataset.desc!;
+      const id = (target as HTMLElement).dataset.desc!;
       if (e.shiftKey) {
         s.toggleSelect(id);
         return;
       }
       const ids = s.sel.includes(id) ? s.sel : [id];
       if (!s.sel.includes(id)) s.select([id]);
-      s.pushHistory();
+      // history is pushed lazily on the first real move (avoids undo noise on plain clicks)
       const start = o.descs.filter((d) => ids.includes(d.id)).map((d) => [d.x, d.y] as [number, number]);
-      dragRef.current = { m: 'move', ids, start, p0: [nx, ny], moved: false };
+      dragRef.current = { m: 'move', ids, start, p0: [nx, ny], moved: false, pushed: false };
       return;
     }
 
@@ -95,7 +98,8 @@ export default function Canvas() {
       if (!dr) return;
 
       if (dr.m === 'move') {
-        if (!dr.moved && Math.hypot(nx - dr.p0[0], ny - dr.p0[1]) * 800 < 3) return;
+        if (!dr.moved && Math.hypot(nx - dr.p0[0], ny - dr.p0[1]) * el.getBoundingClientRect().width < 3) return;
+        if (!dr.moved && !dr.pushed) { s.pushHistory(); dr.pushed = true; }
         dr.moved = true;
         let dx = snapV(dr.start[0][0] + (nx - dr.p0[0])) - dr.start[0][0];
         let dy = snapV(dr.start[0][1] + (ny - dr.p0[1])) - dr.start[0][1];
@@ -116,14 +120,24 @@ export default function Canvas() {
         return;
       }
       if (dr.m === 'resize') {
-        const w = Math.max(0.002, Math.abs(nx - dr.anchor[0]));
-        const h = Math.max(0.002, Math.abs(ny - dr.anchor[1]));
-        const x = dr.anchor[0] + (nx > dr.anchor[0] ? -w : w);
-        const y = dr.anchor[1] + (ny > dr.anchor[1] ? -h : h);
+        if (!dr.pushed) { s.pushHistory(); dr.pushed = true; }
+        // half-extents = distance from the fixed corner to the pointer;
+        // center = corner moved TOWARD the pointer by those half-extents
+        let w = Math.max(0.002, Math.abs(nx - dr.anchor[0]));
+        let h = Math.max(0.002, Math.abs(ny - dr.anchor[1]));
+        if (e.shiftKey) {
+          // keep the original w:h aspect ratio
+          if (w / h > dr.ratio) h = w / dr.ratio;
+          else w = h * dr.ratio;
+        }
+        const x = dr.anchor[0] + (nx >= dr.anchor[0] ? w : -w);
+        const y = dr.anchor[1] + (ny >= dr.anchor[1] ? h : -h);
         s.updateDesc(dr.id, { x: +x.toFixed(5), y: +y.toFixed(5), w: +w.toFixed(5), h: +h.toFixed(5) }, false);
+        setSize({ w, h });
         return;
       }
       if (dr.m === 'scale') {
+        if (!dr.pushed) { s.pushHistory(); dr.pushed = true; }
         const r = Math.max(0.01, Math.hypot(nx - dr.c[0], ny - dr.c[1]));
         const f = Math.min(12, Math.max(0.05, r / dr.r0));
         s.updateDescs(dr.ids, (d, i) => {
@@ -152,6 +166,7 @@ export default function Canvas() {
     const dr = dragRef.current;
     dragRef.current = null;
     setGuides({});
+    setSize(null);
     if (dr?.m === 'marquee' && o) {
       const l = Math.min(dr.x0, dr.x1), r = Math.max(dr.x0, dr.x1);
       const t = Math.min(dr.y0, dr.y1), b = Math.max(dr.y0, dr.y1);
@@ -264,6 +279,12 @@ export default function Canvas() {
         <span>x {(cursor[0] * 100).toFixed(1)}% · y {(cursor[1] * 100).toFixed(1)}%</span>
         <span className="text-zinc-600">|</span>
         <span>{o.descs.length} elements</span>
+        {size && (
+          <>
+            <span className="text-zinc-600">|</span>
+            <span className="text-amber-300">{(size.w * 200).toFixed(1)}% × {(size.h * 200).toFixed(1)}%</span>
+          </>
+        )}
         {s.sel.length > 0 && (
           <>
             <span className="text-zinc-600">|</span>
@@ -276,17 +297,20 @@ export default function Canvas() {
 }
 
 function Handle({ h }: { h: 'nw' | 'ne' | 'sw' | 'se' }) {
+  // outer 28px invisible hit zone (easy grabbing, also on touch) + visible 12px dot
   return (
     <div
       data-handle={h}
       className={cn(
-        'pointer-events-auto absolute h-4 w-4 rounded-full border-2 border-zinc-950 bg-teal-300 shadow-md transition-transform hover:scale-125',
-        h === 'nw' && '-left-2 -top-2 cursor-nwse-resize',
-        h === 'ne' && '-right-2 -top-2 cursor-nesw-resize',
-        h === 'sw' && '-bottom-2 -left-2 cursor-nesw-resize',
-        h === 'se' && '-bottom-2 -right-2 cursor-nwse-resize',
+        'pointer-events-auto absolute flex h-7 w-7 items-center justify-center',
+        h === 'nw' && '-left-3.5 -top-3.5 cursor-nwse-resize',
+        h === 'ne' && '-right-3.5 -top-3.5 cursor-nesw-resize',
+        h === 'sw' && '-bottom-3.5 -left-3.5 cursor-nesw-resize',
+        h === 'se' && '-bottom-3.5 -right-3.5 cursor-nwse-resize',
       )}
-    />
+    >
+      <div className="h-3 w-3 rounded-full border-2 border-zinc-950 bg-teal-300 shadow-md ring-1 ring-teal-300/40 transition-transform hover:scale-125" />
+    </div>
   );
 }
 
@@ -322,7 +346,7 @@ function MultiHandles({ o, sel }: { o: { descs: Desc[] }; sel: string[] }) {
   );
 }
 
-function PageBackground({ o, lib }: { o: Overlay; lib: { rel: string; url: string }[] }) {
+function PageBackground({ o, lib }: { o: Overlay; lib: LibImage[] }) {
   const ref = ovImage(o);
   const url = ref ? imageForDesc({ lib }, { id: 'bg', name: '', x: 0, y: 0, w: 0, h: 0, shape: 'rect', extra: {}, image: ref }) : null;
   if (!url) return null;
@@ -341,7 +365,7 @@ function ElementView({ d, o, selected, showHitbox, lib }: {
   o: Overlay;
   selected: boolean;
   showHitbox: boolean;
-  lib: { rel: string; url: string }[];
+  lib: LibImage[];
 }) {
   const kind = inputKind(d.name);
   const color = COLOR[kind];

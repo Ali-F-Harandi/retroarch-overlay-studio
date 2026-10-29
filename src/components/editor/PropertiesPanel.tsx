@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { useEditor } from '@/lib/store';
 import { Desc, sanitizeDescName, ovProp, ovName, BUTTONS, quoteIfNeeded } from '@/lib/cfg';
 import { cn } from '@/lib/utils';
@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Switch } from '@/components/ui/switch';
 import {
-  Trash2, Copy, FlipHorizontal2, FlipVertical2, ChevronDown, X, Link2, Image as ImageIcon,
+  Trash2, Copy, FlipHorizontal2, FlipVertical2, ChevronDown, ChevronRight, X, Link2, Command as CommandIcon,
 } from 'lucide-react';
 
 function NumField({ label, value, onChange, step = 0.001, min, max }: {
@@ -94,6 +94,77 @@ function Section({ title, children, defaultOpen = true }: { title: string; child
   );
 }
 
+const TOTAL_COMMANDS = BUTTONS.reduce((n, g) => n + g.items.length, 0);
+
+/** searchable catalog of every input command RetroArch overlays accept */
+function CommandCatalog({ current, onPick }: { current: string; onPick: (name: string) => void }) {
+  const [open, setOpen] = useState(false);
+  const [q, setQ] = useState('');
+
+  const groups = useMemo(() => {
+    const term = q.trim().toLowerCase();
+    return BUTTONS
+      .map((g) => ({
+        group: g.group,
+        items: term ? g.items.filter((i) => i.toLowerCase().includes(term)) : g.items,
+      }))
+      .filter((g) => g.items.length > 0);
+  }, [q]);
+
+  return (
+    <div className="rounded-lg border border-white/5 bg-black/20">
+      <button
+        onClick={() => setOpen(!open)}
+        className="flex w-full items-center gap-2 px-2.5 py-2 text-left transition hover:bg-white/5"
+      >
+        <CommandIcon className="h-3.5 w-3.5 text-teal-300" />
+        <span className="flex-1 text-[11px] font-medium text-zinc-300">
+          Browse all commands
+          <span className="ml-1.5 font-mono text-[10px] text-zinc-600">{TOTAL_COMMANDS}</span>
+        </span>
+        {open ? <ChevronDown className="h-3.5 w-3.5 text-zinc-500" /> : <ChevronRight className="h-3.5 w-3.5 text-zinc-500" />}
+      </button>
+      {open && (
+        <div className="border-t border-white/5 p-2">
+          <Input
+            value={q}
+            onChange={(e) => setQ(e.target.value)}
+            placeholder="Filter commands… (e.g. retrok, gun, r2)"
+            className="h-8 border-white/10 bg-black/30 text-xs"
+          />
+          <div className="overlay-scroll mt-2 max-h-72 space-y-2.5 overflow-y-auto pr-1">
+            {groups.map((g) => (
+              <div key={g.group}>
+                <p className="mb-1 font-mono text-[9px] font-bold uppercase tracking-widest text-zinc-600">{g.group}</p>
+                <div className="flex flex-wrap gap-1">
+                  {g.items.map((n) => (
+                    <button
+                      key={n}
+                      onClick={() => { onPick(n); setQ(''); }}
+                      title={n}
+                      className={cn(
+                        'max-w-full truncate rounded-md px-1.5 py-1 font-mono text-[10px] ring-1 ring-inset transition',
+                        current === n
+                          ? 'bg-teal-400/20 text-teal-200 ring-teal-400/40'
+                          : 'bg-white/5 text-zinc-400 ring-white/10 hover:bg-white/10 hover:text-zinc-200',
+                      )}
+                    >
+                      {n}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            ))}
+            {groups.length === 0 && (
+              <p className="py-4 text-center text-[11px] text-zinc-600">No command matches “{q.trim()}”.</p>
+            )}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function DescProps({ d }: { d: Desc }) {
   const s = useEditor();
   return (
@@ -122,6 +193,7 @@ function DescProps({ d }: { d: Desc }) {
             </button>
           ))}
         </div>
+        <CommandCatalog current={d.name} onPick={(n) => s.updateDesc(d.id, { name: n })} />
       </Section>
 
       <Section title="Geometry">

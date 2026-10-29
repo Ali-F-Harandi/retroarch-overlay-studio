@@ -11,9 +11,13 @@ hitboxes with **correct `range_mod` handling**, and export a ready-to-use
 
 ## Features
 
-- **Visual canvas editor** — drag to move, corner handles to resize, marquee
-  select, multi-select (Shift+click), group scaling, grid + snap with center
-  guides, arrow-key nudging.
+- **Visual canvas editor** — drag to move, corner handles to resize
+  (`Shift` = keep aspect ratio), marquee select, multi-select (Shift+click),
+  group scaling, grid + snap with center guides, arrow-key nudging.
+- **Complete command catalog** — all **270 input commands** found across the
+  official presets and the RetroArch input namespace: gamepad buttons, combos,
+  analog, light-gun, every `retrok_*` keyboard key and modifiers, system
+  commands and decorative labels — searchable from the element properties.
 - **Official presets bundled offline** — all **312 overlay configs** and ~2,200
   artwork files from the libretro buildbot, browsable by category with
   thumbnails and search. No network needed, no CORS pain.
