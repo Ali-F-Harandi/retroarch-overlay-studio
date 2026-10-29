@@ -62,9 +62,9 @@ export function AddButton() {
           side="top"
           align="start"
           collisionPadding={12}
-          className="w-[336px] border-white/10 bg-zinc-950/95 p-0 backdrop-blur-xl"
+          className="w-[min(336px,calc(100vw-1.5rem))] border-white/10 bg-zinc-950/95 p-0 backdrop-blur-xl"
         >
-          <div className="overlay-scroll max-h-[52dvh] overflow-y-auto p-2">
+          <div className="overlay-scroll max-h-[min(52dvh,420px)] overflow-y-auto p-2">
             {ART_GROUPS.map((g) => (
               <div key={g.title} className="mb-1.5 last:mb-0">
                 <p className="px-1 pb-1 text-[9px] font-bold uppercase tracking-widest text-zinc-600">{g.title}</p>

@@ -12,7 +12,7 @@ const norm = (e: React.PointerEvent, el: HTMLElement): [number, number] => {
 
 type Drag =
   | { m: 'move'; ids: string[]; start: [number, number][]; p0: [number, number]; moved: boolean; pushed: boolean }
-  | { m: 'resize'; id: string; anchor: [number, number]; ratio: number; pushed: boolean }
+  | { m: 'resize'; id: string; anchor: [number, number]; grab: [number, number]; ratio: number; pushed: boolean }
   | { m: 'scale'; ids: string[]; start: { x: number; y: number; w: number; h: number }[]; c: [number, number]; r0: number; pushed: boolean }
   | { m: 'marquee'; x0: number; y0: number; x1: number; y1: number };
 
@@ -47,14 +47,20 @@ export default function Canvas() {
       const descs = o.descs.filter((d) => s.sel.includes(d.id));
       if (s.sel.length === 1 && descs[0]) {
         const d = descs[0];
-        // anchor = the opposite (fixed) corner; center always sits between
-        // the pointer and the anchor at distance (w, h) from it
+        // anchor = the opposite (fixed) corner; the dragged corner follows the
+        // pointer. `grab` records where the finger grabbed RELATIVE to the true
+        // corner so the box keeps its exact size at grab time (no jump).
         const anchor: [number, number] =
           handle === 'nw' ? [d.x + d.w, d.y + d.h]
           : handle === 'ne' ? [d.x - d.w, d.y + d.h]
           : handle === 'sw' ? [d.x + d.w, d.y - d.h]
           : [d.x - d.w, d.y - d.h];
-        dragRef.current = { m: 'resize', id: d.id, anchor, ratio: Math.max(0.0001, d.w / Math.max(0.0001, d.h)), pushed: false };
+        const corner: [number, number] =
+          handle === 'nw' ? [d.x - d.w, d.y - d.h]
+          : handle === 'ne' ? [d.x + d.w, d.y - d.h]
+          : handle === 'sw' ? [d.x - d.w, d.y + d.h]
+          : [d.x + d.w, d.y + d.h];
+        dragRef.current = { m: 'resize', id: d.id, anchor, grab: [nx - corner[0], ny - corner[1]], ratio: Math.max(0.0001, d.w / Math.max(0.0001, d.h)), pushed: false };
       } else {
         const cx = descs.reduce((a, d) => a + d.x, 0) / descs.length;
         const cy = descs.reduce((a, d) => a + d.y, 0) / descs.length;
@@ -101,15 +107,16 @@ export default function Canvas() {
         if (!dr.moved && Math.hypot(nx - dr.p0[0], ny - dr.p0[1]) * el.getBoundingClientRect().width < 3) return;
         if (!dr.moved && !dr.pushed) { s.pushHistory(); dr.pushed = true; }
         dr.moved = true;
-        let dx = snapV(dr.start[0][0] + (nx - dr.p0[0])) - dr.start[0][0];
-        let dy = snapV(dr.start[0][1] + (ny - dr.p0[1])) - dr.start[0][1];
+        const canSnap = s.snapOn && !e.altKey; // hold Alt to bypass the grid
+        const rx = dr.start[0][0] + (nx - dr.p0[0]);
+        const ry = dr.start[0][1] + (ny - dr.p0[1]);
+        let dx = (canSnap ? snapV(rx) : rx) - dr.start[0][0];
+        let dy = (canSnap ? snapV(ry) : ry) - dr.start[0][1];
         const g: { v?: boolean; h?: boolean } = {};
-        if (s.snapOn) {
-          const sx = dr.start[0][0] + (nx - dr.p0[0]);
-          const sy = dr.start[0][1] + (ny - dr.p0[1]);
+        if (canSnap) {
           for (const c of [0.5, 0, 1]) {
-            if (Math.abs(sx - c) < s.gridStep / 3) { dx = c - dr.start[0][0]; g.v = true; }
-            if (Math.abs(sy - c) < s.gridStep / 3) { dy = c - dr.start[0][1]; g.h = true; }
+            if (Math.abs(rx - c) < s.gridStep / 3) { dx = c - dr.start[0][0]; g.v = true; }
+            if (Math.abs(ry - c) < s.gridStep / 3) { dy = c - dr.start[0][1]; g.h = true; }
           }
         }
         setGuides(g);
@@ -121,17 +128,24 @@ export default function Canvas() {
       }
       if (dr.m === 'resize') {
         if (!dr.pushed) { s.pushHistory(); dr.pushed = true; }
+        // pointer corrected for where the handle was grabbed → half-extents are
+        // exactly (w, h) at grab time and only change as the pointer moves
+        const px = nx - dr.grab[0];
+        const py = ny - dr.grab[1];
+        const canSnap = s.snapOn && !e.altKey && !e.shiftKey; // Alt bypasses, Shift locks ratio
+        const cx = canSnap ? snapV(px) : px;
+        const cy = canSnap ? snapV(py) : py;
         // half-extents = distance from the fixed corner to the pointer;
         // center = corner moved TOWARD the pointer by those half-extents
-        let w = Math.max(0.002, Math.abs(nx - dr.anchor[0]));
-        let h = Math.max(0.002, Math.abs(ny - dr.anchor[1]));
+        let w = Math.max(0.002, Math.abs(cx - dr.anchor[0]));
+        let h = Math.max(0.002, Math.abs(cy - dr.anchor[1]));
         if (e.shiftKey) {
           // keep the original w:h aspect ratio
           if (w / h > dr.ratio) h = w / dr.ratio;
           else w = h * dr.ratio;
         }
-        const x = dr.anchor[0] + (nx >= dr.anchor[0] ? w : -w);
-        const y = dr.anchor[1] + (ny >= dr.anchor[1] ? h : -h);
+        const x = dr.anchor[0] + (cx >= dr.anchor[0] ? w : -w);
+        const y = dr.anchor[1] + (cy >= dr.anchor[1] ? h : -h);
         s.updateDesc(dr.id, { x: +x.toFixed(5), y: +y.toFixed(5), w: +w.toFixed(5), h: +h.toFixed(5) }, false);
         setSize({ w, h });
         return;
@@ -213,7 +227,7 @@ export default function Canvas() {
   if (!o) return null;
 
   return (
-    <div className="relative flex h-full w-full items-center justify-center overflow-hidden p-4 md:p-6">
+    <div className="relative flex h-full w-full items-center justify-center overflow-hidden p-3 md:p-6" style={{ containerType: 'size' }}>
       <div
         className="pointer-events-none absolute inset-0 opacity-40"
         style={{ background: 'radial-gradient(60% 60% at 50% 40%, rgba(45,212,191,.08), transparent 70%)' }}
@@ -227,7 +241,9 @@ export default function Canvas() {
         className="relative touch-none select-none overflow-hidden rounded-xl border border-white/10 shadow-2xl shadow-black/60"
         style={{
           aspectRatio: `${aspect.w} / ${aspect.h}`,
-          width: `min(100%, calc((100dvh - 15rem) * ${aspect.w / aspect.h}))`,
+          // container-query sizing: always fills the ACTUAL available space
+          // (header, tabs and mobile panels are all accounted for automatically)
+          width: `min(100%, calc(100cqh * ${(aspect.w / aspect.h).toFixed(6)}))`,
           background: 'repeating-conic-gradient(#18181b 0% 25%, #131316 0% 50%) 50% / 28px 28px',
         }}
       >
@@ -289,6 +305,12 @@ export default function Canvas() {
           <>
             <span className="text-zinc-600">|</span>
             <span className="text-teal-300">{s.sel.length} selected</span>
+          </>
+        )}
+        {s.snapOn && (
+          <>
+            <span className="text-zinc-600">|</span>
+            <span className="text-teal-300/80" title="Snap to grid is on — hold Alt to bypass">snap {+(s.gridStep * 100).toFixed(2)}%</span>
           </>
         )}
       </div>

@@ -122,7 +122,7 @@ export const useEditor = create<EditorState>((set, get) => ({
   aspect: 0,
   gridStep: 0.05,
   showGrid: true,
-  snapOn: false,
+  snapOn: true,
   showHitbox: false,
   previewOpacity: 0.7,
   presetOpen: false,
