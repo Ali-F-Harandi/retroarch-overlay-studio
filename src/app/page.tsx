@@ -20,6 +20,7 @@ function RestoreBanner() {
   const s = useEditor();
   const [pending, setPending] = React.useState<{
     cfg: string; fileName: string; savedAt: number;
+    lib?: { rel: string; name: string; url: string; builtin?: boolean }[];
     ui?: { aspect?: number; gridStep?: number; showGrid?: boolean; snapOn?: boolean; showHitbox?: boolean };
   } | null>(null);
   const asked = useRef(false);
@@ -29,7 +30,7 @@ function RestoreBanner() {
     asked.current = true;
     queueMicrotask(() => {
       const ses = loadSession();
-      if (ses) setPending({ cfg: ses.cfg, fileName: ses.fileName, savedAt: ses.savedAt, ui: ses.ui });
+      if (ses) setPending({ cfg: ses.cfg, fileName: ses.fileName, savedAt: ses.savedAt, lib: ses.lib, ui: ses.ui });
     });
   }, []);
 
@@ -46,6 +47,9 @@ function RestoreBanner() {
         className="h-7 rounded-lg bg-teal-400 px-3 text-[11px] font-bold text-zinc-950 hover:bg-teal-300"
         onClick={() => {
           s.loadCfgText(pending.cfg, pending.fileName, 'replace');
+          // bring back the image library too — without it, preset/builtin
+          // artwork would all fall back to unlabeled placeholder boxes
+          if (pending.lib?.length) s.addLibImages(pending.lib);
           // also bring back the saved editor preferences (grid, snap, aspect…)
           if (pending.ui) {
             const ui: Parameters<typeof s.setUI>[0] = {};

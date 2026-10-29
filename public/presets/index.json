@@ -845,7 +845,7 @@
   },
   {
    "id": "gamepads",
-   "count": 202,
+   "count": 207,
    "cfgs": [
     {
      "name": "6-button-fighter",
@@ -3952,6 +3952,91 @@
       "hidden"
      ],
      "thumb": ".thumbs/gamepads/flat/wonderswan.png"
+    },
+    {
+     "name": "Nintendo - Game Boy",
+     "file": "Nintendo - Game Boy.cfg",
+     "path": "gamepads/flat/Nintendo - Game Boy.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 6,
+     "descs": 88,
+     "names": [
+      "landscape-A",
+      "hidden-A",
+      "portrait-A",
+      "landscape-B",
+      "hidden-B",
+      "portrait-B"
+     ],
+     "thumb": ".thumbs/gamepads/flat/Nintendo - Game Boy.png"
+    },
+    {
+     "name": "Nintendo - Game Boy Advance",
+     "file": "Nintendo - Game Boy Advance.cfg",
+     "path": "gamepads/flat/Nintendo - Game Boy Advance.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 6,
+     "descs": 104,
+     "names": [
+      "landscape-A",
+      "hidden-A",
+      "portrait-A",
+      "landscape-B",
+      "hidden-B",
+      "portrait-B"
+     ],
+     "thumb": ".thumbs/gamepads/flat/Nintendo - Game Boy Advance.png"
+    },
+    {
+     "name": "Nintendo - NES",
+     "file": "Nintendo - NES.cfg",
+     "path": "gamepads/flat/Nintendo - NES.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 6,
+     "descs": 88,
+     "names": [
+      "landscape-A",
+      "hidden-A",
+      "portrait-A",
+      "landscape-B",
+      "hidden-B",
+      "portrait-B"
+     ],
+     "thumb": ".thumbs/gamepads/flat/Nintendo - NES.png"
+    },
+    {
+     "name": "Sega - Genesis",
+     "file": "Sega - Genesis.cfg",
+     "path": "gamepads/flat/Sega - Genesis.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 6,
+     "descs": 96,
+     "names": [
+      "landscape-A",
+      "hidden-A",
+      "portrait-A",
+      "landscape-B",
+      "hidden-B",
+      "portrait-B"
+     ],
+     "thumb": ".thumbs/gamepads/flat/Sega - Genesis.png"
+    },
+    {
+     "name": "Nintendo - SNES",
+     "file": "Nintendo - SNES.cfg",
+     "path": "gamepads/flat/Nintendo - SNES.cfg",
+     "dir": "gamepads/flat",
+     "overlays": 6,
+     "descs": 130,
+     "names": [
+      "landscape-A",
+      "hidden-A",
+      "portrait-A",
+      "landscape-B",
+      "hidden-B",
+      "portrait-B"
+     ],
+     "thumb": ".thumbs/gamepads/flat/Nintendo - SNES.png"
     }
    ]
   },

@@ -31,6 +31,7 @@ const ART_GROUPS: { title: string; from: number; to: number }[] = [
   { title: 'Shoulders', from: 10, to: 16 },
   { title: 'Analog', from: 16, to: 18 },
   { title: 'RetroArch', from: 18, to: 26 },
+  { title: 'Hotkeys', from: 26, to: 34 },
 ];
 
 export function AddButton() {

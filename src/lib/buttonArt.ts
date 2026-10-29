@@ -54,6 +54,16 @@ export const BUTTON_ART: ButtonArt[] = [
   { cmd: 'pause_toggle', label: 'Pause', img: 'pause.png', w: 0.055, h: 0.032 },
   { cmd: 'overlay_next', label: 'Next Overlay', img: 'overlay-next.png', w: 0.045, h: 0.045 },
   { cmd: 'osk_toggle', label: 'Keyboard', img: 'osk.png', w: 0.045, h: 0.045 },
+  // Dedicated hotkey icons (same art the original HTML editor generated,
+  // also used by the custom console presets)
+  { cmd: 'save_state', label: 'Quick Save', img: 'hotkey-save-state.png', w: 0.045, h: 0.045 },
+  { cmd: 'load_state', label: 'Quick Load', img: 'hotkey-load-state.png', w: 0.045, h: 0.045 },
+  { cmd: 'rewind', label: 'Rewind', img: 'hotkey-rewind.png', w: 0.045, h: 0.045 },
+  { cmd: 'toggle_slowmotion', label: 'Slow Motion', img: 'hotkey-toggle-slowmotion.png', w: 0.045, h: 0.045 },
+  { cmd: 'toggle_fast_forward', label: 'Fast Forward', img: 'hotkey-toggle-fast-forward.png', w: 0.045, h: 0.045 },
+  { cmd: 'pause_toggle', label: 'Pause', img: 'hotkey-pause-toggle.png', w: 0.045, h: 0.045 },
+  { cmd: 'menu_toggle', label: 'Menu', img: 'hotkey-menu-toggle.png', w: 0.045, h: 0.045 },
+  { cmd: 'screenshot', label: 'Screenshot', img: 'hotkey-screenshot.png', w: 0.045, h: 0.045 },
 ];
 
 /** find art by desc command (case-insensitive, first match) */
