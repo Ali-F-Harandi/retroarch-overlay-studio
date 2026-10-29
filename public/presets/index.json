@@ -15,7 +15,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/borders/gb.jpg"
     },
     {
      "name": "gb-4k",
@@ -25,7 +25,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/borders/gb-4k.jpg"
     },
     {
      "name": "gba-4k",
@@ -35,7 +35,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/borders/gba-4k.jpg"
     },
     {
      "name": "megadrive_animated_border",
@@ -48,7 +48,7 @@
       "3-button",
       "6-button"
      ],
-     "thumb": "borders/animated-border/img-md/pad_up.png"
+     "thumb": ".thumbs/borders/animated-border/megadrive_animated_border.jpg"
     },
     {
      "name": "nes-border",
@@ -60,7 +60,7 @@
      "names": [
       "overlay0"
      ],
-     "thumb": "borders/animated-border/img-nes/l.png"
+     "thumb": ".thumbs/borders/animated-border/nes-border.jpg"
     },
     {
      "name": "nes-smb2-integer",
@@ -70,7 +70,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/borders/nes-smb2-integer.jpg"
     },
     {
      "name": "psx_animated_border",
@@ -82,7 +82,7 @@
      "names": [
       "overlay0"
      ],
-     "thumb": "borders/animated-border/img-psx/THUMB_BTN.png"
+     "thumb": ".thumbs/borders/animated-border/psx_animated_border.jpg"
     },
     {
      "name": "snes-castlevania4",
@@ -92,7 +92,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/borders/snes-castlevania4.jpg"
     },
     {
      "name": "snes-ct-integer",
@@ -102,7 +102,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/borders/snes-ct-integer.jpg"
     },
     {
      "name": "snes-demonscrest-integer",
@@ -112,7 +112,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/borders/snes-demonscrest-integer.jpg"
     },
     {
      "name": "snes-lttp",
@@ -122,7 +122,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/borders/snes-lttp.jpg"
     },
     {
      "name": "snes-metroid-integer",
@@ -132,7 +132,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/borders/snes-metroid-integer.jpg"
     },
     {
      "name": "snes-smas-integer",
@@ -142,7 +142,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/borders/snes-smas-integer.jpg"
     },
     {
      "name": "super_famicom_animated_border",
@@ -157,7 +157,7 @@
       "BZL_DARK",
       "DARK"
      ],
-     "thumb": "borders/animated-border/img-sfc/BEZEL_LEFT.png"
+     "thumb": ".thumbs/borders/animated-border/super_famicom_animated_border.png"
     },
     {
      "name": "tv-integer",
@@ -167,7 +167,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/borders/tv-integer.jpg"
     }
    ]
   },
@@ -183,7 +183,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/ctr/templates/a2600_template.jpg"
     },
     {
      "name": "a2600-integer",
@@ -193,7 +193,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/ctr/borders/a2600-integer.jpg"
     },
     {
      "name": "gb_integer_template",
@@ -203,7 +203,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/ctr/templates/gb_integer_template.jpg"
     },
     {
      "name": "gb_template",
@@ -213,7 +213,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/ctr/templates/gb_template.jpg"
     },
     {
      "name": "gb-alt3",
@@ -223,7 +223,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/ctr/borders/gb-alt3.jpg"
     },
     {
      "name": "gb-alt3-grid-gray",
@@ -233,7 +233,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/ctr/borders/gb-alt3-grid-gray.jpg"
     },
     {
      "name": "gb-alt3-grid-green",
@@ -243,7 +243,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/ctr/borders/gb-alt3-grid-green.jpg"
     },
     {
      "name": "gb-integer",
@@ -253,7 +253,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/ctr/borders/gb-integer.jpg"
     },
     {
      "name": "gb-integer-grid-gray",
@@ -263,7 +263,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/ctr/borders/gb-integer-grid-gray.jpg"
     },
     {
      "name": "mame-phosphors",
@@ -273,7 +273,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/ctr/effects/mame-phosphors.jpg"
     },
     {
      "name": "nes_template",
@@ -283,7 +283,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/ctr/templates/nes_template.jpg"
     },
     {
      "name": "nes-integer",
@@ -293,7 +293,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/ctr/borders/nes-integer.jpg"
     },
     {
      "name": "nes-integer-mame-phosphors",
@@ -303,7 +303,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/ctr/borders/nes-integer-mame-phosphors.jpg"
     },
     {
      "name": "psx_template",
@@ -313,7 +313,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/ctr/templates/psx_template.jpg"
     },
     {
      "name": "psx-alt-integer",
@@ -323,7 +323,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/ctr/borders/psx-alt-integer.jpg"
     },
     {
      "name": "psx-integer",
@@ -333,7 +333,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/ctr/borders/psx-integer.jpg"
     },
     {
      "name": "psx-integer-mame-phosphors",
@@ -343,7 +343,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/ctr/borders/psx-integer-mame-phosphors.jpg"
     },
     {
      "name": "scanlines-alpha",
@@ -353,7 +353,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/ctr/effects/scanlines-alpha.jpg"
     },
     {
      "name": "scanlines-grid-alpha",
@@ -363,7 +363,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/ctr/effects/scanlines-grid-alpha.jpg"
     },
     {
      "name": "snes_template",
@@ -373,7 +373,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/ctr/templates/snes_template.jpg"
     },
     {
      "name": "snes-integer",
@@ -383,7 +383,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/ctr/borders/snes-integer.jpg"
     }
    ]
   },
@@ -399,7 +399,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/nesguy_scanlines/3x-scanlines1-1280x720.jpg"
     },
     {
      "name": "3x-scanlines2-1280x720",
@@ -409,7 +409,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/nesguy_scanlines/3x-scanlines2-1280x720.jpg"
     },
     {
      "name": "3x-scanlines3-1280x720",
@@ -419,7 +419,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/nesguy_scanlines/3x-scanlines3-1280x720.jpg"
     },
     {
      "name": "4x-scanlines1-1920x1080",
@@ -429,7 +429,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/nesguy_scanlines/4x-scanlines1-1920x1080.jpg"
     },
     {
      "name": "4x-scanlines2-1920x1080",
@@ -439,7 +439,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/nesguy_scanlines/4x-scanlines2-1920x1080.jpg"
     },
     {
      "name": "4x-scanlines3-1920x1080",
@@ -449,7 +449,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/nesguy_scanlines/4x-scanlines3-1920x1080.jpg"
     },
     {
      "name": "4x-scanlines4-1920x1080",
@@ -459,7 +459,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/nesguy_scanlines/4x-scanlines4-1920x1080.jpg"
     },
     {
      "name": "5x-scanlines1-1920x1080",
@@ -469,7 +469,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/nesguy_scanlines/5x-scanlines1-1920x1080.jpg"
     },
     {
      "name": "5x-scanlines2-1920x1080",
@@ -479,7 +479,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/nesguy_scanlines/5x-scanlines2-1920x1080.jpg"
     },
     {
      "name": "5x-scanlines3-1920x1080",
@@ -489,7 +489,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/nesguy_scanlines/5x-scanlines3-1920x1080.jpg"
     },
     {
      "name": "5x-scanlines4-1920x1080",
@@ -499,7 +499,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/nesguy_scanlines/5x-scanlines4-1920x1080.jpg"
     },
     {
      "name": "5x-scanlines5-1920x1080",
@@ -509,7 +509,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/nesguy_scanlines/5x-scanlines5-1920x1080.jpg"
     },
     {
      "name": "5x-scanlines6-1920x1080",
@@ -519,7 +519,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/nesguy_scanlines/5x-scanlines6-1920x1080.jpg"
     },
     {
      "name": "5x-scanlines7-1920x1080",
@@ -529,7 +529,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/nesguy_scanlines/5x-scanlines7-1920x1080.jpg"
     },
     {
      "name": "5x-scanlines8-1920x1080",
@@ -539,7 +539,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/nesguy_scanlines/5x-scanlines8-1920x1080.jpg"
     },
     {
      "name": "5x-scanlines9-1920x1080",
@@ -549,7 +549,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/nesguy_scanlines/5x-scanlines9-1920x1080.jpg"
     },
     {
      "name": "aperture-grille-3x",
@@ -559,7 +559,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/aperture-grille-3x.jpg"
     },
     {
      "name": "aperture-grille-4x-1280x720",
@@ -569,7 +569,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/aperture-grille-4x-1280x720.jpg"
     },
     {
      "name": "aperture-grille-4x-1920x1080",
@@ -579,7 +579,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/aperture-grille-4x-1920x1080.jpg"
     },
     {
      "name": "aperture-grille-5x-1280x720",
@@ -589,7 +589,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/aperture-grille-5x-1280x720.jpg"
     },
     {
      "name": "aperture-grille-5x-1440x1080",
@@ -599,7 +599,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/aperture-grille-5x-1440x1080.jpg"
     },
     {
      "name": "aperture-grille-5x-1920x1080",
@@ -609,7 +609,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/aperture-grille-5x-1920x1080.jpg"
     },
     {
      "name": "checker",
@@ -619,7 +619,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/patterns/checker.jpg"
     },
     {
      "name": "checker2x",
@@ -629,7 +629,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/patterns/checker2x.jpg"
     },
     {
      "name": "crt-royale-scanlines-vertical-interlacing",
@@ -639,7 +639,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/crt-royale-scanlines-vertical-interlacing.jpg"
     },
     {
      "name": "crt-royale-scanlines-vertical-interlacing-thin",
@@ -649,7 +649,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/crt-royale-scanlines-vertical-interlacing-thin.jpg"
     },
     {
      "name": "gb_green_shade_integerscale_6x7x",
@@ -659,7 +659,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/patterns/gb_green_shade_integerscale_6x7x.jpg"
     },
     {
      "name": "gb_no_shade_integerscale_6x7x",
@@ -669,7 +669,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/patterns/gb_no_shade_integerscale_6x7x.jpg"
     },
     {
      "name": "gbc_grille_integerscale_6x7x",
@@ -679,7 +679,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/patterns/gbc_grille_integerscale_6x7x.jpg"
     },
     {
      "name": "grid",
@@ -689,7 +689,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/patterns/grid.jpg"
     },
     {
      "name": "grid2x",
@@ -699,7 +699,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/patterns/grid2x.jpg"
     },
     {
      "name": "horizontal",
@@ -709,7 +709,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/crt-bezels/horizontal.jpg"
     },
     {
      "name": "lines",
@@ -719,7 +719,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/patterns/lines.jpg"
     },
     {
      "name": "lines2x",
@@ -729,7 +729,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/patterns/lines2x.jpg"
     },
     {
      "name": "mame-cools-4x",
@@ -739,7 +739,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/mame-cools-4x.jpg"
     },
     {
      "name": "mame-phosphors-3x",
@@ -749,7 +749,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/mame-phosphors-3x.jpg"
     },
     {
      "name": "mame-rgb-3x",
@@ -759,7 +759,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/mame-rgb-3x.jpg"
     },
     {
      "name": "phosphors",
@@ -769,7 +769,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/patterns/phosphors.jpg"
     },
     {
      "name": "scanline-fade-integer-nocrop",
@@ -779,7 +779,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/scanline-fade-integer-nocrop.jpg"
     },
     {
      "name": "scanline-solid-integer-nocrop",
@@ -789,7 +789,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/scanline-solid-integer-nocrop.jpg"
     },
     {
      "name": "scanlines1280x720",
@@ -799,7 +799,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/nesguy_scanlines/scanlines1280x720.jpg"
     },
     {
      "name": "scanlines1920x1080",
@@ -809,7 +809,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/nesguy_scanlines/scanlines1920x1080.jpg"
     },
     {
      "name": "scanlines1920x1080-5x",
@@ -819,7 +819,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/scanlines/nesguy_scanlines/scanlines1920x1080-5x.jpg"
     },
     {
      "name": "trellis",
@@ -829,7 +829,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/patterns/trellis.jpg"
     },
     {
      "name": "vertical",
@@ -839,7 +839,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/effects/crt-bezels/vertical.jpg"
     }
    ]
   },
@@ -857,7 +857,7 @@
      "names": [
       "6-button-fighter"
      ],
-     "thumb": "gamepads/arcade-anim/img/left.png"
+     "thumb": ".thumbs/gamepads/arcade-anim/6-button-fighter.jpg"
     },
     {
      "name": "720-med",
@@ -870,7 +870,7 @@
       "landscape",
       "menu"
      ],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/720-med/720-med.jpg"
     },
     {
      "name": "720-med",
@@ -880,7 +880,7 @@
      "overlays": 2,
      "descs": 40,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/old/720-med.jpg"
     },
     {
      "name": "arcade",
@@ -897,7 +897,7 @@
       "menu",
       "hide"
      ],
-     "thumb": "gamepads/arcade/img/start.png"
+     "thumb": ".thumbs/gamepads/arcade/arcade.png"
     },
     {
      "name": "arcade",
@@ -916,7 +916,7 @@
       "landscape-6",
       "hidden-6"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/flat/arcade.png"
     },
     {
      "name": "arcade-minimal",
@@ -933,7 +933,7 @@
       "menu",
       "hide"
      ],
-     "thumb": "gamepads/arcade-minimal/img/start.png"
+     "thumb": ".thumbs/gamepads/arcade-minimal/arcade-minimal.png"
     },
     {
      "name": "arctic",
@@ -945,7 +945,7 @@
      "names": [
       "landscape"
      ],
-     "thumb": "gamepads/gba_landscape_6x/img/bezel_default.png"
+     "thumb": ".thumbs/gamepads/gba_landscape_6x/arctic.jpg"
     },
     {
      "name": "Atari - 2600",
@@ -959,7 +959,7 @@
       "hidden",
       "portrait"
      ],
-     "thumb": "gamepads/flat/img/atari-stick-background.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Atari - 2600.png"
     },
     {
      "name": "Atari - 7800",
@@ -975,7 +975,7 @@
       "landscape-B",
       "hidden-B"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Atari - 7800.png"
     },
     {
      "name": "Atari - 8-bit",
@@ -994,7 +994,7 @@
       "both",
       "both_mouse"
      ],
-     "thumb": "gamepads/lite/select.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Atari - 8-bit.png"
     },
     {
      "name": "Atari - Jaguar",
@@ -1011,7 +1011,7 @@
       "hidden-3-button",
       "hidden-numpad"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Atari - Jaguar.png"
     },
     {
      "name": "Atari - Lynx",
@@ -1027,7 +1027,7 @@
       "landscape-gb-B-flipped",
       "hidden-gb-B-flipped"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Atari - Lynx.png"
     },
     {
      "name": "atari_lynx",
@@ -1043,7 +1043,7 @@
       "landscape-gb-B-flipped",
       "hidden-gb-B-flipped"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/flat/atari_lynx.png"
     },
     {
      "name": "atari2600",
@@ -1057,7 +1057,7 @@
       "hidden",
       "portrait"
      ],
-     "thumb": "gamepads/flat/img/atari-stick-background.png"
+     "thumb": ".thumbs/gamepads/flat/atari2600.png"
     },
     {
      "name": "atari7800",
@@ -1073,7 +1073,7 @@
       "landscape-B",
       "hidden-B"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/flat/atari7800.png"
     },
     {
      "name": "Bandai - WonderSwan",
@@ -1087,7 +1087,7 @@
       "portrait",
       "hidden"
      ],
-     "thumb": "gamepads/flat/img/X4_wswan.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Bandai - WonderSwan.png"
     },
     {
      "name": "Bandai - WonderSwan Color",
@@ -1101,7 +1101,7 @@
       "portrait",
       "hidden"
      ],
-     "thumb": "gamepads/flat/img/X4_wswan.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Bandai - WonderSwan Color.png"
     },
     {
      "name": "basic_overlay",
@@ -1111,7 +1111,7 @@
      "overlays": 3,
      "descs": 27,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/old/Low-resolution/basic_overlay.jpg"
     },
     {
      "name": "basic_overlay_portrait",
@@ -1121,7 +1121,7 @@
      "overlays": 3,
      "descs": 27,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/old/Low-resolution/basic_overlay_portrait.jpg"
     },
     {
      "name": "black",
@@ -1133,7 +1133,7 @@
      "names": [
       "landscape"
      ],
-     "thumb": "gamepads/gba_landscape_6x/img/bezel_default.png"
+     "thumb": ".thumbs/gamepads/gba_landscape_6x/black.jpg"
     },
     {
      "name": "box-gba",
@@ -1143,7 +1143,7 @@
      "overlays": 4,
      "descs": 34,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/old/box-gba.jpg"
     },
     {
      "name": "box-gba-with-diagonals",
@@ -1153,7 +1153,7 @@
      "overlays": 4,
      "descs": 42,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/old/box-gba-with-diagonals.jpg"
     },
     {
      "name": "box-ps-with-diagonals",
@@ -1163,7 +1163,7 @@
      "overlays": 4,
      "descs": 50,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/old/box-ps-with-diagonals.jpg"
     },
     {
      "name": "box-psx",
@@ -1173,7 +1173,7 @@
      "overlays": 4,
      "descs": 42,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/old/box-psx.jpg"
     },
     {
      "name": "box-psx-diagonals",
@@ -1188,7 +1188,7 @@
       "menu",
       "hide"
      ],
-     "thumb": "gamepads/psx/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/psx/box-psx-diagonals.png"
     },
     {
      "name": "Casio - Loopy",
@@ -1207,7 +1207,7 @@
       "hidden-4-snes-style-2",
       "portrait-4-2"
      ],
-     "thumb": "gamepads/flat/img/thumbstick-background.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Casio - Loopy.png"
     },
     {
      "name": "Cave Story",
@@ -1221,7 +1221,7 @@
       "hidden-A",
       "portrait"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Cave Story.png"
     },
     {
      "name": "cave_story",
@@ -1235,7 +1235,7 @@
       "hidden-A",
       "portrait"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/flat/cave_story.png"
     },
     {
      "name": "cdi",
@@ -1247,7 +1247,7 @@
      "names": [
       "cdi-portrait"
      ],
-     "thumb": "gamepads/cdi_anim_portrait/img/Menu.png"
+     "thumb": ".thumbs/gamepads/cdi_anim_portrait/cdi.jpg"
     },
     {
      "name": "Commodore - 64",
@@ -1266,7 +1266,7 @@
       "both",
       "both_mouse"
      ],
-     "thumb": "gamepads/lite/select.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Commodore - 64.png"
     },
     {
      "name": "Commodore - Amiga",
@@ -1285,7 +1285,7 @@
       "both",
       "both_mouse"
      ],
-     "thumb": "gamepads/lite/select.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Commodore - Amiga.png"
     },
     {
      "name": "Commodore - PET",
@@ -1304,7 +1304,7 @@
       "both",
       "both_mouse"
      ],
-     "thumb": "gamepads/lite/select.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Commodore - PET.png"
     },
     {
      "name": "Commodore - Plus-4",
@@ -1323,7 +1323,7 @@
       "both",
       "both_mouse"
      ],
-     "thumb": "gamepads/lite/select.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Commodore - Plus-4.png"
     },
     {
      "name": "Commodore - VIC-20",
@@ -1342,7 +1342,7 @@
       "both",
       "both_mouse"
      ],
-     "thumb": "gamepads/lite/select.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Commodore - VIC-20.png"
     },
     {
      "name": "cps",
@@ -1356,7 +1356,7 @@
       "hidden-6",
       "portrait-6"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/flat/cps.png"
     },
     {
      "name": "DOS",
@@ -1375,7 +1375,7 @@
       "both",
       "both_mouse"
      ],
-     "thumb": "gamepads/lite/select.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/DOS.png"
     },
     {
      "name": "DOS",
@@ -1394,7 +1394,7 @@
       "both",
       "both_mouse"
      ],
-     "thumb": "gamepads/lite/select.png"
+     "thumb": ".thumbs/gamepads/lite/DOS.png"
     },
     {
      "name": "DOS_2",
@@ -1413,7 +1413,7 @@
       "both",
       "both_mouse"
      ],
-     "thumb": "gamepads/lite/select.png"
+     "thumb": ".thumbs/gamepads/lite/DOS_2.png"
     },
     {
      "name": "dreamcast",
@@ -1429,7 +1429,7 @@
       "hidden-A",
       "hidden-B"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/flat/dreamcast.png"
     },
     {
      "name": "dual-shock",
@@ -1444,7 +1444,7 @@
       "menu",
       "hide"
      ],
-     "thumb": "gamepads/dual-shock/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/dual-shock/dual-shock.png"
     },
     {
      "name": "DualShock",
@@ -1463,7 +1463,7 @@
       "right_alt_landscape",
       "both_alt_landscape"
      ],
-     "thumb": "gamepads/lite/select.png"
+     "thumb": ".thumbs/gamepads/lite/DualShock.png"
     },
     {
      "name": "DualShock_2",
@@ -1482,7 +1482,7 @@
       "right_alt",
       "both_alt"
      ],
-     "thumb": "gamepads/lite/select.png"
+     "thumb": ".thumbs/gamepads/lite/DualShock_2.png"
     },
     {
      "name": "DualShock_Full",
@@ -1501,7 +1501,7 @@
       "right_alt",
       "both_alt"
      ],
-     "thumb": "gamepads/lite/select.png"
+     "thumb": ".thumbs/gamepads/lite/DualShock_Full.png"
     },
     {
      "name": "DualShock_Full2",
@@ -1520,7 +1520,7 @@
       "right_alt",
       "both_alt"
      ],
-     "thumb": "gamepads/lite/select.png"
+     "thumb": ".thumbs/gamepads/lite/DualShock_Full2.png"
     },
     {
      "name": "DualShock_Mix",
@@ -1539,7 +1539,7 @@
       "right_full",
       "both_full"
      ],
-     "thumb": "gamepads/lite/select.png"
+     "thumb": ".thumbs/gamepads/lite/DualShock_Mix.png"
     },
     {
      "name": "Enterprise - 128",
@@ -1558,7 +1558,7 @@
       "both",
       "both_mouse"
      ],
-     "thumb": "gamepads/lite/select.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Enterprise - 128.png"
     },
     {
      "name": "example",
@@ -1568,7 +1568,7 @@
      "overlays": 1,
      "descs": 6,
      "names": [],
-     "thumb": "gamepads/example/left.png"
+     "thumb": ".thumbs/gamepads/example/example.png"
     },
     {
      "name": "FBNeo - Arcade Games",
@@ -1587,7 +1587,7 @@
       "landscape-6",
       "hidden-6"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/FBNeo - Arcade Games.png"
     },
     {
      "name": "flat-base",
@@ -1600,7 +1600,7 @@
       "ztestld",
       "ztestla"
      ],
-     "thumb": "gamepads/flat/old/znub1.png"
+     "thumb": ".thumbs/gamepads/flat/old/flat-base.jpg"
     },
     {
      "name": "flat-gb-wip",
@@ -1610,7 +1610,7 @@
      "overlays": 1,
      "descs": 15,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/flat/old/flat-gb-wip.jpg"
     },
     {
      "name": "flat-n64",
@@ -1623,7 +1623,7 @@
       "flat64d",
       "flat64a"
      ],
-     "thumb": "gamepads/flat/old/znub2.png"
+     "thumb": ".thumbs/gamepads/flat/old/flat-n64.jpg"
     },
     {
      "name": "flat-ws",
@@ -1633,7 +1633,7 @@
      "overlays": 1,
      "descs": 12,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/flat/old/flat-ws.jpg"
     },
     {
      "name": "flip_phone",
@@ -1645,7 +1645,7 @@
      "names": [
       "flip_phone_portrait"
      ],
-     "thumb": "gamepads/flip_phone/img/soft1.png"
+     "thumb": ".thumbs/gamepads/flip_phone/flip_phone.png"
     },
     {
      "name": "gameboy",
@@ -1662,7 +1662,7 @@
       "hidden-B",
       "portrait-B"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/flat/gameboy.png"
     },
     {
      "name": "gameboy",
@@ -1677,7 +1677,7 @@
       "menu",
       "hide"
      ],
-     "thumb": "gamepads/gameboy/img/start.png"
+     "thumb": ".thumbs/gamepads/gameboy/gameboy.png"
     },
     {
      "name": "gameboy-landscape",
@@ -1687,7 +1687,7 @@
      "overlays": 3,
      "descs": 26,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/old/gameboy-landscape.jpg"
     },
     {
      "name": "gameboy-portrait",
@@ -1697,7 +1697,7 @@
      "overlays": 3,
      "descs": 26,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/old/gameboy-portrait.jpg"
     },
     {
      "name": "gamecube",
@@ -1711,7 +1711,7 @@
       "hidden",
       "portrait"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/flat/gamecube.png"
     },
     {
      "name": "GamePark - GP32",
@@ -1730,7 +1730,7 @@
       "landscape-4-snes-style-B",
       "hidden-4-snes-style-B"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/GamePark - GP32.png"
     },
     {
      "name": "gb_big",
@@ -1743,7 +1743,7 @@
       "GameBoy",
       "GameBoyColor"
      ],
-     "thumb": "gamepads/gb_anim_portrait/img/gb_left.png"
+     "thumb": ".thumbs/gamepads/gb_anim_portrait/gb_big.jpg"
     },
     {
      "name": "gba",
@@ -1762,7 +1762,7 @@
       "landscape-4-snes-style-B",
       "hidden-4-snes-style-B"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/flat/gba.png"
     },
     {
      "name": "gba",
@@ -1777,7 +1777,7 @@
       "menu",
       "hide"
      ],
-     "thumb": "gamepads/gba/img/start.png"
+     "thumb": ".thumbs/gamepads/gba/gba.png"
     },
     {
      "name": "gba",
@@ -1796,7 +1796,7 @@
       "portrait_turbo_a_b",
       "landscape_turbo_a"
      ],
-     "thumb": "gamepads/gba_easy_touch/img/d_button_horizontal_left.png"
+     "thumb": ".thumbs/gamepads/gba_easy_touch/gba.png"
     },
     {
      "name": "GBA",
@@ -1806,7 +1806,7 @@
      "overlays": 2,
      "descs": 38,
      "names": [],
-     "thumb": "gamepads/lite/select.png"
+     "thumb": ".thumbs/gamepads/lite/GBA.png"
     },
     {
      "name": "GBA_2",
@@ -1816,7 +1816,7 @@
      "overlays": 2,
      "descs": 36,
      "names": [],
-     "thumb": "gamepads/lite/select.png"
+     "thumb": ".thumbs/gamepads/lite/GBA_2.png"
     },
     {
      "name": "gba_dpad_fix",
@@ -1835,7 +1835,7 @@
       "portrait_turbo_a_b",
       "landscape_turbo_a"
      ],
-     "thumb": "gamepads/gba_easy_touch/img/d_button_horizontal_left.png"
+     "thumb": ".thumbs/gamepads/gba_easy_touch/gba_dpad_fix.png"
     },
     {
      "name": "gba-control-purple",
@@ -1847,7 +1847,7 @@
      "names": [
       "gba_control"
      ],
-     "thumb": "gamepads/gba-anim_landscape/img/l.png"
+     "thumb": ".thumbs/gamepads/gba-anim_landscape/gba-control-purple.jpg"
     },
     {
      "name": "gba-grey",
@@ -1862,7 +1862,7 @@
       "menu",
       "hide"
      ],
-     "thumb": "gamepads/gba-grey/img/start.png"
+     "thumb": ".thumbs/gamepads/gba-grey/gba-grey.png"
     },
     {
      "name": "GCE - Vectrex",
@@ -1881,7 +1881,7 @@
       "hidden-4-snes-style-2",
       "portrait-4-2"
      ],
-     "thumb": "gamepads/flat/img/thumbstick-background.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/GCE - Vectrex.png"
     },
     {
      "name": "genesis",
@@ -1898,7 +1898,7 @@
       "hidden-3-button",
       "hidden-6-button"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/flat/genesis.png"
     },
     {
      "name": "genesis",
@@ -1915,7 +1915,7 @@
       "menu",
       "hide"
      ],
-     "thumb": "gamepads/genesis/img/start.png"
+     "thumb": ".thumbs/gamepads/genesis/genesis.png"
     },
     {
      "name": "genesis_and_sms",
@@ -1934,7 +1934,7 @@
       "landscape-sms",
       "portrait-sms"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/flat/genesis_and_sms.png"
     },
     {
      "name": "genesis3-landscape",
@@ -1944,7 +1944,7 @@
      "overlays": 3,
      "descs": 26,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/old/genesis3-landscape.jpg"
     },
     {
      "name": "genesis3-portrait",
@@ -1954,7 +1954,7 @@
      "overlays": 3,
      "descs": 26,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/old/genesis3-portrait.jpg"
     },
     {
      "name": "genesis6-landscape",
@@ -1964,7 +1964,7 @@
      "overlays": 3,
      "descs": 29,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/old/genesis6-landscape.jpg"
     },
     {
      "name": "genesis6-portrait",
@@ -1974,7 +1974,7 @@
      "overlays": 3,
      "descs": 29,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/old/genesis6-portrait.jpg"
     },
     {
      "name": "Hartung - Game Master",
@@ -1991,7 +1991,7 @@
       "hidden-B",
       "portrait-B"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Hartung - Game Master.png"
     },
     {
      "name": "HBMAME",
@@ -2010,7 +2010,7 @@
       "landscape-6",
       "hidden-6"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/HBMAME.png"
     },
     {
      "name": "indigo",
@@ -2022,7 +2022,7 @@
      "names": [
       "landscape"
      ],
-     "thumb": "gamepads/gba_landscape_6x/img/bezel_default.png"
+     "thumb": ".thumbs/gamepads/gba_landscape_6x/indigo.jpg"
     },
     {
      "name": "Infocom - Z-Machine",
@@ -2041,7 +2041,7 @@
       "both",
       "both_mouse"
      ],
-     "thumb": "gamepads/lite/select.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Infocom - Z-Machine.png"
     },
     {
      "name": "lynx-landscape",
@@ -2051,7 +2051,7 @@
      "overlays": 1,
      "descs": 14,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/old/lynx-landscape.jpg"
     },
     {
      "name": "MAME",
@@ -2070,7 +2070,7 @@
       "landscape-6",
       "hidden-6"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/MAME.png"
     },
     {
      "name": "MAME 2000",
@@ -2089,7 +2089,7 @@
       "landscape-6",
       "hidden-6"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/MAME 2000.png"
     },
     {
      "name": "MAME 2003",
@@ -2108,7 +2108,7 @@
       "landscape-6",
       "hidden-6"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/MAME 2003.png"
     },
     {
      "name": "MAME 2003-Plus",
@@ -2127,7 +2127,7 @@
       "landscape-6",
       "hidden-6"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/MAME 2003-Plus.png"
     },
     {
      "name": "MAME 2010",
@@ -2146,7 +2146,7 @@
       "landscape-6",
       "hidden-6"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/MAME 2010.png"
     },
     {
      "name": "MAME 2015",
@@ -2165,7 +2165,7 @@
       "landscape-6",
       "hidden-6"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/MAME 2015.png"
     },
     {
      "name": "MAME 2016",
@@ -2184,7 +2184,7 @@
       "landscape-6",
       "hidden-6"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/MAME 2016.png"
     },
     {
      "name": "Microsoft - MSX",
@@ -2203,7 +2203,7 @@
       "both",
       "both_mouse"
      ],
-     "thumb": "gamepads/lite/select.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Microsoft - MSX.png"
     },
     {
      "name": "Microsoft - MSX2",
@@ -2222,7 +2222,7 @@
       "both",
       "both_mouse"
      ],
-     "thumb": "gamepads/lite/select.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Microsoft - MSX2.png"
     },
     {
      "name": "n64",
@@ -2237,7 +2237,7 @@
       "portrait-analog",
       "landscape-analog"
      ],
-     "thumb": "gamepads/n64/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/n64/n64.png"
     },
     {
      "name": "n64",
@@ -2254,7 +2254,7 @@
       "menu",
       "hide"
      ],
-     "thumb": "gamepads/n64/old/start.png"
+     "thumb": ".thumbs/gamepads/n64/old/n64.png"
     },
     {
      "name": "NDS",
@@ -2273,7 +2273,7 @@
       "hidden_stylus1_landscape",
       "hidden_stylus2_landscape"
      ],
-     "thumb": "gamepads/lite/select.png"
+     "thumb": ".thumbs/gamepads/lite/NDS.png"
     },
     {
      "name": "NEC - PC Engine - TurboGrafx 16",
@@ -2292,7 +2292,7 @@
       "hidden-6",
       "portrait-6"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/NEC - PC Engine - TurboGrafx 16.png"
     },
     {
      "name": "NEC - PC Engine CD - TurboGrafx-CD",
@@ -2311,7 +2311,7 @@
       "hidden-6",
       "portrait-6"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/NEC - PC Engine CD - TurboGrafx-CD.png"
     },
     {
      "name": "NEC - PC Engine SuperGrafx",
@@ -2330,7 +2330,7 @@
       "hidden-6",
       "portrait-6"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/NEC - PC Engine SuperGrafx.png"
     },
     {
      "name": "NEC - PC-8001",
@@ -2349,7 +2349,7 @@
       "both",
       "both_mouse"
      ],
-     "thumb": "gamepads/lite/select.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/NEC - PC-8001.png"
     },
     {
      "name": "NEC - PC-98",
@@ -2368,7 +2368,7 @@
       "both",
       "both_mouse"
      ],
-     "thumb": "gamepads/lite/select.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/NEC - PC-98.png"
     },
     {
      "name": "NEC - PC-FX",
@@ -2382,7 +2382,7 @@
       "hidden-6",
       "portrait-6"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/NEC - PC-FX.png"
     },
     {
      "name": "neo-ds-portrait",
@@ -2395,7 +2395,7 @@
       "portrait-digital",
       "portrait-hidden-digital"
      ],
-     "thumb": "gamepads/neo-ds-portrait/img/clear/dpad_down.png"
+     "thumb": ".thumbs/gamepads/neo-ds-portrait/neo-ds-portrait.png"
     },
     {
      "name": "neo-retropad",
@@ -2414,7 +2414,7 @@
       "portrait-hidden-digital",
       "portrait-hidden-analog"
      ],
-     "thumb": "gamepads/neo-retropad/img/default/dpad_down.png"
+     "thumb": ".thumbs/gamepads/neo-retropad/neo-retropad.png"
     },
     {
      "name": "neo-retropad_collapsed",
@@ -2433,7 +2433,7 @@
       "portrait-hidden-digital",
       "portrait-hidden-analog"
      ],
-     "thumb": "gamepads/neo-retropad/img/default/dpad_down.png"
+     "thumb": ".thumbs/gamepads/neo-retropad/neo-retropad_collapsed.png"
     },
     {
      "name": "neo-retropad-clear",
@@ -2452,7 +2452,7 @@
       "portrait-hidden-digital",
       "portrait-hidden-analog"
      ],
-     "thumb": "gamepads/neo-retropad/img/clear/dpad_down.png"
+     "thumb": ".thumbs/gamepads/neo-retropad/neo-retropad-clear.png"
     },
     {
      "name": "neo-retropad-clear_collapsed",
@@ -2471,7 +2471,7 @@
       "portrait-hidden-digital",
       "portrait-hidden-analog"
      ],
-     "thumb": "gamepads/neo-retropad/img/clear/dpad_down.png"
+     "thumb": ".thumbs/gamepads/neo-retropad/neo-retropad-clear_collapsed.png"
     },
     {
      "name": "neogeo",
@@ -2483,7 +2483,7 @@
      "names": [
       "neogeo"
      ],
-     "thumb": "gamepads/arcade-anim/img/left.png"
+     "thumb": ".thumbs/gamepads/arcade-anim/neogeo.jpg"
     },
     {
      "name": "neogeo",
@@ -2502,7 +2502,7 @@
       "hidden-4-snes-style-2",
       "portrait-4-2"
      ],
-     "thumb": "gamepads/flat/img/thumbstick-background.png"
+     "thumb": ".thumbs/gamepads/flat/neogeo.png"
     },
     {
      "name": "neogeo_pocket",
@@ -2519,7 +2519,7 @@
       "hidden-B",
       "portrait-B"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/flat/neogeo_pocket.png"
     },
     {
      "name": "nes",
@@ -2538,7 +2538,7 @@
       "portrait-gb-A",
       "portrait-gb-B"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/flat/nes.png"
     },
     {
      "name": "nes",
@@ -2553,7 +2553,7 @@
       "menu",
       "hide"
      ],
-     "thumb": "gamepads/nes/img/start.png"
+     "thumb": ".thumbs/gamepads/nes/nes.png"
     },
     {
      "name": "nes-landscape",
@@ -2563,7 +2563,7 @@
      "overlays": 3,
      "descs": 26,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/old/nes-landscape.jpg"
     },
     {
      "name": "nes-portrait",
@@ -2573,7 +2573,7 @@
      "overlays": 3,
      "descs": 26,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/old/nes-portrait.jpg"
     },
     {
      "name": "nes-small-ab",
@@ -2583,7 +2583,7 @@
      "overlays": 1,
      "descs": 8,
      "names": [],
-     "thumb": "gamepads/nes-small/img/dpad-left_no-mark.png"
+     "thumb": ".thumbs/gamepads/nes-small/nes-small-ab.png"
     },
     {
      "name": "nes-small-abxy",
@@ -2593,7 +2593,7 @@
      "overlays": 1,
      "descs": 10,
      "names": [],
-     "thumb": "gamepads/nes-small/img/dpad-left_no-mark.png"
+     "thumb": ".thumbs/gamepads/nes-small/nes-small-abxy.png"
     },
     {
      "name": "Nintendo - Family Computer Disk System",
@@ -2612,7 +2612,7 @@
       "portrait-gb-A",
       "portrait-gb-B"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Nintendo - Family Computer Disk System.png"
     },
     {
      "name": "Nintendo - Game Boy",
@@ -2629,7 +2629,7 @@
       "hidden-B",
       "portrait-B"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Nintendo - Game Boy.png"
     },
     {
      "name": "Nintendo - Game Boy Advance",
@@ -2648,7 +2648,7 @@
       "landscape-4-snes-style-B",
       "hidden-4-snes-style-B"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Nintendo - Game Boy Advance.png"
     },
     {
      "name": "Nintendo - Game Boy Color",
@@ -2665,7 +2665,7 @@
       "hidden-B",
       "portrait-B"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Nintendo - Game Boy Color.png"
     },
     {
      "name": "Nintendo - GameCube",
@@ -2679,7 +2679,7 @@
       "hidden",
       "portrait"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Nintendo - GameCube.png"
     },
     {
      "name": "Nintendo - Nintendo 3DS",
@@ -2693,7 +2693,7 @@
       "portrait",
       "hidden"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Nintendo - Nintendo 3DS.png"
     },
     {
      "name": "Nintendo - Nintendo 64",
@@ -2708,7 +2708,7 @@
       "portrait_analog",
       "portrait_d-pad"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Nintendo - Nintendo 64.png"
     },
     {
      "name": "Nintendo - Nintendo 64DD",
@@ -2723,7 +2723,7 @@
       "portrait_analog",
       "portrait_d-pad"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Nintendo - Nintendo 64DD.png"
     },
     {
      "name": "Nintendo - Nintendo DS",
@@ -2737,7 +2737,7 @@
       "portrait",
       "hidden"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Nintendo - Nintendo DS.png"
     },
     {
      "name": "Nintendo - Nintendo DSi",
@@ -2751,7 +2751,7 @@
       "portrait",
       "hidden"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Nintendo - Nintendo DSi.png"
     },
     {
      "name": "Nintendo - Nintendo Entertainment System",
@@ -2770,7 +2770,7 @@
       "portrait-gb-A",
       "portrait-gb-B"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Nintendo - Nintendo Entertainment System.png"
     },
     {
      "name": "Nintendo - Pokemon Mini",
@@ -2787,7 +2787,7 @@
       "hidden-B",
       "portrait-B"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Nintendo - Pokemon Mini.png"
     },
     {
      "name": "Nintendo - Satellaview",
@@ -2803,7 +2803,7 @@
       "hidden-A",
       "hidden-B"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Nintendo - Satellaview.png"
     },
     {
      "name": "Nintendo - Sufami Turbo",
@@ -2819,7 +2819,7 @@
       "hidden-A",
       "hidden-B"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Nintendo - Sufami Turbo.png"
     },
     {
      "name": "Nintendo - Super Nintendo Entertainment System",
@@ -2835,7 +2835,7 @@
       "hidden-A",
       "hidden-B"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Nintendo - Super Nintendo Entertainment System.png"
     },
     {
      "name": "Nintendo - Virtual Boy",
@@ -2849,7 +2849,7 @@
       "hidden",
       "portrait"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Nintendo - Virtual Boy.png"
     },
     {
      "name": "Nintendo - Wii",
@@ -2868,7 +2868,7 @@
       "nunchuk landscape",
       "nunchuk hidden"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Nintendo - Wii.png"
     },
     {
      "name": "Nintendo - Wii (Digital)",
@@ -2887,7 +2887,7 @@
       "nunchuk landscape",
       "nunchuk hidden"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Nintendo - Wii (Digital).png"
     },
     {
      "name": "Nintendo - Wii U",
@@ -2906,7 +2906,7 @@
       "hidden-0",
       "hidden-1"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Nintendo - Wii U.png"
     },
     {
      "name": "nintendo64",
@@ -2923,7 +2923,7 @@
       "portrait_d-pad",
       "portrait_analog"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/flat/nintendo64.png"
     },
     {
      "name": "one-handed-v1",
@@ -2939,7 +2939,7 @@
       "double",
       "analog"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/flat/one-handed-v1.png"
     },
     {
      "name": "one-handed-v2",
@@ -2954,7 +2954,7 @@
       "double",
       "analog-double"
      ],
-     "thumb": "gamepads/flat/img/A.png"
+     "thumb": ".thumbs/gamepads/flat/one-handed-v2.png"
     },
     {
      "name": "one-handed-v2-left",
@@ -2969,7 +2969,7 @@
       "double",
       "analog-double"
      ],
-     "thumb": "gamepads/flat/img/A.png"
+     "thumb": ".thumbs/gamepads/flat/one-handed-v2-left.png"
     },
     {
      "name": "opium_2",
@@ -2979,7 +2979,7 @@
      "overlays": 3,
      "descs": 27,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/old/Low-resolution/opium_2.jpg"
     },
     {
      "name": "opium_3",
@@ -2989,7 +2989,7 @@
      "overlays": 3,
      "descs": 27,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/old/Low-resolution/opium_3.jpg"
     },
     {
      "name": "opium_4",
@@ -2999,7 +2999,7 @@
      "overlays": 3,
      "descs": 27,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/old/Low-resolution/opium_4.jpg"
     },
     {
      "name": "opium_5",
@@ -3009,7 +3009,7 @@
      "overlays": 3,
      "descs": 27,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/old/Low-resolution/opium_5.jpg"
     },
     {
      "name": "opium_5b",
@@ -3019,7 +3019,7 @@
      "overlays": 3,
      "descs": 27,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/old/Low-resolution/opium_5b.jpg"
     },
     {
      "name": "opium_6",
@@ -3029,7 +3029,7 @@
      "overlays": 3,
      "descs": 27,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/old/Low-resolution/opium_6.jpg"
     },
     {
      "name": "opium_7",
@@ -3039,7 +3039,7 @@
      "overlays": 3,
      "descs": 27,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/old/Low-resolution/opium_7.jpg"
     },
     {
      "name": "opium_8",
@@ -3049,7 +3049,7 @@
      "overlays": 3,
      "descs": 27,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/old/Low-resolution/opium_8.jpg"
     },
     {
      "name": "orange",
@@ -3061,7 +3061,7 @@
      "names": [
       "landscape"
      ],
-     "thumb": "gamepads/gba_landscape_6x/img/bezel_default.png"
+     "thumb": ".thumbs/gamepads/gba_landscape_6x/orange.jpg"
     },
     {
      "name": "palm",
@@ -3074,7 +3074,7 @@
       "palm",
       "hidden"
      ],
-     "thumb": "gamepads/flat/img/X4_wswan.png"
+     "thumb": ".thumbs/gamepads/flat/palm.png"
     },
     {
      "name": "pc-fx",
@@ -3088,7 +3088,7 @@
       "hidden",
       "portrait"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/flat/pc-fx.png"
     },
     {
      "name": "Piixel Retropad",
@@ -3107,7 +3107,7 @@
       "landscape-01",
       "portrait-01"
      ],
-     "thumb": "gamepads/Piixel-Gamepads/Retropad/img/piixel-rpd-logo.png"
+     "thumb": ".thumbs/gamepads/Piixel-Gamepads/Retropad/Piixel Retropad.png"
     },
     {
      "name": "Piixel Retropad Neo",
@@ -3126,7 +3126,7 @@
       "landscape-01",
       "portrait-01"
      ],
-     "thumb": "gamepads/Piixel-Gamepads/Retropad/img/piixel-neo-logo.png"
+     "thumb": ".thumbs/gamepads/Piixel-Gamepads/Retropad/Piixel Retropad Neo.png"
     },
     {
      "name": "pokemini",
@@ -3143,7 +3143,7 @@
       "hidden-B",
       "portrait-B"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/flat/pokemini.png"
     },
     {
      "name": "psp",
@@ -3159,7 +3159,7 @@
       "hidden-A",
       "hidden-B"
      ],
-     "thumb": "gamepads/flat/img/dpad-left_psx.png"
+     "thumb": ".thumbs/gamepads/flat/psp.png"
     },
     {
      "name": "PSP",
@@ -3178,7 +3178,7 @@
       "full_digital_portrait",
       "full_analog_portrait"
      ],
-     "thumb": "gamepads/lite/select.png"
+     "thumb": ".thumbs/gamepads/lite/PSP.png"
     },
     {
      "name": "psx",
@@ -3197,7 +3197,7 @@
       "hidden-0",
       "hidden-1"
      ],
-     "thumb": "gamepads/flat/img/dpad-left_psx.png"
+     "thumb": ".thumbs/gamepads/flat/psx.png"
     },
     {
      "name": "psx",
@@ -3212,7 +3212,7 @@
       "menu",
       "hide"
      ],
-     "thumb": "gamepads/psx/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/psx/psx.png"
     },
     {
      "name": "PSX",
@@ -3222,7 +3222,7 @@
      "overlays": 2,
      "descs": 38,
      "names": [],
-     "thumb": "gamepads/lite/select.png"
+     "thumb": ".thumbs/gamepads/lite/PSX.png"
     },
     {
      "name": "PSX_FrameAdvance",
@@ -3232,7 +3232,7 @@
      "overlays": 2,
      "descs": 42,
      "names": [],
-     "thumb": "gamepads/lite/select.png"
+     "thumb": ".thumbs/gamepads/lite/PSX_FrameAdvance.png"
     },
     {
      "name": "psx-black",
@@ -3247,7 +3247,7 @@
       "menu",
       "hide"
      ],
-     "thumb": "gamepads/dual-shock/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/dual-shock/psx-black.png"
     },
     {
      "name": "psx-fast",
@@ -3264,7 +3264,7 @@
       "hidden-0",
       "hidden-1"
      ],
-     "thumb": "gamepads/flat/img/dpad-left_psx.png"
+     "thumb": ".thumbs/gamepads/flat/psx-fast.png"
     },
     {
      "name": "psx-landscape",
@@ -3274,7 +3274,7 @@
      "overlays": 3,
      "descs": 32,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/old/psx-landscape.jpg"
     },
     {
      "name": "psx-portrait",
@@ -3284,7 +3284,7 @@
      "overlays": 3,
      "descs": 32,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/old/psx-portrait.jpg"
     },
     {
      "name": "psx-simple",
@@ -3297,7 +3297,7 @@
       "landscape",
       "hidden"
      ],
-     "thumb": "gamepads/flat/img/dpad-left_psx.png"
+     "thumb": ".thumbs/gamepads/flat/psx-simple.png"
     },
     {
      "name": "quadpad",
@@ -3312,7 +3312,7 @@
       "portrait",
       "portrait-options"
      ],
-     "thumb": "gamepads/quadpad/img/dpad_up.png"
+     "thumb": ".thumbs/gamepads/quadpad/quadpad.png"
     },
     {
      "name": "retropad",
@@ -3331,7 +3331,7 @@
       "hidden-0",
       "hidden-1"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/retropad.png"
     },
     {
      "name": "retropad",
@@ -3350,7 +3350,7 @@
       "hidden-0",
       "hidden-1"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/flat/retropad.png"
     },
     {
      "name": "retropad",
@@ -3369,7 +3369,7 @@
       "landscape-analog-menu",
       "portrait-menu"
      ],
-     "thumb": "gamepads/retropad/img/start.png"
+     "thumb": ".thumbs/gamepads/retropad/retropad.png"
     },
     {
      "name": "retropad-fast",
@@ -3386,7 +3386,7 @@
       "hidden-0",
       "hidden-1"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/flat/retropad-fast.png"
     },
     {
      "name": "retropad-fast-forward",
@@ -3403,7 +3403,7 @@
       "hidden-0",
       "hidden-1"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/flat/retropad-fast-forward.png"
     },
     {
      "name": "rgpad_modern",
@@ -3422,7 +3422,7 @@
       "portrait-basic-mini",
       "portrait-basic-mini-hidden"
      ],
-     "thumb": "gamepads/rgpad/modern/dpad_up.png"
+     "thumb": ".thumbs/gamepads/rgpad/rgpad_modern.png"
     },
     {
      "name": "rgpad_retro",
@@ -3441,7 +3441,7 @@
       "portrait-basic-mini",
       "portrait-basic-mini-hidden"
      ],
-     "thumb": "gamepads/rgpad/retro/dpad_up.png"
+     "thumb": ".thumbs/gamepads/rgpad/rgpad_retro.png"
     },
     {
      "name": "saturn",
@@ -3455,7 +3455,7 @@
       "portrait",
       "hidden"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/flat/saturn.png"
     },
     {
      "name": "scummvm_mousemode",
@@ -3468,7 +3468,7 @@
       "hide",
       "landscape"
      ],
-     "thumb": "gamepads/scummvm/img/next.png"
+     "thumb": ".thumbs/gamepads/scummvm/scummvm_mousemode.png"
     },
     {
      "name": "Sega - 32X",
@@ -3485,7 +3485,7 @@
       "hidden-3-button",
       "hidden-6-button"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Sega - 32X.png"
     },
     {
      "name": "Sega - Dreamcast",
@@ -3501,7 +3501,7 @@
       "hidden-A",
       "hidden-B"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Sega - Dreamcast.png"
     },
     {
      "name": "Sega - Game Gear",
@@ -3515,7 +3515,7 @@
       "portrait-sms",
       "hidden-sms"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Sega - Game Gear.png"
     },
     {
      "name": "Sega - Master System - Mark III",
@@ -3529,7 +3529,7 @@
       "portrait-sms",
       "hidden-sms"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Sega - Master System - Mark III.png"
     },
     {
      "name": "Sega - Mega Drive - Genesis",
@@ -3546,7 +3546,7 @@
       "hidden-3-button",
       "hidden-6-button"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Sega - Mega Drive - Genesis.png"
     },
     {
      "name": "Sega - Mega-CD - Sega CD",
@@ -3563,7 +3563,7 @@
       "hidden-3-button",
       "hidden-6-button"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Sega - Mega-CD - Sega CD.png"
     },
     {
      "name": "Sega - Saturn",
@@ -3577,7 +3577,7 @@
       "portrait",
       "hidden"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Sega - Saturn.png"
     },
     {
      "name": "Sega - SG-1000",
@@ -3591,7 +3591,7 @@
       "portrait",
       "hidden"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Sega - SG-1000.png"
     },
     {
      "name": "sms",
@@ -3607,7 +3607,7 @@
       "landscape-B",
       "hidden-B"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/flat/sms.png"
     },
     {
      "name": "snes",
@@ -3623,7 +3623,7 @@
       "hidden-A",
       "hidden-B"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/flat/snes.png"
     },
     {
      "name": "snes",
@@ -3638,7 +3638,7 @@
       "menu",
       "hide"
      ],
-     "thumb": "gamepads/snes/img/start.png"
+     "thumb": ".thumbs/gamepads/snes/snes.png"
     },
     {
      "name": "SNES",
@@ -3648,7 +3648,7 @@
      "overlays": 2,
      "descs": 25,
      "names": [],
-     "thumb": "gamepads/lite/select.png"
+     "thumb": ".thumbs/gamepads/lite/SNES.png"
     },
     {
      "name": "SNES_2",
@@ -3658,7 +3658,7 @@
      "overlays": 2,
      "descs": 27,
      "names": [],
-     "thumb": "gamepads/lite/select.png"
+     "thumb": ".thumbs/gamepads/lite/SNES_2.png"
     },
     {
      "name": "snes-landscape",
@@ -3668,7 +3668,7 @@
      "overlays": 3,
      "descs": 30,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/old/snes-landscape.jpg"
     },
     {
      "name": "snes-portrait",
@@ -3678,7 +3678,7 @@
      "overlays": 3,
      "descs": 30,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/gamepads/old/snes-portrait.jpg"
     },
     {
      "name": "SNK - Neo Geo",
@@ -3697,7 +3697,7 @@
       "hidden-4-snes-style-2",
       "portrait-4-2"
      ],
-     "thumb": "gamepads/flat/img/thumbstick-background.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/SNK - Neo Geo.png"
     },
     {
      "name": "SNK - Neo Geo CD",
@@ -3716,7 +3716,7 @@
       "hidden-4-snes-style-2",
       "portrait-4-2"
      ],
-     "thumb": "gamepads/flat/img/thumbstick-background.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/SNK - Neo Geo CD.png"
     },
     {
      "name": "SNK - Neo Geo Pocket",
@@ -3733,7 +3733,7 @@
       "hidden-B",
       "portrait-B"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/SNK - Neo Geo Pocket.png"
     },
     {
      "name": "SNK - Neo Geo Pocket Color",
@@ -3750,7 +3750,7 @@
       "hidden-B",
       "portrait-B"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/SNK - Neo Geo Pocket Color.png"
     },
     {
      "name": "Sony - PlayStation",
@@ -3769,7 +3769,7 @@
       "hidden-0",
       "hidden-1"
      ],
-     "thumb": "gamepads/flat/img/dpad-left_psx.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Sony - PlayStation.png"
     },
     {
      "name": "Sony - PlayStation 2",
@@ -3788,7 +3788,7 @@
       "hidden-0",
       "hidden-1"
      ],
-     "thumb": "gamepads/flat/img/dpad-left_psx.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Sony - PlayStation 2.png"
     },
     {
      "name": "Sony - PlayStation 3",
@@ -3807,7 +3807,7 @@
       "hidden-0",
       "hidden-1"
      ],
-     "thumb": "gamepads/flat/img/dpad-left_psx.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Sony - PlayStation 3.png"
     },
     {
      "name": "Sony - PlayStation 3 (PSN)",
@@ -3826,7 +3826,7 @@
       "hidden-0",
       "hidden-1"
      ],
-     "thumb": "gamepads/flat/img/dpad-left_psx.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Sony - PlayStation 3 (PSN).png"
     },
     {
      "name": "Sony - PlayStation Portable",
@@ -3842,7 +3842,7 @@
       "hidden-A",
       "hidden-B"
      ],
-     "thumb": "gamepads/flat/img/dpad-left_psx.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Sony - PlayStation Portable.png"
     },
     {
      "name": "Sony - PlayStation Portable (PSN)",
@@ -3858,7 +3858,7 @@
       "hidden-A",
       "hidden-B"
      ],
-     "thumb": "gamepads/flat/img/dpad-left_psx.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Sony - PlayStation Portable (PSN).png"
     },
     {
      "name": "The 3DO Company - 3DO",
@@ -3872,7 +3872,7 @@
       "portrait",
       "hidden"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/The 3DO Company - 3DO.png"
     },
     {
      "name": "turbografx-16",
@@ -3888,7 +3888,7 @@
       "landscape-B",
       "hidden-B"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/flat/turbografx-16.png"
     },
     {
      "name": "turbografx-16_6-button",
@@ -3907,7 +3907,7 @@
       "hidden-6",
       "portrait-6"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/flat/turbografx-16_6-button.png"
     },
     {
      "name": "Vircon32",
@@ -3923,7 +3923,7 @@
       "hidden-A",
       "hidden-B"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/Named_Overlays/Vircon32.png"
     },
     {
      "name": "virtualboy",
@@ -3937,7 +3937,7 @@
       "hidden",
       "portrait"
      ],
-     "thumb": "gamepads/flat/img/dpad-left.png"
+     "thumb": ".thumbs/gamepads/flat/virtualboy.png"
     },
     {
      "name": "wonderswan",
@@ -3951,7 +3951,7 @@
       "portrait",
       "hidden"
      ],
-     "thumb": "gamepads/flat/img/X4_wswan.png"
+     "thumb": ".thumbs/gamepads/flat/wonderswan.png"
     }
    ]
   },
@@ -3971,7 +3971,7 @@
       "menu",
       "hide"
      ],
-     "thumb": "ipad/n64-dark/img/n64_start.png"
+     "thumb": ".thumbs/ipad/n64-dark/n64_dark.jpg"
     },
     {
      "name": "n64-ipad",
@@ -3988,7 +3988,7 @@
       "menu",
       "hide"
      ],
-     "thumb": "ipad/n64/img/start.png"
+     "thumb": ".thumbs/ipad/n64/n64-ipad.jpg"
     },
     {
      "name": "ps_dark_a",
@@ -4002,7 +4002,7 @@
       "menu",
       "hide"
      ],
-     "thumb": "ipad/psx-dark/img/ps_left.png"
+     "thumb": ".thumbs/ipad/psx-dark/ps_dark_a.jpg"
     },
     {
      "name": "ps_dark_b",
@@ -4016,7 +4016,7 @@
       "menu",
       "hide"
      ],
-     "thumb": "ipad/psx-dark/img/ps_left.png"
+     "thumb": ".thumbs/ipad/psx-dark/ps_dark_b.jpg"
     },
     {
      "name": "ps_dark_basic",
@@ -4030,7 +4030,7 @@
       "menu",
       "hide"
      ],
-     "thumb": "ipad/psx-dark/img/ps_left.png"
+     "thumb": ".thumbs/ipad/psx-dark/ps_dark_basic.jpg"
     },
     {
      "name": "psx",
@@ -4045,7 +4045,7 @@
       "menu",
       "hide"
      ],
-     "thumb": "ipad/box-psx/img/dpad-left.png"
+     "thumb": ".thumbs/ipad/box-psx/psx.jpg"
     }
    ]
   },
@@ -4070,7 +4070,7 @@
       "hidden_tenkeyless_portrait",
       "hidden_keypad_portrait"
      ],
-     "thumb": "keyboards/flat_keyboard/img/esc.png"
+     "thumb": ".thumbs/keyboards/flat_keyboard/big.png"
     },
     {
      "name": "big",
@@ -4089,7 +4089,7 @@
       "hidden_tenkeyless_portrait",
       "hidden_keypad_portrait"
      ],
-     "thumb": "keyboards/modular-keyboard/clear/img/esc.png"
+     "thumb": ".thumbs/keyboards/modular-keyboard/clear/big.png"
     },
     {
      "name": "big",
@@ -4108,7 +4108,7 @@
       "hidden_tenkeyless_portrait",
       "hidden_keypad_portrait"
      ],
-     "thumb": "keyboards/modular-keyboard/opaque/img/esc.png"
+     "thumb": ".thumbs/keyboards/modular-keyboard/opaque/big.png"
     },
     {
      "name": "big_and_retropad",
@@ -4127,7 +4127,7 @@
       "shift_tenkeyless_landscape",
       "shift_tenkeyless_portrait"
      ],
-     "thumb": "keyboards/flat_keyboard/img/esc.png"
+     "thumb": ".thumbs/keyboards/flat_keyboard/big_and_retropad.png"
     },
     {
      "name": "big_and_retropad_ctrl",
@@ -4146,7 +4146,7 @@
       "shift_tenkeyless_landscape",
       "shift_tenkeyless_portrait"
      ],
-     "thumb": "keyboards/flat_keyboard/img/esc.png"
+     "thumb": ".thumbs/keyboards/flat_keyboard/big_and_retropad_ctrl.png"
     },
     {
      "name": "big_and_retropad_tab",
@@ -4165,7 +4165,7 @@
       "shift_tenkeyless_landscape",
       "shift_tenkeyless_portrait"
      ],
-     "thumb": "keyboards/flat_keyboard/img/esc.png"
+     "thumb": ".thumbs/keyboards/flat_keyboard/big_and_retropad_tab.png"
     },
     {
      "name": "plus4",
@@ -4179,7 +4179,7 @@
       "joystick",
       "hidden"
      ],
-     "thumb": "keyboards/commodore/img/esc.png"
+     "thumb": ".thumbs/keyboards/commodore/plus4.png"
     },
     {
      "name": "qwerty",
@@ -4191,7 +4191,7 @@
      "names": [
       "portrait-qwerty"
      ],
-     "thumb": null
+     "thumb": ".thumbs/keyboards/qwerty/qwerty.jpg"
     },
     {
      "name": "qwerty-big",
@@ -4203,7 +4203,7 @@
      "names": [
       "portrait-qwerty"
      ],
-     "thumb": null
+     "thumb": ".thumbs/keyboards/qwerty-big/qwerty-big.jpg"
     },
     {
      "name": "small",
@@ -4216,7 +4216,7 @@
       "standard",
       "shift"
      ],
-     "thumb": "keyboards/flat_keyboard/img/esc.png"
+     "thumb": ".thumbs/keyboards/flat_keyboard/small.png"
     },
     {
      "name": "small",
@@ -4231,7 +4231,7 @@
       "hidden_landscape",
       "hidden_portrait"
      ],
-     "thumb": "keyboards/modular-keyboard/clear/img/esc.png"
+     "thumb": ".thumbs/keyboards/modular-keyboard/clear/small.png"
     },
     {
      "name": "small",
@@ -4248,7 +4248,7 @@
       "hidden_landscape",
       "hidden_portrait"
      ],
-     "thumb": "keyboards/modular-keyboard/opaque/img/esc.png"
+     "thumb": ".thumbs/keyboards/modular-keyboard/opaque/small.png"
     },
     {
      "name": "split-qwerty",
@@ -4263,7 +4263,7 @@
       "portrait-primary",
       "portrait-fn"
      ],
-     "thumb": null
+     "thumb": ".thumbs/keyboards/split-qwerty/split-qwerty.jpg"
     },
     {
      "name": "US-101",
@@ -4280,7 +4280,7 @@
       "portrait-kp",
       "portrait-kp-hide"
      ],
-     "thumb": null
+     "thumb": ".thumbs/keyboards/US-101/US-101.jpg"
     }
    ]
   },
@@ -4301,7 +4301,7 @@
       "gb_save",
       "gb2_save"
      ],
-     "thumb": null
+     "thumb": ".thumbs/misc/gb-portrait/gb.jpg"
     },
     {
      "name": "im",
@@ -4316,7 +4316,7 @@
       "im2",
       "im3"
      ],
-     "thumb": null
+     "thumb": ".thumbs/misc/immerse/im.jpg"
     },
     {
      "name": "xperia_play_l2_r2",
@@ -4326,7 +4326,7 @@
      "overlays": 1,
      "descs": 2,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/misc/xperia_play_l2_r2.png"
     }
    ]
   },
@@ -4342,7 +4342,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/wii/gb.jpg"
     },
     {
      "name": "gb-grid",
@@ -4352,7 +4352,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/wii/gb-grid.jpg"
     },
     {
      "name": "gb-grid-green",
@@ -4362,7 +4362,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/wii/gb-grid-green.jpg"
     },
     {
      "name": "scanlines",
@@ -4372,7 +4372,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/wii/scanlines.jpg"
     },
     {
      "name": "scanlines-bold",
@@ -4382,7 +4382,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/wii/scanlines-bold.jpg"
     },
     {
      "name": "scanlines-grid",
@@ -4392,7 +4392,7 @@
      "overlays": 1,
      "descs": 0,
      "names": [],
-     "thumb": null
+     "thumb": ".thumbs/wii/scanlines-grid.jpg"
     }
    ]
   }

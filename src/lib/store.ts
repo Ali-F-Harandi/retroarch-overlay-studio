@@ -67,7 +67,7 @@ interface EditorState {
 
   updateDesc: (id: string, patch: Partial<Desc>, history?: boolean) => void;
   updateDescs: (ids: string[], fn: (d: Desc, i: number) => void, history?: boolean) => void;
-  addDesc: (name?: string) => void;
+  addDesc: (name?: string, art?: { rel: string; url: string; w?: number; h?: number }) => void;
   duplicateSel: () => void;
   deleteSel: () => void;
   reorder: (from: number, to: number) => void;
@@ -245,7 +245,7 @@ export const useEditor = create<EditorState>((set, get) => ({
     });
   },
 
-  addDesc: (name = 'a') => {
+  addDesc: (name = 'a', art) => {
     get().pushHistory();
     set((s) => {
       const model = clone(s.model);
@@ -261,11 +261,22 @@ export const useEditor = create<EditorState>((set, get) => ({
         if (!taken.some((t) => Math.abs(t.x - x) < t.w + 0.05 && Math.abs(t.y - y) < t.h + 0.05)) break;
       }
       d.x = +x.toFixed(3); d.y = +y.toFixed(3);
-      // auto-attach icon from library if we have one for this name
-      const hit = s.lib.find((l) => l.name.toLowerCase() === `${name.toLowerCase()}.png`);
-      if (hit) d.image = hit.rel;
+      let lib = s.lib;
+      if (art) {
+        // attach default artwork + sensible default size
+        d.image = art.rel;
+        if (art.w) d.w = art.w;
+        if (art.h) d.h = art.h;
+        if (!lib.some((l) => l.rel.toLowerCase() === art.rel.toLowerCase())) {
+          lib = [...lib, { rel: art.rel, name: art.rel.split('/').pop() ?? art.rel, url: art.url, builtin: true }];
+        }
+      } else {
+        // auto-attach icon from library if we have one for this name
+        const hit = s.lib.find((l) => l.name.toLowerCase() === `${name.toLowerCase()}.png`);
+        if (hit) d.image = hit.rel;
+      }
       model.overlays[s.cur].descs.push(d);
-      return { model, sel: [d.id], dirty: true };
+      return { model, sel: [d.id], dirty: true, lib };
     });
   },
 

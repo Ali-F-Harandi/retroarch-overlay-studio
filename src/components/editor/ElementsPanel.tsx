@@ -1,11 +1,13 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { useEditor } from '@/lib/store';
 import { inputKind, COLOR, isCombo } from '@/lib/cfg';
+import { BUTTON_ART, buttonArtUrl } from '@/lib/buttonArt';
 import { cn } from '@/lib/utils';
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import {
-  Plus, Copy, Trash2, GripVertical, Layers, Gamepad2, SlidersHorizontal,
+  Plus, Copy, Trash2, GripVertical, Gamepad2, SlidersHorizontal,
   CircleSlash, Expand, Aperture, Keyboard, Crosshair, Tag,
 } from 'lucide-react';
 
