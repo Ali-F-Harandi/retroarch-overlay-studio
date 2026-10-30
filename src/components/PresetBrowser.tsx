@@ -295,7 +295,7 @@ export default function PresetBrowser() {
           </DialogTitle>
           <DialogDescription className="text-xs text-zinc-500">
             Browse the folders to find a preset — {index ? `${index.categories.reduce((n, c) => n + c.count, 0)} configs` : 'hundreds of configs'} bundled offline.
-            The ⭐ Custom folder holds the hand-made console overlays (GB, GBA, NES, Genesis, SNES).
+            The ⭐ Custom folder holds the hand-made console overlays (GB, GBA, NES, Genesis, SNES, FBNeo, PS1).
           </DialogDescription>
         </DialogHeader>
 

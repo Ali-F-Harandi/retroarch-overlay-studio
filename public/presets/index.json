@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-30T04:59:10Z",
+ "generated": "2026-10-30T05:31:22Z",
  "source": "https://buildbot.libretro.com/assets/frontend/overlays.zip",
  "license": "CC-BY-4.0 (see presets/COPYING)",
  "categories": [
   {
    "id": "Custom",
-   "count": 5,
+   "count": 7,
    "cfgs": [
     {
      "name": "Nintendo - Game Boy",
@@ -91,6 +91,40 @@
       "portrait-B"
      ],
      "thumb": ".thumbs/Custom/Nintendo - SNES.png"
+    },
+    {
+     "name": "FBNeo - Arcade",
+     "file": "FBNeo - Arcade.cfg",
+     "path": "Custom/FBNeo - Arcade.cfg",
+     "dir": "Custom",
+     "overlays": 6,
+     "descs": 120,
+     "names": [
+      "landscape-A",
+      "hidden-A",
+      "portrait-A",
+      "landscape-B",
+      "hidden-B",
+      "portrait-B"
+     ],
+     "thumb": ".thumbs/Custom/FBNeo - Arcade.png"
+    },
+    {
+     "name": "Sony - PlayStation",
+     "file": "Sony - PlayStation.cfg",
+     "path": "Custom/Sony - PlayStation.cfg",
+     "dir": "Custom",
+     "overlays": 6,
+     "descs": 136,
+     "names": [
+      "landscape-A",
+      "hidden-A",
+      "portrait-A",
+      "landscape-B",
+      "hidden-B",
+      "portrait-B"
+     ],
+     "thumb": ".thumbs/Custom/Sony - PlayStation.png"
     }
    ]
   },

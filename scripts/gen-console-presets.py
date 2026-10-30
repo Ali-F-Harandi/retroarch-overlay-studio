@@ -7,16 +7,13 @@ A/B size variants) matching the design of their "Nintendo - Game Boy.cfg":
   - range_mod 1.5 / alpha_mod 2.0 / full_screen / normalized
   - user's hotkey set: menu, fast-forward, quick save (x2 landscape; save+load,
     rewind, slow-motion in portrait), variant switch, hide, rotate relay
-  - console-specific controls taken from the official libretro "flat" layouts
-  - images resolve via ../flat/img/* (cfgs live in gamepads/flat/)
-
-Output: public/presets/gamepads/flat/<name>.cfg
+Output: public/presets/Custom/<name>.cfg  (self-contained: img/ refs)
 """
 import math
 import os
 import shutil
 
-ROOT = '/home/z/my-project/public/presets/gamepads/flat'
+ROOT = '/home/z/my-project/public/presets/Custom'
 UPLOAD_GB = '/home/z/my-project/upload/Nintendo - Game Boy.cfg'
 
 # ---------------------------------------------------------------- primitives
@@ -53,7 +50,7 @@ def sys_land(switch_img, rotate_target, hide_target, switch_target):
         ('overlay_next',       0.1, 0.1, 'radial', 0.02604, 0.0463, switch_img, switch_target, False),
         ('toggle_fast_forward',0.8, 0.1, 'radial', 0.02604, 0.0463, 'fast_forward.png', None, False),
         ('save_state',         0.2, 0.3, 'radial', 0.02508, 0.04459, 'hotkey_save_state.png', None, False),
-        ('save_state',         0.8, 0.3, 'radial', 0.02508, 0.04459, 'hotkey_save_state.png', None, False),
+        ('load_state',         0.8, 0.3, 'radial', 0.02508, 0.04459, 'hotkey_load_state.png', None, False),
     ]
 
 def sys_port(switch_img, rotate_target, switch_target):
@@ -188,11 +185,81 @@ SNES_PORT = [
     entry('select', 0.37963, 0.83386, 'radial', 0.07037, 0.03958, 'start.png'),
 ]
 
+# FBNeo arcade, Neo Geo style 4-button curve (official flat/neogeo.cfg):
+# RetroArch Neo Geo mapping: pad b=A, a=B, y=C, x=D
+_FB_FOCAL = (0.72, 0.77)
+FB_LAND = [
+    entry('b', 0.645, 0.88, 'radial', 0.05, 0.08889, 'A.png'),
+    entry('a', 0.73, 0.785, 'radial', 0.05, 0.08889, 'B.png'),
+    entry('y', 0.83, 0.75, 'radial', 0.05, 0.08889, 'C.png'),
+    entry('x', 0.933, 0.75, 'radial', 0.05, 0.08889, 'D.png'),
+    *combo_pair('b|a', (0.645, 0.88), (0.73, 0.785), _FB_FOCAL, 0.01667, 0.02963),
+    *combo_pair('a|y', (0.73, 0.785), (0.83, 0.75), _FB_FOCAL, 0.01667, 0.02963),
+    *combo_pair('y|x', (0.83, 0.75), (0.933, 0.75), _FB_FOCAL, 0.01667, 0.02963),
+    *combo_pair('b|y', (0.645, 0.88), (0.83, 0.75), _FB_FOCAL, 0.01667, 0.02963),
+    entry('start', 0.9375, 0.26, 'rect', 0.03958, 0.07037, 'start_rounded.png'),
+    entry('select', 0.0625, 0.26, 'rect', 0.03958, 0.07037, 'coin.png'),
+]
+
+_FB_A, _FB_B, _FB_C, _FB_D = (0.72, 0.835), (0.85, 0.77), (0.59, 0.77), (0.72, 0.705)
+FB_PORT = [
+    entry('b', *_FB_A, 'radial', 0.07, 0.0394, 'A.png'),
+    entry('a', *_FB_B, 'radial', 0.07, 0.0394, 'B.png'),
+    entry('y', *_FB_C, 'radial', 0.07, 0.0394, 'C.png'),
+    entry('x', *_FB_D, 'radial', 0.07, 0.0394, 'D.png'),
+    *combo_pair('b|a', _FB_A, _FB_B, _FB_FOCAL, 0.02469, 0.01389),
+    *combo_pair('a|y', _FB_B, _FB_C, _FB_FOCAL, 0.02469, 0.01389),
+    *combo_pair('y|x', _FB_C, _FB_D, _FB_FOCAL, 0.02469, 0.01389),
+    *combo_pair('b|y', _FB_A, _FB_C, _FB_FOCAL, 0.02469, 0.01389),
+    entry('start', 0.93958, 0.45, 'rect', 0.07037, 0.03958, 'start_rounded.png'),
+    entry('select', 0.0625, 0.45, 'rect', 0.07037, 0.03958, 'coin.png'),
+]
+
+# Sony PlayStation (official flat/psx.cfg): diamond circle/cross/square/triangle
+# RetroArch mapping: a=circle, b=cross, x=triangle, y=square; L1/R1 + L2/R2
+PSX_LAND = [
+    entry('a', 0.9375, 0.77778, 'radial', 0.04167, 0.07407, 'circle.png'),
+    entry('b', 0.875, 0.88889, 'radial', 0.04167, 0.07407, 'cross.png'),
+    entry('x', 0.875, 0.66667, 'radial', 0.04167, 0.07407, 'triangle.png'),
+    entry('y', 0.8125, 0.77778, 'radial', 0.04167, 0.07407, 'square.png'),
+    *combo_pair('x|y', (0.875, 0.66667), (0.8125, 0.77778), (0.875, 0.77778), 0.01389, 0.02469),
+    *combo_pair('a|b', (0.9375, 0.77778), (0.875, 0.88889), (0.875, 0.77778), 0.01389, 0.02469),
+    *combo_pair('y|b', (0.8125, 0.77778), (0.875, 0.88889), (0.875, 0.77778), 0.01389, 0.02469),
+    *combo_pair('x|a', (0.875, 0.66667), (0.9375, 0.77778), (0.875, 0.77778), 0.01389, 0.02469),
+    entry('l', 0.02917, 0.5, 'rect', 0.05208, 0.09259, 'L1.png'),
+    entry('l2', 0.02917, 0.3, 'rect', 0.05208, 0.09259, 'L2.png'),
+    entry('r', 0.97083, 0.5, 'rect', 0.05208, 0.09259, 'R1.png'),
+    entry('r2', 0.97083, 0.3, 'rect', 0.05208, 0.09259, 'R2.png'),
+    entry('start', 0.56042, 0.91852, 'rect', 0.03958, 0.04444, 'start_psx.png'),
+    entry('select', 0.34583, 0.91852, 'rect', 0.040625, 0.04259, 'select_psx.png'),
+]
+
+_PS_A, _PS_B, _PS_X, _PS_Y = (0.845, 0.7975), (0.735, 0.86), (0.735, 0.735), (0.625, 0.7975)
+_PSMID = (0.735, 0.7975)
+PSX_PORT = [
+    entry('a', *_PS_A, 'radial', 0.074, 0.0417, 'circle.png'),
+    entry('b', *_PS_B, 'radial', 0.074, 0.0417, 'cross.png'),
+    entry('x', *_PS_X, 'radial', 0.074, 0.0417, 'triangle.png'),
+    entry('y', *_PS_Y, 'radial', 0.074, 0.0417, 'square.png'),
+    *combo_pair('x|y', _PS_X, _PS_Y, _PSMID, 0.02469, 0.01389),
+    *combo_pair('a|b', _PS_A, _PS_B, _PSMID, 0.02469, 0.01389),
+    *combo_pair('y|b', _PS_Y, _PS_B, _PSMID, 0.02469, 0.01389),
+    *combo_pair('x|a', _PS_X, _PS_A, _PSMID, 0.02469, 0.01389),
+    entry('l', 0.04815, 0.45, 'rect', 0.09259, 0.05208, 'L1.png'),
+    entry('l2', 0.04815, 0.35, 'rect', 0.09259, 0.05208, 'L2.png'),
+    entry('r', 0.95185, 0.45, 'rect', 0.09259, 0.05208, 'R1.png'),
+    entry('r2', 0.95185, 0.35, 'rect', 0.09259, 0.05208, 'R2.png'),
+    entry('start', 0.64815, 0.52, 'rect', 0.07037, 0.03958, 'start_psx.png'),
+    entry('select', 0.35185, 0.52, 'rect', 0.07222, 0.03958, 'select_psx.png'),
+]
+
 CONSOLES = [
     ('Nintendo - Game Boy Advance.cfg', GBA_LAND, GBA_PORT),
     ('Nintendo - NES.cfg', NES_LAND, NES_PORT),
     ('Sega - Genesis.cfg', GEN_LAND, GEN_PORT),
     ('Nintendo - SNES.cfg', SNES_LAND, SNES_PORT),
+    ('FBNeo - Arcade.cfg', FB_LAND, FB_PORT),
+    ('Sony - PlayStation.cfg', PSX_LAND, PSX_PORT),
 ]
 
 SCALE_B = 0.833  # B variants keep centers, shrink hitboxes (like the user's GB preset)
@@ -207,7 +274,7 @@ def emit_desc(ov, i, e, scale):
     sw, sh = (w * scale, h * scale) if (scale != 1.0 and scalable) else (w, h)
     lines = [f'overlay{ov}_desc{i} = "{cmd},{fmt(x)},{fmt(y)},{shape},{fmt(sw)},{fmt(sh)}"']
     if img:
-        lines.append(f'overlay{ov}_desc{i}_overlay = ../flat/img/{img}')
+        lines.append(f'overlay{ov}_desc{i}_overlay = img/{img}')
     if target:
         lines.append(f'overlay{ov}_desc{i}_next_target = "{target}"')
     return lines
@@ -251,10 +318,8 @@ def build_cfg(land, port):
     return '\n'.join(lines) + '\n'
 
 def main():
-    # 1. the user's Game Boy / Color preset, copied verbatim
-    dst_gb = os.path.join(ROOT, 'Nintendo - Game Boy.cfg')
-    shutil.copyfile(UPLOAD_GB, dst_gb)
-    print('copied', dst_gb)
+    # 1. the user's Game Boy / Color preset is patched separately
+    #    (scripts/fix-landscape-loadstate.py) - never regenerated here.
 
     # 2. generated consoles
     for name, land, port in CONSOLES:

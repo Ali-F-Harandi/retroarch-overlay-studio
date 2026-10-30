@@ -9,6 +9,8 @@ FILES = [
     'Nintendo - NES.cfg',
     'Sega - Genesis.cfg',
     'Nintendo - SNES.cfg',
+    'FBNeo - Arcade.cfg',
+    'Sony - PlayStation.cfg',
 ]
 
 desc_re = re.compile(r'^overlay(\d+)_desc(\d+)\s*=\s*"(.*)"')
