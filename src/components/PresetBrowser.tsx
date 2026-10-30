@@ -59,9 +59,9 @@ function sampleThumbs(n: FolderNode, max = 3): string[] {
 }
 
 const CAT_ICON: Record<string, string> = {
-  gamepads: '🎮', keyboards: '⌨️', borders: '🖼️', effects: '✨', misc: '🧩', ipad: '📱', wii: '🎯', ctr: '🎮',
+  custom: '⭐', gamepads: '🎮', keyboards: '⌨️', borders: '🖼️', effects: '✨', misc: '🧩', ipad: '📱', wii: '🎯', ctr: '🎮',
 };
-const folderIcon = (name: string) => CAT_ICON[name] ?? '📁';
+const folderIcon = (name: string) => CAT_ICON[name.toLowerCase()] ?? '📁';
 
 /* ---------- preset card ---------- */
 
@@ -202,7 +202,13 @@ export default function PresetBrowser() {
 
   const folders = useMemo(() => {
     if (!current) return [];
-    return [...current.children.values()].sort((a, b) => a.name.localeCompare(b.name));
+    return [...current.children.values()].sort((a, b) => {
+      // the Custom folder (user's own presets) always comes first
+      const pa = a.name.toLowerCase() === 'custom' ? 0 : 1;
+      const pb = b.name.toLowerCase() === 'custom' ? 0 : 1;
+      if (pa !== pb) return pa - pb;
+      return a.name.localeCompare(b.name);
+    });
   }, [current]);
 
   const cfgs = useMemo(() => {
@@ -282,13 +288,14 @@ export default function PresetBrowser() {
       <DialogContent className="flex h-[92dvh] w-[calc(100vw-1rem)] flex-col gap-0 overflow-hidden border-white/10 bg-zinc-950/95 p-0 backdrop-blur-xl sm:h-[88dvh] sm:max-w-6xl">
         <DialogHeader className="shrink-0 border-b border-white/5 px-4 py-3 sm:px-5 sm:py-4">
           <DialogTitle className="flex flex-wrap items-center gap-2 text-sm font-bold text-zinc-100 sm:text-base">
-            <Sparkles className="h-4 w-4 shrink-0 text-teal-300" /> Official presets
+            <Sparkles className="h-4 w-4 shrink-0 text-teal-300" /> Preset library
             <span className="rounded-full bg-teal-400/10 px-2 py-0.5 text-[10px] font-medium text-teal-300 ring-1 ring-inset ring-teal-400/30">
               libretro buildbot · CC-BY-4.0
             </span>
           </DialogTitle>
           <DialogDescription className="text-xs text-zinc-500">
-            Browse the folders to find a preset — 312 official configs with all artwork, bundled offline.
+            Browse the folders to find a preset — {index ? `${index.categories.reduce((n, c) => n + c.count, 0)} configs` : 'hundreds of configs'} bundled offline.
+            The ⭐ Custom folder holds the hand-made console overlays (GB, GBA, NES, Genesis, SNES).
           </DialogDescription>
         </DialogHeader>
 

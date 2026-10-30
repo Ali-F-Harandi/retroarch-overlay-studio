@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Ali-F-Harandi" }],
   openGraph: {
     title: "Overlay Studio — RetroArch Overlay Editor",
-    description: "Edit RetroArch overlays in your browser. 312 official presets included.",
+    description: "Edit RetroArch overlays in your browser. 312 official presets plus custom console overlays included.",
     type: "website",
   },
 };

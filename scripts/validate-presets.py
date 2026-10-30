@@ -2,7 +2,7 @@
 """Validate the generated console presets: structure, images, targets, overlaps."""
 import math, os, re, sys
 
-ROOT = '/home/z/my-project/public/presets/gamepads/flat'
+ROOT = '/home/z/my-project/public/presets/Custom'
 FILES = [
     'Nintendo - Game Boy.cfg',
     'Nintendo - Game Boy Advance.cfg',
@@ -53,7 +53,7 @@ for fn in FILES:
     name_by_ov = {k[0]: v for k, v in names.items()}
     # 3. images exist
     for (ov, di), ref in imgs.items():
-        rel = resolve('gamepads/flat', ref.strip().strip('"'))
+        rel = resolve('Custom', ref.strip().strip('"'))
         if not os.path.exists(os.path.join('/home/z/my-project/public/presets', rel)):
             print(f'FAIL {fn}: overlay{ov} desc{di} missing image {ref}'); fails += 1
     # 4. next targets resolve

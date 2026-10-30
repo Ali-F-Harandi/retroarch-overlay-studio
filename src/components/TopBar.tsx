@@ -193,7 +193,7 @@ export default function TopBar() {
         <Images className="h-3.5 w-3.5" /> Images
         {s.lib.length > 0 && <span className="ml-0.5 rounded-full bg-teal-400/20 px-1.5 text-[10px] text-teal-300">{s.lib.length}</span>}
       </Button>
-      <Button variant="outline" className={btn} onClick={() => s.setUI({ presetOpen: true })}>
+      <Button variant="outline" className={btn} onClick={() => s.setUI({ presetOpen: true })} title="Presets" aria-label="Presets">
         <Sparkles className="h-3.5 w-3.5 text-teal-300" /> <span className="hidden sm:inline">Presets</span>
       </Button>
 

@@ -18,9 +18,11 @@ hitboxes with **correct `range_mod` handling**, and export a ready-to-use
   official presets and the RetroArch input namespace: gamepad buttons, combos,
   analog, light-gun, every `retrok_*` keyboard key and modifiers, system
   commands and decorative labels — searchable from the element properties.
-- **Official presets bundled offline** — all **312 overlay configs** and ~2,200
-  artwork files from the libretro buildbot, organized in a **folder explorer**
-  (Library → gamepads → gameboy → …) with breadcrumbs, plus global search.
+- **Presets bundled offline** — all **312 official overlay configs** (~2,200
+  artwork files) from the libretro buildbot, plus a pinned **⭐ Custom** folder
+  with hand-made console overlays (Game Boy/GBC, GBA, NES, Genesis, SNES —
+  landscape & portrait, with hotkey buttons), organized in a **folder explorer**
+  (Library → Custom / gamepads → gameboy → …) with breadcrumbs and global search.
   Every preset and folder shows a **real rendered preview** — background +
   buttons composited at their true coordinates, generated from the .cfg itself.
 - **Default artwork for new elements** — the “Add element” picker offers 26
